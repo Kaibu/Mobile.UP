@@ -13,11 +13,12 @@ import { LectureListComponent } from './lecture-list/lecture-list.component';
 import { MensaMealComponent } from './mensa-meal/mensa-meal.component';
 import { NewsArticleComponent } from './news-article/news-article.component';
 import { EventViewComponent } from './event-view/event-view.component';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BookLocationComponent } from './book-location/book-location.component';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { CampusMapFeatureModalComponent } from './campus-map-feature-modal/campus-map-feature-modal.component';
 import { CourseDataComponent } from './course-data/course-data.component';
+import {CustomEventPromptComponent} from './custom-event-prompt/custom-event-prompt.component';
 
 @NgModule({
   declarations: [
@@ -32,12 +33,14 @@ import { CourseDataComponent } from './course-data/course-data.component';
     EventViewComponent,
     BookLocationComponent,
     CampusMapFeatureModalComponent,
-    CourseDataComponent
+    CourseDataComponent,
+    CustomEventPromptComponent
   ],
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     LeafletModule,
     TranslateModule.forChild({
       loader: {
@@ -59,8 +62,12 @@ import { CourseDataComponent } from './course-data/course-data.component';
     EventViewComponent,
     BookLocationComponent,
     CampusMapFeatureModalComponent,
-    CourseDataComponent
+    CourseDataComponent,
+    CustomEventPromptComponent
   ],
-  entryComponents: [CampusMapFeatureModalComponent]
+  entryComponents: [
+    CampusMapFeatureModalComponent,
+    CustomEventPromptComponent
+  ]
 })
 export class ComponentsModule { }

@@ -1,0 +1,131 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start" (click)="cancel()" fill="clear">
+      <ion-icon style="color: black; font-size: x-large;" name="ios-arrow-back"></ion-icon>
+    </ion-button>
+    <ion-title>{{ 'page.timetable.newEventModal.title' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+
+  <ion-list lines="none">
+    <form [formGroup]="newEvent" (ngSubmit)="submit()">
+
+      <!-- title -->
+      <ion-item>
+        <ion-label position="floating">
+          {{ 'page.timetable.newEventModal.form.title' | translate }}
+        </ion-label>
+        <ion-input type="text"
+                   formControlName="title"
+                   [placeholder]="'page.timetable.newEventModal.form.placeholder.title' |translate"></ion-input>
+      </ion-item>
+
+      <!-- description -->
+      <ion-item>
+        <ion-label position="floating">
+          {{ 'page.timetable.newEventModal.form.description' | translate }}
+        </ion-label>
+        <ion-input formControlName="description"
+                   [placeholder]="'page.timetable.newEventModal.form.placeholder.description'|translate"></ion-input>
+      </ion-item>
+
+      <!-- location -->
+      <ion-item>
+        <ion-label position="floating">
+          {{ 'page.timetable.newEventModal.form.location' | translate }}
+        </ion-label>
+        <ion-input formControlName="location"
+                   [placeholder]="'page.timetable.newEventModal.form.placeholder.location'|translate"></ion-input>
+      </ion-item>
+
+      <!--&lt;!&ndash; campus &ndash;&gt;-->
+      <!--<ion-item>-->
+        <!--<ion-label position="floating">-->
+          <!--{{ 'page.timetable.newEventModal.form.lcationCampus' | translate }}-->
+        <!--</ion-label>-->
+        <!--<ion-input formControlName="locationCampus"-->
+                   <!--[placeholder]="'page.timetable.newEventModal.form.placeholder.location'|translate"></ion-input>-->
+      <!--</ion-item>-->
+
+      <!--&lt;!&ndash; building &ndash;&gt;-->
+      <!--<ion-item>-->
+        <!--<ion-label position="floating">-->
+          <!--{{ 'page.timetable.newEventModal.form.locationBuilding' | translate }}-->
+        <!--</ion-label>-->
+        <!--<ion-input formControlName="locationBuilding"-->
+                   <!--[placeholder]="'page.timetable.newEventModal.form.placeholder.location'|translate"></ion-input>-->
+      <!--</ion-item>-->
+
+      <!--&lt;!&ndash; room &ndash;&gt;-->
+      <!--<ion-item>-->
+        <!--<ion-label position="floating">-->
+          <!--{{ 'page.timetable.newEventModal.form.locationRoom' | translate }}-->
+        <!--</ion-label>-->
+        <!--<ion-input formControlName="location_room"-->
+                   <!--[placeholder]="'page.timetable.newEventModal.form.placeholder.location'|translate"></ion-input>-->
+      <!--</ion-item>-->
+
+      <!-- rhythm -->
+      <ion-item>
+        <ion-label position="floating">
+          {{ 'page.timetable.newEventModal.form.rhythm' | translate }}
+        </ion-label>
+        <ion-select formControlName="rhythm"
+                    (ngModelChange)="onRhythmSelected($event)">
+          <ng-container *ngFor="let rhythm of objectValues(rhythms)">
+            <ion-select-option [value]="rhythm">
+              {{ 'page.timetable.rhythms.'+rhythm.name | translate }}
+            </ion-select-option>
+          </ng-container>
+        </ion-select>
+      </ion-item>
+
+      <!-- beginDate - date and time when event starts (default is now) -->
+      <ion-item>
+        <ion-label position="floating">
+          {{ 'page.timetable.newEventModal.form.beginDate' | translate }}
+        </ion-label>
+        <ion-datetime formControlName="beginDate"
+                      display-format="DD.MM.YYYY HH:mm"
+                      [cancelText]="'page.timetable.newEventModal.form.cancel' | translate"
+                      [doneText]="'page.timetable.newEventModal.form.done' | translate"
+                      (ngModelChange)="onBeginDateSelected($event)"
+        ></ion-datetime>
+      </ion-item>
+
+      <!-- endDate - date and time when event ends (default is now + 1 hour) -->
+      <ion-item>
+        <ion-label position="floating">
+          {{ 'page.timetable.newEventModal.form.endDate' | translate }}
+        </ion-label>
+        <ion-datetime formControlName="endDate"
+                      display-format="DD.MM.YYYY HH:mm"
+                      [cancelText]="'page.timetable.newEventModal.form.cancel' | translate"
+                      [doneText]="'page.timetable.newEventModal.form.done' | translate"
+        ></ion-datetime>
+      </ion-item>
+
+      <!-- recurrenceEnd - date when event recurrence ends (default is end of semester) -->
+      <ion-item *ngIf="newEvent.value.rhythm.name != 'single'">
+        <ion-label position="floating">
+          {{ 'page.timetable.newEventModal.form.recurrenceEnd' | translate }}
+        </ion-label>
+        <ion-datetime formControlName="recurrenceEnd"
+                      display-format="DD.MM.YYYY"
+                      [cancelText]="'page.timetable.newEventModal.form.cancel' | translate"
+                      [doneText]="'page.timetable.newEventModal.form.done' | translate"
+        ></ion-datetime>
+      </ion-item>
+
+      <ion-button type="submit" [disabled]="!newEvent.valid">
+        {{ 'page.timetable.newEventModal.form.submit' | translate }}
+      </ion-button>
+
+      <ion-button type="button" (click)="cancel()">
+        {{ 'page.timetable.newEventModal.form.cancel' | translate }}
+      </ion-button>
+
+    </form>
+  </ion-list>
+</ion-content>

@@ -149,7 +149,39 @@
       "building": "Gebäude",
       "room": "Raum",
       "rhythm": "Rhythmus",
-      "lecturer": "Dozent"
+      "lecturer": "Dozent",
+      "rhythms": {
+        "weekly": "Wöchentlich",
+        "biweekly": "Zwei-wöchentlich",
+        "single": "Einzeltermin",
+        "block": "Blockveranstaltung"
+      },
+      "newEventModal": {
+        "title": "Neuen Termin hinzufügen",
+        "form": {
+          "title": "Titel",
+          "description": "Beschreibung",
+          "color": "Farbe",
+          "beginDate": "Beginn des Termins",
+          "endDate": "Ende des Termins",
+          "recurrenceEnd": "Wiederholung bis",
+          "rhythm": "Rhythmus",
+          "location": "Ort",
+          "weekday": "Wochentag",
+          "placeholder": {
+            "title": "Titel des Termins",
+            "location": "Ort des Termins",
+            "description": "Beschreibung des Termins",
+            "color": "Farbe",
+            "begin": "Start",
+            "end": "Ende",
+            "rhythm": "Rhythmus"
+          },
+          "submit": "Hinzufügen",
+          "cancel": "Verwerfen",
+          "done": "OK"
+        }
+      }
     },
     "mail": {
       "title": "Mail.UP"

@@ -11,6 +11,8 @@ import { AlertService } from 'src/app/services/alert/alert.service';
 import * as dLoop from 'delayed-loop';
 import { AbstractPage } from 'src/app/lib/abstract-page';
 import { WebserviceWrapperService } from '../../services/webservice-wrapper/webservice-wrapper.service';
+import { Storage } from '@ionic/storage';
+import {CustomEventPromptComponent} from '../../components/custom-event-prompt/custom-event-prompt.component';
 
 @Component({
   selector: 'app-timetable',
@@ -25,6 +27,9 @@ export class TimetablePage extends AbstractPage {
   hexIndex = 0;
 
   eventSource: IEventObject[] = [];
+  customEvents: IEventObject[] = [];
+  pulsEvents: IEventObject[] = [];
+
   noUserRights = false;
   isLoading = true;
 
@@ -32,6 +37,8 @@ export class TimetablePage extends AbstractPage {
   exportFinished = true;
   exportedEvents = 0;
   modalOpen;
+
+  customEventsStorageKey = 'customTimetableEvents';
 
   // title string that should be displayed for every mode, eg. "24.12.2018"
   currentTitle = '';
@@ -60,22 +67,36 @@ export class TimetablePage extends AbstractPage {
     private calendar: Calendar,
     private modalCtrl: ModalController,
     private alertService: AlertService,
-    private alertCtrl: AlertController
+    private alertCtrl: AlertController,
+    private storage: Storage
   ) {
     super({ optionalNetwork: true, requireSession: true });
   }
 
   async ionViewWillEnter() {
+    this.initializeCalendar();
+  }
 
+  async initializeCalendar(refresh: boolean = false) {
     if (this.platform.is('android') || this.platform.is('ios')) { this.isMobile = true; }
     this.setupCalendarOptions();
+    this.loadEvents();
+  }
 
+  loadEvents(refresh: boolean = false) {
+    this.eventSource = [];
+    this.loadCustomEvents();
+    this.loadPulsEvents(refresh);
+  }
+
+  loadPulsEvents(refresh: boolean = false) {
     if (this.session) {
       this.isLoading = true;
       // there is a session
       this.ws.call(
         'pulsGetStudentCourses',
-        {session: this.session}
+        {session: this.session},
+        {forceRefresh: refresh}
       ).subscribe(
         (response: IPulsAPIResponse_getStudentCourses) => {
           if (response.message && response.message === 'no user rights') {
@@ -84,9 +105,10 @@ export class TimetablePage extends AbstractPage {
           } else {
             this.noUserRights = false;
             this.isLoading = false;
-            this.eventSource = createEventSource(
+            this.pulsEvents = createEventSource(
               response.studentCourses.student.actualCourses.course
             );
+            this.eventSource.push(...this.pulsEvents);
           }
         }, error => {
           console.log(error);
@@ -394,6 +416,44 @@ export class TimetablePage extends AbstractPage {
       console.log('[Timetable]: Can not check for calendar permissions.');
       this.alertService.showToast('alert.calendar-export-fail');
     });
+  }
+
+  /**
+   * presents a modal for adding custom events. After adding a custom events
+   * the calendar is reloaded, otherwise nothing will be done.
+   */
+  async customEventPrompt() {
+    const modal = await this.modalCtrl.create({
+      backdropDismiss: false,
+      component: CustomEventPromptComponent
+    });
+    await modal.present();
+    const result = await modal.onWillDismiss();
+    if (result.data && result.data.hasOwnProperty('events')) {
+      await this.addCustomEvents(result.data.events);
+      this.loadEvents();
+    }
+  }
+
+  /**
+   * adds a custom event to storage
+   * @param events {IEventObject[]} the events to be added to storage
+   */
+  async addCustomEvents(events: IEventObject[]) {
+    const eventsInStorage = await this.storage.get(this.customEventsStorageKey);
+    eventsInStorage.push(...events);
+    await this.storage.set(this.customEventsStorageKey, events);
+  }
+
+  /**
+   * loads custom events from storage and adds them to eventSource
+   */
+  loadCustomEvents() {
+    this.storage.get(this.customEventsStorageKey).then(
+      events => {
+        this.eventSource.push(...events);
+      }
+    );
   }
 
 }

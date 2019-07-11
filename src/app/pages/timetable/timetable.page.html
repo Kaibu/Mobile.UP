@@ -5,6 +5,10 @@
       <ion-icon name="calendar"></ion-icon>
       <ion-label>Export</ion-label>
     </ion-chip>
+    <ion-chip slot="end" outline="true" (click)="customEventPrompt()">
+      <ion-icon name="add"></ion-icon>
+      <ion-label>Neu</ion-label>
+    </ion-chip>
     <ion-menu-button slot="end"></ion-menu-button>
     <ion-title>{{ "page.timetable.title" | translate }}</ion-title>
   </ion-toolbar>
@@ -74,7 +78,9 @@
         </div>
       </ng-template>
 
-      <calendar class="calendar" [eventSource]="eventSource"
+      <calendar
+        class="calendar"
+        [eventSource]="eventSource"
         [calendarMode]="calendarOptions.calendarMode"
         [currentDate]="calendarOptions.currentDate"
         [locale]="calendarOptions.locale"

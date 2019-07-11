@@ -34,6 +34,7 @@ import { Calendar } from '@ionic-native/calendar/ngx';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import {WebserviceWrapperService} from './services/webservice-wrapper/webservice-wrapper.service';
 import { HTTP } from '@ionic-native/http/ngx';
+import {FormsModule} from '@angular/forms';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -71,6 +72,7 @@ export class IonicGestureConfig extends HammerGestureConfig {
       mode: 'md',
       rippleEffect: true
     }),
+    FormsModule,
     LeafletModule.forRoot(),
     IonicStorageModule.forRoot(),
     AppRoutingModule,

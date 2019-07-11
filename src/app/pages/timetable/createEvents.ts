@@ -20,9 +20,14 @@ export interface IEventObject {
 
 export type IEventSource = IEventObject[];
 export interface IWeekDaysMapping {[weekday: string]: Weekday; }
-export interface IRhythmMapping {[rhyhtm: string]: {freq: Frequency, interval: number}; }
+export interface IRhythm {
+  freq: Frequency;
+  interval: number;
+  name: string;
+}
+export interface IRhythmMapping {[rhyhtm: string]: IRhythm; }
 
-const weekdaysMapping: IWeekDaysMapping = {
+export const weekdaysMapping: IWeekDaysMapping = {
   'Montag': RRule.MO,
   'Dienstag': RRule.TU,
   'Mittwoch': RRule.WE,
@@ -32,32 +37,38 @@ const weekdaysMapping: IWeekDaysMapping = {
   'Sonntag': RRule.SU,
 };
 
-const rhythmMapping: IRhythmMapping = {
-  'wöchentlich': {
+export const Rhythms: IRhythmMapping = {
+  'weekly': {
+    name: 'weekly',
     freq: RRule.WEEKLY,
     interval: 1
   },
-  '14-täglich': {
+  'biweekly': {
+    name: 'biweekly',
     freq: RRule.WEEKLY,
     interval: 2
   },
-  'Einzel': {
-    // can be treated as weekly event that occurs in a single week
+  'single': {
+    name: 'single',
     freq: RRule.WEEKLY,
     interval: 1
   },
-  'Einzeltermin': {
-    // can be treated as weekly event that occurs in a single week
-    freq: RRule.WEEKLY,
-    interval: 1
-  },
-  'Block': {
+  'block': {
+    name: 'block',
     freq: RRule.DAILY,
     interval: 1
   },
 };
 
-function pulsToUTC(date, time, second= '00') {
+export const rhythmMapping = {
+  'wöchentlich': Rhythms.weekly,
+  '14-täglich': Rhythms.biweekly,
+  'Einzel': Rhythms.single,
+  'Einzeltermin': Rhythms.single,
+  'Block': Rhythms.block,
+};
+
+export function pulsToUTC(date, time, second= '00') {
   const day = date.substr(0, 2);
   const month = date.substr(3, 2);
   const year = date.substr(6);
@@ -84,7 +95,7 @@ function pulsToUTC(date, time, second= '00') {
  * @param tzid Id of timezone to be used
  * @returns eventrules
  */
-function createEventRules(event: IEvent, tzid): IEventRules {
+export function createEventRules(event: IEvent, tzid): IEventRules {
 
   if (!rhythmMapping[event.rhythm]) {
     throw new Error(`[createRule]: Event ${event.eventId}: Unknown rhythm: ${event.rhythm}`);

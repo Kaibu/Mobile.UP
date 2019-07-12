@@ -1,12 +1,22 @@
 import {Component} from '@angular/core';
 import {ModalController} from '@ionic/angular';
-import {IEventObject, Rhythms, weekdaysMapping} from '../../pages/timetable/createEvents';
+import {IEventObject, IRhythm, Rhythms, weekdaysMapping} from '../../pages/timetable/createEvents';
 import {RRule } from 'rrule';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import * as moment from 'moment';
 import {DatetimeChangeEventDetail} from '@ionic/core';
 import {IConfig} from '../../lib/interfaces';
 import {ConfigService} from '../../services/config/config.service';
+
+export interface NewEvent {
+  beginDate: string;
+  endDate: string;
+  recurrenceEnd: string;
+  title: string;
+  description: string;
+  location: string;
+  rhythm: IRhythm;
+}
 
 @Component({
   selector: 'app-custom-event-prompt',
@@ -64,6 +74,10 @@ export class CustomEventPromptComponent {
     });
   }
 
+  /**
+   * returns true when the selected rhythm is not 'single'
+   * @param control
+   */
   isRecurring(control) {
     const rhythmControl = control.root.get('rhythm');
     if (rhythmControl != null) {
@@ -83,6 +97,11 @@ export class CustomEventPromptComponent {
     });
   }
 
+  /**
+   * sets the recurrenceEnd to the last day of the semester value when a
+   * rhythm != 'single' has been selected
+   * @param event
+   */
   onRhythmSelected(event: string) {
     if (event['name'] !== 'single') {
       this.newEvent.patchValue((
@@ -92,19 +111,23 @@ export class CustomEventPromptComponent {
   }
 
   createEvents(newEvent) {
-    const event = newEvent.value;
+    const event: NewEvent = newEvent.value;
 
     const beginDate = new Date(event.beginDate);
     const endDate = new Date(event.endDate);
+    const recurrenceEndBegin = event.recurrenceEnd == null
+                                ? new Date(event.beginDate)
+                                : new Date(event.recurrenceEnd);
+    const recurrenceEndEnd = event.recurrenceEnd == null
+                                ? new Date(event.endDate)
+                                : new Date(event.recurrenceEnd);
 
     const beginRules = new RRule( {
       freq: event.rhythm.freq,
       interval: event.rhythm.interval,
       byweekday: beginDate.getDay() - 1,
       dtstart: beginDate,
-      until: event.recurrenceEnd == null
-              ? new Date(event.beginDate)
-              : new Date(event.recurrenceEnd)
+      until: recurrenceEndBegin
     }).all();
 
     const endRules = new RRule( {
@@ -112,17 +135,32 @@ export class CustomEventPromptComponent {
       interval: event.rhythm.interval,
       byweekday: beginDate.getDay() - 1,
       dtstart: endDate,
-      until: event.recurrenceEnd == null
-              ? new Date(event.endDate)
-              : new Date(event.recurrenceEnd)
+      until: recurrenceEndEnd
     }).all();
 
     const rules = beginRules.map(
       (value, index, array) => {
         return <IEventObject>{
+          type: 'custom',
           title: event.title,
+          color: '#ff504a',
           eventDetails: {
-            location: event.location
+            startTime: event.beginDate,
+            endTime: event.endDate,
+            startDate: event.beginDate,
+            endDate: recurrenceEndEnd.toISOString(),
+            location: event.location,
+            rhythm: event.rhythm.name,
+            lecturers: {
+              lecturer: {
+                lecturerFirstname: '',
+                lecturerLastname: ''
+              }
+            }
+          },
+          courseDetails: {
+            courseId: '',
+            courseName: event.title
           },
           startTime: value,
           endTime: endRules[index]
@@ -130,7 +168,6 @@ export class CustomEventPromptComponent {
       }
     );
 
-    console.log(rules)
     return rules;
   }
 

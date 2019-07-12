@@ -10,7 +10,10 @@
 <ion-content no-padding>
     <!-- template for one single event, will be wrapped in ion-card tag -->
     <ng-template #singleEventTemplate let-event="event">
-            <h6 text-wrap [innerHtml]="event.title+' ('+event.courseDetails.courseType+')'" padding-start></h6>
+            <h6 text-wrap [innerHtml]="event.title + event.courseDetails.courseType
+                                                      ? ' ('+event.courseDetails.courseType+')'
+                                                      : ''"
+                padding-start></h6>
             <ion-list>
                 <!-- lecturer(s)-->
                 <ng-container *ngIf="isArray(event.eventDetails.lecturers.lecturer);
@@ -73,9 +76,9 @@
                         </h2>
 
                         <p>
-                            {{ event.eventDetails.startDate }}
+                            {{ moment(event.eventDetails.startDate).format('ll') }}
                             -
-                            {{ event.eventDetails.endDate }}
+                            {{ moment(event.eventDetails.endDate).format('ll') }}
                         </p>
                     </ion-label>
                 </ion-item>

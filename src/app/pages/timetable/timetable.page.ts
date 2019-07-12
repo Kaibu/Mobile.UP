@@ -105,10 +105,15 @@ export class TimetablePage extends AbstractPage {
           } else {
             this.noUserRights = false;
             this.isLoading = false;
-            this.pulsEvents = createEventSource(
-              response.studentCourses.student.actualCourses.course
-            );
-            this.eventSource.push(...this.pulsEvents);
+
+            if (response.studentCourses.student.actualCourses != null) {
+              this.pulsEvents = createEventSource(
+                response.studentCourses.student.actualCourses.course
+              );
+              this.eventSource.push(...this.pulsEvents);
+            } else {
+              console.log('User has no courses');
+            }
           }
         }, error => {
           console.log(error);
@@ -430,6 +435,7 @@ export class TimetablePage extends AbstractPage {
     await modal.present();
     const result = await modal.onWillDismiss();
     if (result.data && result.data.hasOwnProperty('events')) {
+      console.log(result)
       await this.addCustomEvents(result.data.events);
       this.loadEvents();
     }
@@ -440,8 +446,13 @@ export class TimetablePage extends AbstractPage {
    * @param events {IEventObject[]} the events to be added to storage
    */
   async addCustomEvents(events: IEventObject[]) {
-    const eventsInStorage = await this.storage.get(this.customEventsStorageKey);
+    let eventsInStorage = await this.storage.get(this.customEventsStorageKey);
+    console.log(eventsInStorage)
+    if (!eventsInStorage) {
+      eventsInStorage = [];
+    }
     eventsInStorage.push(...events);
+    console.log(eventsInStorage)
     await this.storage.set(this.customEventsStorageKey, events);
   }
 

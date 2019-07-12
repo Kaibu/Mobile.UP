@@ -9,6 +9,7 @@ export interface IEventRules {
 }
 
 export interface IEventObject {
+  type: 'custom' | 'puls';
   id: number;
   startTime: Date;
   endTime: Date;
@@ -178,6 +179,7 @@ export function createEventSource(studentCourses: ICourse[],
           }
 
           eventSource.push(<IEventObject>{
+            type: 'puls',
             id: e.eventId,
             title: c.courseName,
             startTime: begin[i],

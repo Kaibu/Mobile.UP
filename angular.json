@@ -39,6 +39,11 @@
                 "glob": "**/*",
                 "input": "node_modules/leaflet",
                 "output": "assets/leaflet/"
+              },
+              {
+                "glob": "package.json",
+                "input": ".",
+                "output": "assets/json/package.json"
               }
             ],
             "styles": [

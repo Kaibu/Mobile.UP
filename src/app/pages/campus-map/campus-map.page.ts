@@ -31,7 +31,6 @@ export interface CampusMapQueryParams {
 export class CampusMapPage extends AbstractPage implements AfterViewInit {
 
   campusList: ICampus[] = ConfigService.config.campus;
-  currentCampus: ICampus;
   geoJSON: IMapsResponseObject[];
   searchControl;
   searchableLayers: L.LayerGroup = L.layerGroup();
@@ -57,7 +56,40 @@ export class CampusMapPage extends AbstractPage implements AfterViewInit {
   }
 
   /**
-   * @name loadMap
+   * implementation of abstract page function
+   * @param params
+   */
+  handleQueryParams(params: CampusMapQueryParams) {
+    this.logger.entry('handleQueryParams', JSON.stringify(params));
+    if (params.coordinates) {
+      this.moveToPosition(params.coordinates);
+    }
+
+    if (params.feature) {
+      this.moveToFeature(params.feature);
+    }
+
+    if (params.campus) {
+      this.campusTab.selectCampusByQuery(params.campus);
+    }
+  }
+
+  /**
+   *
+   */
+  ngAfterViewInit () {
+    if (!this.map) {
+      this.map = this.initializeLeafletMap();
+      this.loadMapData(this.map);
+      this.addLeafletSearch(this.map);
+      this.addGeoLocationButton(this.map);
+      this.map.whenReady(
+        () => this.pageReadyResolve()
+      );
+    }
+  }
+
+  /**
    * @description loads map and initializes it
    */
   initializeLeafletMap() {
@@ -69,53 +101,6 @@ export class CampusMapPage extends AbstractPage implements AfterViewInit {
         maxZoom: 18
       }).addTo(map);
     return map;
-  }
-
-  /**
-   * implementation of abstract page function
-   * @param params
-   */
-  handleQueryParams(params: CampusMapQueryParams) {
-    this.logger.entry('handleQueryParams', params);
-    if (params.coordinates) {
-      this.moveToPosition(params.coordinates);
-    }
-
-    if (params.feature) {
-      this.moveToFeature(params.feature);
-    }
-
-    if (params.campus) {
-      this.moveToQueriedCampus(params.campus);
-    }
-  }
-
-  /**
-   * @name ionViewWillEnter
-   * @desc take user to login if there is no session.
-   * We are using ionViewDidEnter here because it is run every time the view is
-   * entered, other than ionViewDidLoad which will run only once
-   */
-  ngAfterViewInit () {
-    // initialize map
-    if (!this.map) {
-      this.map = this.initializeLeafletMap();
-
-      // if the currentCampus has been set already, move there
-      if (this.currentCampus) {
-        this.moveToCampus(this.currentCampus);
-      }
-
-      this.loadMapData(this.map);
-      this.addLeafletSearch(this.map);
-      this.addGeoLocationButton(this.map);
-    }
-    // trigger pageReadyResolve, need to wait a second until map is really ready
-    // TODO: find out why this timeout is necessary and find better solution
-    setTimeout(
-      () => this.pageReadyResolve(),
-      1000
-    );
   }
 
   /**
@@ -306,62 +291,19 @@ export class CampusMapPage extends AbstractPage implements AfterViewInit {
   }
 
   /**
-   * selects the given campus and sets fitBounds to the campus' bounds
-   * @param {ICampus} campus
-   */
-  selectCampus(campus: ICampus) {
-    this.currentCampus = campus;
-    if (this.map) {
-      this.moveToCampus(campus);
-    }
-  }
-
-  /**
-   * moves to given campus
+   * moves map to given campus
    * @param campus {ICampus}
    */
   moveToCampus(campus: ICampus) {
+    this.logger.info('moving to campus:', campus.pretty_name);
     this.map.fitBounds(campus.lat_long_bounds);
-  }
-
-  /**
-   * Finds a campus by query. Campus can be specified in multiple ways:
-   *  - location_id (as string or number)
-   *  - name
-   *  - pretty_name
-   * @description fits map to given campus
-   * @param {string | name} query
-   */
-  queryCampus(query: string | number) {
-    return this.config.campus.find(
-      (campus: ICampus) => {
-        return campus.location_id === query
-          || campus.location_id === query.toString()
-          || campus.name === query
-          || campus.pretty_name === query;
-      }
-    );
-  }
-
-  /**
-   * Queries the desired campus and moves there if it can be found
-   * @param query
-   */
-  moveToQueriedCampus(query: string | number) {
-    const foundCampus = this.queryCampus(query);
-    if (foundCampus) {
-      this.logger.info(`moving to campus ${foundCampus.pretty_name}`);
-      this.selectCampus(foundCampus);
-    } else {
-      this.logger.error(`could not find campus by query: '${query}'`);
-    }
   }
 
   /**
    * move map to given feature, if it exists
    */
   moveToFeature(feature) {
-
+    this.logger.info('moving to feature', feature);
   }
 
   /**
@@ -369,7 +311,7 @@ export class CampusMapPage extends AbstractPage implements AfterViewInit {
    * @param coordinates
    */
   moveToPosition(coordinates: LatLngExpression) {
-    this.logger.entry('moveToPosition', coordinates);
+    this.logger.info('moving to position', coordinates);
     this.map.panTo(coordinates);
   }
 
@@ -417,8 +359,8 @@ export class CampusMapPage extends AbstractPage implements AfterViewInit {
 
         // add click listener that will open a Modal displaying some information
         geoJson.on('click', async () => {
-          if (props.campus !== this.currentCampus) {
-            this.currentCampus = props.campus;
+          if (props.campus !== this.campusTab.getSelectedCampus) {
+            this.campusTab.selectCampus(props.campus, true);
           }
 
           const modal = await this.modalCtrl.create({

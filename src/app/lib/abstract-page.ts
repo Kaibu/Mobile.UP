@@ -37,9 +37,9 @@ export abstract class AbstractPage  {
     logger: Logger;
     session: ISession;
 
-    pageReady: Promise<void>;
-    pageReadyResolve: () => void;
-    pageReadyReject: (error) => void;
+    pageReadyPromise;
+    pageReadyResolve;
+    pageReadyReject;
 
     protected sessionProvider: UserSessionService;
     protected connection: ConnectionService;
@@ -52,7 +52,7 @@ export abstract class AbstractPage  {
     protected webIntent: WebIntentService;
 
     protected constructor(
-        pageOptions?: IPageOptions
+        pageOptions: IPageOptions = {}
     ) {
 
       const injector: Injector = StaticInjectorService.getInjector();
@@ -70,40 +70,35 @@ export abstract class AbstractPage  {
 
       this.config = ConfigService.config;
 
-      if (pageOptions) { this.processOptions(pageOptions); }
+      this.processOptions(pageOptions);
 
-      // Assign pageReady promises. Those should be called from a page
-      // implementing this one
-      this.pageReady = new Promise(
+      this.pageReadyPromise = new Promise(
         (resolve, reject) => {
-          this.pageReadyResolve = () => {
-            this.logger.info('page is now ready');
-            resolve();
-          };
-          this.pageReadyReject = (error) => {
-            this.logger.error(`page is not ready: ${error}`);
-            reject();
-          };
+          this.pageReadyResolve = resolve;
+          this.pageReadyReject = reject;
         }
       );
 
-      // Forwarding queryParams to the pre-existing handleQueryParams function.
-      // The existing one doesn't do anything, though
-      this.activatedRoute.queryParams.subscribe(
-        params => {
-          const parsedParams = {};
-          for (const k in params) {
-            parsedParams[k] = JSON.parse(params[k]);
-          }
-          if (!isEmptyObject(parsedParams)) {
-            this.setMenuStatus(parsedParams['menu']);
-            this.pageReady.then(
-              () => this.handleQueryParams(parsedParams)
-            );
-          }
+      this.pageReadyPromise.then(
+        ready => {
+          // Forwarding queryParams to the pre-existing handleQueryParams function.
+          // The existing one doesn't do anything, though
+          this.activatedRoute.queryParams.subscribe(
+            params => {
+              const parsedParams = {};
+              for (const k in params) {
+                parsedParams[k] = JSON.parse(params[k]);
+              }
+              this.setMenuStatus(parsedParams['menu']);
+              delete parsedParams['menu'];
+
+              this.handleQueryParams(parsedParams);
+            }
+          );
         }
       );
     }
+
 
     /**
      * process the given pageOptions and execute desired functions

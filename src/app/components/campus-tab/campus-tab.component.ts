@@ -39,14 +39,21 @@ export class CampusTabComponent implements OnInit {
   }
 
   /**
+   * accessor for getting the current campus
+   */
+  @Output() get getSelectedCampus() {
+    return this._selectedCampus;
+  }
+
+  /**
    * @desc list of ICampus object that will be used
    */
-  campusList: ICampus[] = ConfigService.config.campus;
+  private campusList: ICampus[] = ConfigService.config.campus;
 
   /**
    * @desc holds the currently selected campus object
    */
-  _selectedCampus: ICampus;
+  private _selectedCampus: ICampus;
 
   constructor(
     private settings: SettingsService
@@ -61,6 +68,28 @@ export class CampusTabComponent implements OnInit {
 
     if (!dontEmit) {
       this.campusChanged.emit(this._selectedCampus);
+    }
+  }
+
+  /**
+   * Finds a campus by query. Campus can be specified in multiple ways:
+   *  - location_id (as string or number)
+   *  - name
+   *  - pretty_name
+   * @description fits map to given campus
+   * @param {string | name} query
+   */
+  selectCampusByQuery(query: string | number = '') {
+    const foundCampus = this.campusList.find(
+      (campus: ICampus) => {
+        return campus.location_id === query
+            || campus.location_id === query.toString()
+            || campus.name === query
+            || campus.pretty_name === query;
+      }
+    );
+    if (foundCampus) {
+      this.selectCampus(foundCampus);
     }
   }
 

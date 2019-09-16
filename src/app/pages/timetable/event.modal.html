@@ -16,12 +16,15 @@
                 padding-start></h6>
             <ion-list>
                 <!-- lecturer(s)-->
-                <ng-container *ngIf="isArray(event.eventDetails.lecturers.lecturer);
-                            then multipleLecturersTemplate else singleLecturerTemplate"></ng-container>
+                <ng-container *ngIf="event.eventDetails.lecturers">
+                  <ng-container *ngIf="isArray(event.eventDetails.lecturers.lecturer);
+                              then multipleLecturersTemplate else singleLecturerTemplate">
+                  </ng-container>
+                </ng-container>
 
                 <!-- template for event with single lecturer-->
                 <ng-template #singleLecturerTemplate>
-                    <ion-item *ngIf="event.eventDetails.lecturers">
+                    <ion-item>
                         <ion-label text-wrap>
                             <h2>
                                 {{ "page.timetable.lecturer" | translate }}
@@ -36,7 +39,7 @@
 
                 <!-- template for event with multiple lecturers -->
                 <ng-template #multipleLecturersTemplate>
-                    <ion-item *ngIf="event.eventDetails.lecturers">
+                    <ion-item>
                         <ion-label text-wrap>
                             <h2>
                                 {{ "page.timetable.lecturer" | translate }}
@@ -96,7 +99,7 @@
                 </ion-item>
 
                 <!-- location -->
-                <ion-item *nfIf="event.eventDetails.location">
+                <ion-item *ngIf="event.eventDetails.location">
                     <ion-label text-wrap>
                         <h2>
                             {{ "page.timetable.location" | translate }}

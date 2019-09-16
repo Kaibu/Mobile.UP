@@ -7,6 +7,7 @@ import * as moment from 'moment';
 import {DatetimeChangeEventDetail} from '@ionic/core';
 import {IConfig} from '../../lib/interfaces';
 import {ConfigService} from '../../services/config/config.service';
+import {TranslateService} from '@ngx-translate/core';
 
 export interface NewEvent {
   beginDate: string;
@@ -31,6 +32,7 @@ export class CustomEventPromptComponent {
   weekdays = weekdaysMapping;
 
   constructor(private modalCtrl: ModalController,
+              private translate: TranslateService,
               private formBuilder: FormBuilder ) {
     const now = moment();
     this.newEvent = this.formBuilder.group({
@@ -150,18 +152,9 @@ export class CustomEventPromptComponent {
             startDate: event.beginDate,
             endDate: recurrenceEndEnd.toISOString(),
             location: event.location,
-            rhythm: event.rhythm.name,
-            lecturers: {
-              lecturer: {
-                lecturerFirstname: '',
-                lecturerLastname: ''
-              }
-            }
+            rhythm: this.translate.instant('page.timetable.rhythms.' + event.rhythm.name),
           },
-          courseDetails: {
-            courseId: '',
-            courseName: event.title
-          },
+          courseDetails: {},
           startTime: value,
           endTime: endRules[index]
         };

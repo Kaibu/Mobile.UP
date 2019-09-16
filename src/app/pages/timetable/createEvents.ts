@@ -14,8 +14,8 @@ export interface IEventObject {
   startTime: Date;
   endTime: Date;
   title: string;
-  courseDetails: ICourse;
-  eventDetails: IEvent;
+  courseDetails?: ICourse;
+  eventDetails?: IEvent;
   color: string;
 }
 

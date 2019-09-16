@@ -21,7 +21,7 @@
 
                 <!-- template for event with single lecturer-->
                 <ng-template #singleLecturerTemplate>
-                    <ion-item>
+                    <ion-item *ngIf="event.eventDetails.lecturers">
                         <ion-label text-wrap>
                             <h2>
                                 {{ "page.timetable.lecturer" | translate }}
@@ -36,7 +36,7 @@
 
                 <!-- template for event with multiple lecturers -->
                 <ng-template #multipleLecturersTemplate>
-                    <ion-item>
+                    <ion-item *ngIf="event.eventDetails.lecturers">
                         <ion-label text-wrap>
                             <h2>
                                 {{ "page.timetable.lecturer" | translate }}
@@ -51,7 +51,7 @@
                 </ng-template>
 
                 <!-- time -->
-                <ion-item>
+                <ion-item *ngIf="event.startTime && event.endTime">
                     <ion-label text-wrap>
                         <h2>
                             {{ "page.timetable.time" | translate }}
@@ -69,7 +69,7 @@
                 </ion-item>
 
                 <!-- period -->
-                <ion-item>
+                <ion-item *ngIf="event.eventDetails.startDate && event.eventDetails.endDate">
                     <ion-label text-wrap>
                         <h2>
                             {{ "page.timetable.period" | translate }}
@@ -84,7 +84,7 @@
                 </ion-item>
 
                 <!-- rhythm -->
-                <ion-item>
+                <ion-item *ngIf="event.eventDetails.rhythm">
                     <ion-label text-wrap>
                         <h2>
                             {{ "page.timetable.rhythm" | translate }}
@@ -96,7 +96,7 @@
                 </ion-item>
 
                 <!-- location -->
-                <ion-item>
+                <ion-item *nfIf="event.eventDetails.location">
                     <ion-label text-wrap>
                         <h2>
                             {{ "page.timetable.location" | translate }}
@@ -109,7 +109,7 @@
                 </ion-item>
 
                 <!-- building -->
-                <ion-item>
+                <ion-item *ngIf="event.eventDetails.building">
                     <ion-label text-wrap>
                         <h2>
                             {{ "page.timetable.building" | translate }}
@@ -126,7 +126,7 @@
                 </ion-item>
 
                 <!-- roomtype and room -->
-                <ion-item>
+                <ion-item *ngIf="event.eventDetails.room">
                     <ion-label text-wrap>
                         <h2>
                             {{ "page.timetable.room" | translate }}

@@ -193,7 +193,11 @@ export class TimetablePage extends AbstractPage {
       const eventModal = await this.modalCtrl.create({
         backdropDismiss: false,
         component: EventModalPage,
-        componentProps: { events: [event], date: event.startTime }
+        componentProps: {
+          events: [event],
+          date: event.startTime,
+          eventType: event.type
+        }
       });
       eventModal.present();
       this.modalOpen = true;

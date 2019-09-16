@@ -18,8 +18,9 @@ export class EventModalPage {
 
     @Input() events: IEventObject[] = null;
     @Input() date = null;
+    @Input() eventType = 'course';
 
-    constructor(private modalCtrl: ModalController) { }
+    constructor(private modalCtrl: ModalController) {}
 
     closeModal() {
         this.modalCtrl.dismiss();

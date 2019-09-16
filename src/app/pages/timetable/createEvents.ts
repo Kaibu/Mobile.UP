@@ -179,7 +179,7 @@ export function createEventSource(studentCourses: ICourse[],
           }
 
           eventSource.push(<IEventObject>{
-            type: 'puls',
+            type: 'course',
             id: e.eventId,
             title: c.courseName,
             startTime: begin[i],

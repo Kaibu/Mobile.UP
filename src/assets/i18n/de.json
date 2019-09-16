@@ -135,7 +135,10 @@
     },
     "timetable": {
       "title": "Stundenplan",
-      "courseInformation": "Kursinformation",
+      "eventType": {
+        "custom": "Termininformation",
+        "course": "Kursinformation"
+      },
       "until": "",
       "today": "Heute",
       "month": "Monat",

@@ -3,17 +3,23 @@
         <ion-button slot="start" (click)="closeModal()" fill="clear">
             <ion-icon style="color: black; font-size: x-large;" name="ios-arrow-back"></ion-icon>
         </ion-button>
-        <ion-title>{{"page.timetable.courseInformation" | translate }}</ion-title>
+        <ion-title>{{"page.timetable.eventType." + eventType | translate }}</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content no-padding>
     <!-- template for one single event, will be wrapped in ion-card tag -->
     <ng-template #singleEventTemplate let-event="event">
-            <h6 text-wrap [innerHtml]="event.title + event.courseDetails.courseType
-                                                      ? ' ('+event.courseDetails.courseType+')'
-                                                      : ''"
-                padding-start></h6>
+            <h6 *ngIf="eventType == 'course'"
+                text-wrap
+                [innerHtml]="event.title + event.courseDetails.courseType
+                                            ? ' ('+event.courseDetails.courseType+')'
+                                            : ''"
+                padding-start>
+            </h6>
+            <h6 *ngIf="eventType == 'custom'">
+              {{ event.title }}
+            </h6>
             <ion-list>
                 <!-- lecturer(s)-->
                 <ng-container *ngIf="event.eventDetails.lecturers">

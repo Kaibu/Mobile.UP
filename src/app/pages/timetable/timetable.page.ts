@@ -453,7 +453,7 @@ export class TimetablePage extends AbstractPage {
     }
     eventsInStorage.push(...events);
     console.log(eventsInStorage)
-    await this.storage.set(this.customEventsStorageKey, events);
+    await this.storage.set(this.customEventsStorageKey, eventsInStorage);
   }
 
   /**

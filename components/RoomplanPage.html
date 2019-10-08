@@ -1,0 +1,3315 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Mobile.UP</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Mobile.UP</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>RoomplanPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/roomplan/roomplan.page.ts</code>
+</p>
+
+
+    <p class="comment">
+        <h3>Extends</h3>
+    </p>
+    <p class="comment">
+                <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+    </p>
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-roomplan</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./roomplan.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./roomplan.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#campusTabComponent">campusTabComponent</a>
+                            </li>
+                            <li>
+                                <a href="#current_location">current_location</a>
+                            </li>
+                            <li>
+                                <a href="#day_offset">day_offset</a>
+                            </li>
+                            <li>
+                                <a href="#default_house">default_house</a>
+                            </li>
+                            <li>
+                                <a href="#default_room">default_room</a>
+                            </li>
+                            <li>
+                                <a href="#error">error</a>
+                            </li>
+                            <li>
+                                <a href="#houseMap">houseMap</a>
+                            </li>
+                            <li>
+                                <a href="#housesFound">housesFound</a>
+                            </li>
+                            <li>
+                                <a href="#isLoaded">isLoaded</a>
+                            </li>
+                            <li>
+                                <a href="#refresher">refresher</a>
+                            </li>
+                            <li>
+                                <a href="#requestProcessed">requestProcessed</a>
+                            </li>
+                            <li>
+                                <a href="#response">response</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#translate">translate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#activatedRoute">activatedRoute</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#config">config</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#connection">connection</a>
+                            </li>
+                            <li>
+                                <a href="#logger">logger</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#loggingService">loggingService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#menu">menu</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#navCtrl">navCtrl</a>
+                            </li>
+                            <li>
+                                <a href="#pageReady">pageReady</a>
+                            </li>
+                            <li>
+                                <a href="#pageReadyReject">pageReadyReject</a>
+                            </li>
+                            <li>
+                                <a href="#pageReadyResolve">pageReadyResolve</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#platform">platform</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#router">router</a>
+                            </li>
+                            <li>
+                                <a href="#session">session</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#sessionProvider">sessionProvider</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#webIntent">webIntent</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addRoomToHouse">addRoomToHouse</a>
+                            </li>
+                            <li>
+                                <a href="#changeDay">changeDay</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#compareEvents">compareEvents</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#compareHouses">compareHouses</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#compareRooms">compareRooms</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#expandHouse">expandHouse</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#expandRoom">expandRoom</a>
+                            </li>
+                            <li>
+                                <a href="#getRoomInfo">getRoomInfo</a>
+                            </li>
+                            <li>
+                                <a href="#refreshRoom">refreshRoom</a>
+                            </li>
+                            <li>
+                                <a href="#switchLocation">switchLocation</a>
+                            </li>
+                            <li>
+                                <a href="#uniqueFilter">uniqueFilter</a>
+                            </li>
+                            <li>
+                                <a href="#handleQueryParams">handleQueryParams</a>
+                            </li>
+                            <li>
+                                <a href="#openModule">openModule</a>
+                            </li>
+                            <li>
+                                <a href="#openModuleByName">openModuleByName</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#processOptions">processOptions</a>
+                            </li>
+                            <li>
+                                <a href="#requireNetwork">requireNetwork</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#requireSession">requireSession</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setMenuStatus">setMenuStatus</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(alertService: <a href="../injectables/AlertService.html">AlertService</a>, ws: <a href="../injectables/WebserviceWrapperService.html">WebserviceWrapperService</a>, translate: TranslateService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:23</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>alertService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AlertService.html" target="_self" >AlertService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ws</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/WebserviceWrapperService.html" target="_self" >WebserviceWrapperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addRoomToHouse"></a>
+                    <span class="name">
+                        <b>
+                            addRoomToHouse
+                        </b>
+                        <a href="#addRoomToHouse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addRoomToHouse(houseLbl, room: <a href="../interfaces/IRoom.html">IRoom</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="183"
+                            class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:183</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Adds a room to a house (specified by its lbl)
+If the house does not exist one is created
+Room is only added if house does not already have that room (identified by lbl)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>houseLbl</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>lbl of house to add room for</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>room</td>
+                                    <td>
+                                                <code><a href="../interfaces/IRoom.html" target="_self" >IRoom</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>room to add to house</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeDay"></a>
+                    <span class="name">
+                        <b>
+                            changeDay
+                        </b>
+                        <a href="#changeDay"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeDay(newDay)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Changes the day for which to load data
+Day comes from DOM select element &quot;select_day&quot;</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>newDay</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="compareEvents"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Static</span>
+                            compareEvents
+                        </b>
+                        <a href="#compareEvents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>compareEvents(a: <a href="../interfaces/IRoomEvent.html">IRoomEvent</a>, b: <a href="../interfaces/IRoomEvent.html">IRoomEvent</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="58"
+                            class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:58</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Comparator for event sorting</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>a</td>
+                                    <td>
+                                                <code><a href="../interfaces/IRoomEvent.html" target="_self" >IRoomEvent</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>b</td>
+                                    <td>
+                                                <code><a href="../interfaces/IRoomEvent.html" target="_self" >IRoomEvent</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>1 | 0 | -1</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="compareHouses"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Static</span>
+                            compareHouses
+                        </b>
+                        <a href="#compareHouses"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>compareHouses(a: <a href="../interfaces/IHouse.html">IHouse</a>, b: <a href="../interfaces/IHouse.html">IHouse</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="90"
+                            class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:90</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Comparator for house</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>a</td>
+                                    <td>
+                                                <code><a href="../interfaces/IHouse.html" target="_self" >IHouse</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>b</td>
+                                    <td>
+                                                <code><a href="../interfaces/IHouse.html" target="_self" >IHouse</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>1 | 0 | -1</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="compareRooms"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Static</span>
+                            compareRooms
+                        </b>
+                        <a href="#compareRooms"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>compareRooms(a: <a href="../interfaces/IRoom.html">IRoom</a>, b: <a href="../interfaces/IRoom.html">IRoom</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Comparator for room sorting</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>a</td>
+                                    <td>
+                                                <code><a href="../interfaces/IRoom.html" target="_self" >IRoom</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>b</td>
+                                    <td>
+                                                <code><a href="../interfaces/IRoom.html" target="_self" >IRoom</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>1 | 0 | -1</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="expandHouse"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            expandHouse
+                        </b>
+                        <a href="#expandHouse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>expandHouse(house)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="146"
+                            class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:146</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Expand house expandable to show rooms
+Closes rooms when house is closed</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>house</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>lbl of house to close</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="expandRoom"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            expandRoom
+                        </b>
+                        <a href="#expandRoom"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>expandRoom(house, room)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="164"
+                            class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:164</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Expand room expandable to show events</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>house</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>lbl of house to close</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>room</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>lbl of room to close</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getRoomInfo"></a>
+                    <span class="name">
+                        <b>
+                            getRoomInfo
+                        </b>
+                        <a href="#getRoomInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getRoomInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="206"
+                            class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:206</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Main function to query api and build array that is later parsed to DOM
+Gets all its parameters from pages global vars (location, day, default house/room)</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="refreshRoom"></a>
+                    <span class="name">
+                        <b>
+                            refreshRoom
+                        </b>
+                        <a href="#refreshRoom"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>refreshRoom(refresher)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="123"
+                            class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:123</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Called by refresher element to refresh info</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>refresher</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>DOM refresher element, passed for later closing</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="switchLocation"></a>
+                    <span class="name">
+                        <b>
+                            switchLocation
+                        </b>
+                        <a href="#switchLocation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>switchLocation(campus: <a href="../interfaces/ICampus.html">ICampus</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="134"
+                            class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:134</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Switch campus location and reload info for new campus</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>campus</td>
+                                    <td>
+                                                <code><a href="../interfaces/ICampus.html" target="_self" >ICampus</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uniqueFilter"></a>
+                    <span class="name">
+                        <b>
+                            uniqueFilter
+                        </b>
+                        <a href="#uniqueFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>uniqueFilter(value, index, self)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="352"
+                            class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:352</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Filter for person array uniqueness</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>index</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>self</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleQueryParams"></a>
+                    <span class="name">
+                        <b>
+                            handleQueryParams
+                        </b>
+                        <a href="#handleQueryParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleQueryParams(params: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:134</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>handles the queryParams for a page. Should be overwritten.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>params</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the params that should be handled</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openModule"></a>
+                    <span class="name">
+                        <b>
+                            openModule
+                        </b>
+                        <a href="#openModule"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openModule(moduleToOpen: <a href="../interfaces/IModule.html">IModule</a>, params: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:144</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>opens a page by using it&#39;s module</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>moduleToOpen</td>
+                                    <td>
+                                                <code><a href="../interfaces/IModule.html" target="_self" >IModule</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>params</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>{}</code>
+                                    </td>
+
+                                    <td>
+                                        <p>params {any} params that should by passed on</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openModuleByName"></a>
+                    <span class="name">
+                        <b>
+                            openModuleByName
+                        </b>
+                        <a href="#openModuleByName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openModuleByName(moduleName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, params: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:160</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>opens a page by name</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>moduleName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        <p>name of the module</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>params</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>{}</code>
+                                    </td>
+
+                                    <td>
+                                        <p>params that should by passed on</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="processOptions"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            processOptions
+                        </b>
+                        <a href="#processOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>processOptions(pageOptions: <a href="../interfaces/IPageOptions.html">IPageOptions</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:115</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>process the given pageOptions and execute desired functions</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageOptions</td>
+                                    <td>
+                                                <code><a href="../interfaces/IPageOptions.html" target="_self" >IPageOptions</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="requireNetwork"></a>
+                    <span class="name">
+                        <b>
+                            requireNetwork
+                        </b>
+                        <a href="#requireNetwork"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>requireNetwork(necessary?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:174</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>necessary</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="requireSession"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            requireSession
+                        </b>
+                        <a href="#requireSession"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>requireSession(optional?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:183</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>optional</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setMenuStatus"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            setMenuStatus
+                        </b>
+                        <a href="#setMenuStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setMenuStatus(shouldEnable: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:126</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>enables or disables the pages menu section</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>shouldEnable</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>true</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="campusTabComponent"></a>
+                        <span class="name">
+                            <b>
+                            campusTabComponent</b>
+                            <a href="#campusTabComponent"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../components/CampusTabComponent.html" target="_self" >CampusTabComponent</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(CampusTabComponent)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:50</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="current_location"></a>
+                        <span class="name">
+                            <b>
+                            current_location</b>
+                            <a href="#current_location"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/ICampus.html" target="_self" >ICampus</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="day_offset"></a>
+                        <span class="name">
+                            <b>
+                            day_offset</b>
+                            <a href="#day_offset"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="default_house"></a>
+                        <span class="name">
+                            <b>
+                            default_house</b>
+                            <a href="#default_house"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IHouse.html" target="_self" >IHouse</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="default_room"></a>
+                        <span class="name">
+                            <b>
+                            default_room</b>
+                            <a href="#default_room"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IRoom.html" target="_self" >IRoom</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="error"></a>
+                        <span class="name">
+                            <b>
+                            error</b>
+                            <a href="#error"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/common/http/HttpErrorResponse" target="_blank" >HttpErrorResponse</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="houseMap"></a>
+                        <span class="name">
+                            <b>
+                            houseMap</b>
+                            <a href="#houseMap"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Map&lt;string | IHousePlan&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Map&lt;string, IHousePlan&gt;()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="housesFound"></a>
+                        <span class="name">
+                            <b>
+                            housesFound</b>
+                            <a href="#housesFound"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IHouse.html" target="_self" >Array&lt;IHouse&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoaded"></a>
+                        <span class="name">
+                            <b>
+                            isLoaded</b>
+                            <a href="#isLoaded"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="refresher"></a>
+                        <span class="name">
+                            <b>
+                            refresher</b>
+                            <a href="#refresher"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="requestProcessed"></a>
+                        <span class="name">
+                            <b>
+                            requestProcessed</b>
+                            <a href="#requestProcessed"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="response"></a>
+                        <span class="name">
+                            <b>
+                            response</b>
+                            <a href="#response"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="translate"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            translate</b>
+                            <a href="#translate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>TranslateService</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/pages/roomplan/roomplan.page.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="activatedRoute"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            activatedRoute</b>
+                            <a href="#activatedRoute"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:45</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="config"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            config</b>
+                            <a href="#config"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IConfig.html" target="_self" >IConfig</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:48</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="connection"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            connection</b>
+                            <a href="#connection"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/ConnectionService.html" target="_self" >ConnectionService</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:44</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="logger"></a>
+                        <span class="name">
+                            <b>
+                            logger</b>
+                            <a href="#logger"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Logger</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:36</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loggingService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            loggingService</b>
+                            <a href="#loggingService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>LoggingService</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:49</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="menu"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            menu</b>
+                            <a href="#menu"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MenuController</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:46</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="navCtrl"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            navCtrl</b>
+                            <a href="#navCtrl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>NavController</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:47</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageReady"></a>
+                        <span class="name">
+                            <b>
+                            pageReady</b>
+                            <a href="#pageReady"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Promise&lt;void&gt;</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:39</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageReadyReject"></a>
+                        <span class="name">
+                            <b>
+                            pageReadyReject</b>
+                            <a href="#pageReadyReject"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:41</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageReadyResolve"></a>
+                        <span class="name">
+                            <b>
+                            pageReadyResolve</b>
+                            <a href="#pageReadyResolve"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:40</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="platform"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            platform</b>
+                            <a href="#platform"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Platform</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:52</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="router"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            router</b>
+                            <a href="#router"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:50</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="session"></a>
+                        <span class="name">
+                            <b>
+                            session</b>
+                            <a href="#session"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/ISession.html" target="_self" >ISession</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:37</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sessionProvider"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            sessionProvider</b>
+                            <a href="#sessionProvider"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/UserSessionService.html" target="_self" >UserSessionService</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:43</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="webIntent"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            webIntent</b>
+                            <a href="#webIntent"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/WebIntentService.html" target="_self" >WebIntentService</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:51</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, ViewChild } from &#x27;@angular/core&#x27;;
+import { HttpErrorResponse } from &#x27;@angular/common/http&#x27;;
+import { AlertService } from &#x27;src/app/services/alert/alert.service&#x27;;
+import {
+  IHouse,
+  IRoom,
+  IHousePlan,
+  IRoomEvent,
+  IReservationRequestResponse,
+  ICampus
+} from &#x27;src/app/lib/interfaces&#x27;;
+import { AbstractPage } from &#x27;src/app/lib/abstract-page&#x27;;
+import { WebserviceWrapperService} from &#x27;src/app/services/webservice-wrapper/webservice-wrapper.service&#x27;;
+import { IRoomsRequestParams } from &#x27;../../services/webservice-wrapper/webservice-definition-interfaces&#x27;;
+import { CampusTabComponent } from &#x27;../../components/campus-tab/campus-tab.component&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+
+@Component({
+  selector: &#x27;app-roomplan&#x27;,
+  templateUrl: &#x27;./roomplan.page.html&#x27;,
+  styleUrls: [&#x27;./roomplan.page.scss&#x27;],
+})
+export class RoomplanPage extends AbstractPage {
+
+  constructor(
+    private alertService: AlertService,
+    private ws: WebserviceWrapperService,
+    public translate: TranslateService // used in template
+  ) {
+    super({ requireNetwork: true });
+  }
+
+  // params
+  default_house: IHouse;
+  default_room: IRoom;
+
+  // bindings
+  refresher: any;
+  isLoaded;
+
+  // vars
+  houseMap: Map&lt;string, IHousePlan&gt; &#x3D; new Map&lt;string, IHousePlan&gt;();
+  housesFound: Array&lt;IHouse&gt; &#x3D; [];
+  day_offset: string;
+  response: any;
+  current_location: ICampus;
+  error: HttpErrorResponse;
+  requestProcessed &#x3D; false;
+
+  @ViewChild(CampusTabComponent) campusTabComponent: CampusTabComponent;
+
+  /**
+   * Comparator for event sorting
+   * @param {IRoomEvent} a
+   * @param {IRoomEvent} b
+   * @returns {number}
+   */
+  static compareEvents(a: IRoomEvent, b: IRoomEvent) {
+    if (a.startTime &lt; b.startTime) {
+      return -1;
+    }
+    if (a.startTime &gt; b.startTime) {
+      return 1;
+    }
+    return 0;
+  }
+
+  /**
+   * Comparator for room sorting
+   * @param {IRoomEvent} a
+   * @param {IRoomEvent} b
+   * @returns {number}
+   */
+  static compareRooms(a: IRoom, b: IRoom) {
+    if (a.lbl &lt; b.lbl) {
+      return -1;
+    }
+    if (a.lbl &gt; b.lbl) {
+      return 1;
+    }
+    return 0;
+  }
+
+  /**
+   * Comparator for house
+   * @param {IRoomEvent} a
+   * @param {IRoomEvent} b
+   * @returns {number}
+   */
+  static compareHouses(a: IHouse, b: IHouse) {
+    if (a.lbl &lt; b.lbl) {
+      return -1;
+    }
+    if (a.lbl &gt; b.lbl) {
+      return 1;
+    }
+    return 0;
+  }
+
+  /**
+   * Changes the day for which to load data
+   * Day comes from DOM select element &quot;select_day&quot;
+   */
+  changeDay(newDay) {
+    this.day_offset &#x3D; newDay;
+
+    this.housesFound &#x3D; [];
+    this.houseMap &#x3D; new Map&lt;string, IHousePlan&gt;();
+    // reset defaults so they don&#x27;t open on new day
+    this.default_room &#x3D; null;
+    this.default_house &#x3D; null;
+
+    if (this.current_location) {
+      this.getRoomInfo();
+    }
+  }
+
+  /**
+   * Called by refresher element to refresh info
+   * @param refresher - DOM refresher element, passed for later closing
+   * @returns {Promise&lt;void&gt;}
+   */
+  refreshRoom(refresher) {
+    this.getRoomInfo();
+    if (refresher) {
+      this.refresher &#x3D; refresher;
+    } else { this.isLoaded &#x3D; false; }
+  }
+
+  /**
+   * Switch campus location and reload info for new campus
+   * @param location - number as string representing campus
+   */
+  switchLocation(campus: ICampus) {
+    this.houseMap &#x3D; new Map&lt;string, IHousePlan&gt;();
+    this.housesFound &#x3D; [];
+    this.current_location &#x3D; campus;
+    this.getRoomInfo();
+  }
+
+  /**
+   * Expand house expandable to show rooms
+   * Closes rooms when house is closed
+   * @param house - lbl of house to close
+   */
+  public expandHouse(house) {
+    for (let i &#x3D; 0; i &lt; this.housesFound.length; i++) {
+      if (this.housesFound[i].lbl &#x3D;&#x3D;&#x3D; house) {
+        this.housesFound[i].expanded &#x3D; !this.housesFound[i].expanded;
+      }
+      if (this.housesFound[i].expanded &#x3D;&#x3D;&#x3D; false) {
+        this.housesFound[i].rooms.forEach(function (room) {
+          room.expanded &#x3D; false;
+        });
+      }
+    }
+  }
+
+  /**
+   * Expand room expandable to show events
+   * @param house - lbl of house to close
+   * @param room - lbl of room to close
+   */
+  public expandRoom(house, room) {
+    for (let i &#x3D; 0; i &lt; this.housesFound.length; i++) {
+      if (this.housesFound[i].lbl &#x3D;&#x3D;&#x3D; house) {
+        for (let h &#x3D; 0; h &lt; this.housesFound[i].rooms.length; h++) {
+          if (this.housesFound[i].rooms[h].lbl &#x3D;&#x3D;&#x3D; room) {
+            this.housesFound[i].rooms[h].expanded &#x3D; !this.housesFound[i].rooms[h].expanded;
+          }
+        }
+      }
+    }
+  }
+
+  /**
+   * Adds a room to a house (specified by its lbl)
+   * If the house does not exist one is created
+   * Room is only added if house does not already have that room (identified by lbl)
+   * @param houseLbl - lbl of house to add room for
+   * @param {IRoom} room - room to add to house
+   */
+  addRoomToHouse(houseLbl, room: IRoom) {
+    let house: IHousePlan;
+    if (this.houseMap &amp;&amp; this.houseMap.has(houseLbl)) {
+      house &#x3D; this.houseMap.get(houseLbl);
+    } else {
+      house &#x3D; {
+        lbl: houseLbl,
+        rooms: new Map&lt;string, IRoom&gt;(),
+        expanded: false
+      };
+    }
+
+    if (house.rooms.has(room.lbl) &#x3D;&#x3D;&#x3D; false) {
+      house.rooms.set(room.lbl, room);
+      this.houseMap.set(houseLbl, house);
+    }
+  }
+
+  /**
+   * Main function to query api and build array that is later parsed to DOM
+   * Gets all its parameters from pages global vars (location, day, default house/room)
+   * @returns {Promise&lt;void&gt;}
+   */
+  getRoomInfo() {
+    this.requestProcessed &#x3D; false;
+
+    const start &#x3D; new Date();
+    const end &#x3D; new Date();
+    start.setHours(8);
+    end.setHours(22);
+    start.setDate(start.getDate() + + this.day_offset); // unary plus for string-&gt;num conversion
+    end.setDate(end.getDate() + + this.day_offset);
+
+    this.ws.call(
+      &#x27;roomPlanSearch&#x27;,
+      &lt;IRoomsRequestParams&gt;{
+        campus: this.current_location,
+        timeSlot: {start: start, end: end}
+      }
+    ).subscribe(
+      (response: IReservationRequestResponse) &#x3D;&gt; {
+
+        this.houseMap &#x3D; new Map&lt;string, IHousePlan&gt;();
+        this.housesFound &#x3D; [];
+        this.error &#x3D; null;
+
+        if (response &amp;&amp; response.reservationsResponse &amp;&amp; response.reservationsResponse.return) {
+          for (const reservation of response.reservationsResponse.return) {
+            // API often returns basically empty reservations, we want to ignore these
+            if (reservation.veranstaltung !&#x3D;&#x3D; &#x27;&#x27; &amp;&amp; reservation.veranstaltung !&#x3D; null) {
+
+              if ((reservation.roomList.room instanceof Array) &#x3D;&#x3D;&#x3D; false) {
+                reservation.roomList.room &#x3D; [reservation.roomList.room];
+              }
+
+              const roomList &#x3D; &lt;Array&lt;string&gt;&gt; reservation.roomList.room;
+              for (let i &#x3D; 0; i &lt; roomList.length; i++) {
+                const split &#x3D; roomList[i].split(&#x27;.&#x27;);
+                const room: IRoom &#x3D; {
+                  lbl: split.splice(2, 5).join(&#x27;.&#x27;),
+                  events: [],
+                  expanded: false
+                };
+
+                this.addRoomToHouse(split[1], room);
+
+                let persons: Array&lt;String&gt; &#x3D; [];
+                const personArray &#x3D; reservation.personList.person;
+                for (let h &#x3D; 0; h &lt; personArray.length; h &#x3D; h + 2) {
+                  if (personArray[h] &#x3D;&#x3D;&#x3D; &#x27;N.N&#x27; ) {
+                    persons.push(&#x27;N.N &#x27;);
+                  }
+                  if (personArray[h] !&#x3D;&#x3D; &#x27;&#x27; &amp;&amp; personArray[h + 1] !&#x3D;&#x3D; &#x27;&#x27;) {
+                    persons.push(personArray[h + 1].trim() + &#x27; &#x27; + personArray[h].trim());
+                  }
+                }
+
+                persons &#x3D; persons.filter(this.uniqueFilter);
+
+                const event: IRoomEvent &#x3D; {
+                  lbl: reservation.veranstaltung,
+                  startTime: new Date(reservation.startTime),
+                  endTime: new Date(reservation.endTime),
+                  persons: persons
+                };
+
+                if (
+                  this.houseMap &amp;&amp; split &amp;&amp; split[1]
+                  &amp;&amp; this.houseMap.has(split[1])
+                  &amp;&amp; this.houseMap.get(split[1]).rooms.has(room.lbl)
+                  &amp;&amp; this.houseMap.get(split[1]).rooms.get(room.lbl).events
+                ) {
+                  this.houseMap.get(split[1]).rooms.get(room.lbl).events.push(event);
+                }
+              }
+            }
+          }
+
+          // load defaults if they are passed to the page by other files
+          let default_error &#x3D; &#x27;&#x27;;
+          if (this.default_house !&#x3D; null) {
+            if (this.houseMap &amp;&amp; this.houseMap.has(this.default_house.lbl)) {
+              this.houseMap.get(this.default_house.lbl).expanded &#x3D; true;
+
+              if (this.default_room !&#x3D; null) {
+                if (this.houseMap.get(this.default_house.lbl).rooms.has(this.default_room.lbl)) {
+                  this.houseMap.get(this.default_house.lbl).rooms.get(this.default_room.lbl).expanded &#x3D; true;
+                } else {
+                  default_error &#x3D; &#x27;page.roomplan.no_room&#x27;;
+                }
+              }
+            } else {
+              default_error &#x3D; &#x27;page.roomplan.no_house&#x27;;
+            }
+          }
+
+          if (default_error !&#x3D;&#x3D; &#x27;&#x27;) {
+            this.alertService.showToast(default_error);
+          }
+
+          // sadly templates cannot parse maps,
+          // therefore we will generate a new data structure based on arrays and parse everything into there
+          const tmpHouseList &#x3D; Array.from(this.houseMap.values());
+          for (let i &#x3D; 0; i &lt; tmpHouseList.length; i++) {
+            const tmpRoomArray &#x3D; Array.from(tmpHouseList[i].rooms.values());
+
+            tmpRoomArray.sort(RoomplanPage.compareRooms);
+            for (let h &#x3D; 0; h &lt; tmpRoomArray.length; h++) {
+              tmpRoomArray[h].events.sort(RoomplanPage.compareEvents);
+            }
+
+            const tmpHouse: IHouse &#x3D; {
+              lbl: tmpHouseList[i].lbl,
+              rooms: tmpRoomArray,
+              expanded: tmpHouseList[i].expanded
+            };
+            this.housesFound.push(tmpHouse);
+          }
+          this.housesFound.sort(RoomplanPage.compareHouses);
+        }
+
+        this.requestProcessed &#x3D; true;
+        this.isLoaded &#x3D; true;
+        // if refresher is running complete it
+        if (this.refresher) {
+          this.refresher.target.complete();
+        }
+      },
+      (error: HttpErrorResponse) &#x3D;&gt; {
+        // if error reset vars and set error variable for display
+        this.requestProcessed &#x3D; true;
+        this.error &#x3D; error;
+        this.houseMap &#x3D; new Map&lt;string, IHousePlan&gt;();
+        this.housesFound &#x3D; [];
+        this.isLoaded &#x3D; true;
+        if (this.refresher) {
+          this.refresher.target.complete();
+        }
+      }
+    );
+  }
+
+  /**
+   * Filter for person array uniqueness
+   * @param value
+   * @param index
+   * @param self
+   * @returns {boolean}
+   */
+  uniqueFilter(value, index, self) {
+    return self.indexOf(value) &#x3D;&#x3D;&#x3D; index;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-header&gt;
+  &lt;ion-toolbar&gt;
+    &lt;ion-back-button slot&#x3D;&quot;start&quot;&gt;&lt;/ion-back-button&gt;
+    &lt;ion-button *ngIf&#x3D;&quot;!(platform.is(&#x27;ios&#x27;) || platform.is(&#x27;android&#x27;))&quot; (click)&#x3D;&quot;refreshRoom()&quot; slot&#x3D;&quot;end&quot; fill&#x3D;&quot;clear&quot;&gt;
+      &lt;ion-icon style&#x3D;&quot;font-size: x-large;&quot; name&#x3D;&quot;refresh&quot;&gt;&lt;/ion-icon&gt;
+    &lt;/ion-button&gt;
+    &lt;ion-menu-button slot&#x3D;&quot;end&quot;&gt;&lt;/ion-menu-button&gt;
+    &lt;ion-title&gt;{{ &quot;page.roomplan.title&quot; | translate }}&lt;/ion-title&gt;
+  &lt;/ion-toolbar&gt;
+  &lt;ion-toolbar&gt;
+    &lt;app-campus-tab (campusChanged)&#x3D;&quot;switchLocation($event)&quot;&gt;&lt;/app-campus-tab&gt;
+  &lt;/ion-toolbar&gt;
+&lt;/ion-header&gt;
+
+&lt;ion-content no-padding (swipe)&#x3D;&quot;campusTabComponent.handleSwipeEvent($event)&quot;&gt;
+
+  &lt;ion-refresher *ngIf&#x3D;&quot;platform.is(&#x27;ios&#x27;) || platform.is(&#x27;android&#x27;)&quot; slot&#x3D;&quot;fixed&quot; (ionRefresh)&#x3D;&quot;refreshRoom($event)&quot;&gt;
+    &lt;ion-refresher-content pullingIcon&#x3D;&quot;refresh&quot; refreshingSpinner&#x3D;&quot;dots&quot;&gt;&lt;/ion-refresher-content&gt;
+  &lt;/ion-refresher&gt;
+
+  &lt;app-date-picker (dayOffsetEmitter)&#x3D;&quot;changeDay($event)&quot;&gt;&lt;/app-date-picker&gt;
+
+  &lt;ng-template #noRoomsFoundTemplate&gt;
+    &lt;app-hint-box hintTextI18nKey&#x3D;&quot;page.roomplan.no_rooms_hintText&quot;
+          hintTypeI18nKey&#x3D;&quot;&quot;&gt;&lt;/app-hint-box&gt;
+  &lt;/ng-template&gt;
+
+  &lt;ng-template #roomsFoundTemplate&gt;
+    &lt;ion-list&gt;
+      &lt;div *ngFor&#x3D;&quot;let house of housesFound&quot;&gt;
+        &lt;ion-item (click)&#x3D;&quot;expandHouse(house.lbl)&quot;&gt;
+          &lt;ion-label no-margin&gt;
+            &lt;h2&gt;
+              &lt;b&gt;{{ &quot;words.house&quot; | translate }} {{house.lbl}}&lt;/b&gt;
+              &lt;ion-badge color&#x3D;&quot;primary&quot;&gt;
+                  {{house.rooms.length}}
+                  &lt;span *ngIf&#x3D;&quot;house.rooms.length &#x3D;&#x3D; 1&quot;&gt;{{ &quot;words.booking&quot; | translate }}&lt;/span&gt;
+                  &lt;span *ngIf&#x3D;&quot;house.rooms.length &gt; 1&quot;&gt;{{ &quot;words.bookings&quot; | translate }}&lt;/span&gt;
+              &lt;/ion-badge&gt;
+            &lt;/h2&gt;
+          &lt;/ion-label&gt;
+          &lt;ion-icon [name]&#x3D;&quot;!house.expanded ? &#x27;arrow-dropright&#x27; : &#x27;arrow-dropdown&#x27;&quot; slot&#x3D;&quot;end&quot;&gt;&lt;/ion-icon&gt;
+        &lt;/ion-item&gt;
+        &lt;div *ngIf&#x3D;&quot;house.expanded&quot;&gt;
+          &lt;div *ngFor&#x3D;&quot;let room of house.rooms&quot;&gt;
+            &lt;ion-item (click)&#x3D;&quot;expandRoom(house.lbl,room.lbl)&quot;&gt;
+              &lt;ion-label no-margin&gt;
+                &lt;h2 *ngIf&#x3D;&quot;room.lbl&quot;&gt;{{room.lbl}}&lt;ion-badge *ngIf&#x3D;&quot;room.events&quot; color&#x3D;&quot;secondary&quot;&gt;{{room.events.length}}&lt;/ion-badge&gt;&lt;/h2&gt;
+              &lt;/ion-label&gt;
+              &lt;ion-icon [name]&#x3D;&quot;!room.expanded ? &#x27;arrow-dropright&#x27; : &#x27;arrow-dropdown&#x27;&quot; slot&#x3D;&quot;end&quot;&gt;&lt;/ion-icon&gt;
+            &lt;/ion-item&gt;
+            &lt;div *ngIf&#x3D;&quot;room.expanded &amp;&amp; room.events&quot;&gt;
+              &lt;ion-item margin-left *ngFor&#x3D;&quot;let event of room.events&quot;&gt;
+                &lt;ion-label text-wrap&gt;
+                  &lt;u&gt;
+                    &lt;b *ngIf&#x3D;&quot;translate.currentLang &#x3D;&#x3D;&#x3D; &#x27;de&#x27;&quot;&gt;{{event.startTime | date:&#x27;HH:mm&#x27;}} - {{event.endTime | date:&#x27;HH:mm&#x27;}} {{ &quot;words.clock&quot; | translate }}&lt;/b&gt;
+                    &lt;b *ngIf&#x3D;&quot;translate.currentLang !&#x3D;&#x3D; &#x27;de&#x27;&quot;&gt;{{event.startTime | date:&#x27;h:mm a&#x27;}} - {{event.endTime | date:&#x27;h:mm a&#x27;}} {{ &quot;words.clock&quot; | translate }}&lt;/b&gt;
+                  &lt;/u&gt;
+                  &lt;br/&gt;
+
+                  &lt;i&gt;{{event.lbl}}&lt;/i&gt;
+                  &lt;br/&gt;
+                  &lt;p *ngFor&#x3D;&quot;let person of event.persons&quot;&gt;
+                    &lt;ion-badge color&#x3D;&quot;danger&quot;&gt;{{person}}&lt;/ion-badge&gt;
+                  &lt;/p&gt;
+                &lt;/ion-label&gt;
+              &lt;/ion-item&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/ion-list&gt;
+  &lt;/ng-template&gt;
+
+  &lt;p *ngIf&#x3D;&quot;!isLoaded || (housesFound.length &#x3D;&#x3D; 0 &amp;&amp; error &#x3D;&#x3D; null &amp;&amp; !requestProcessed)&quot; style&#x3D;&quot;text-align: center&quot;&gt;
+    &lt;ion-spinner name&#x3D;&quot;dots&quot;&gt;&lt;/ion-spinner&gt;
+  &lt;/p&gt;
+
+  &lt;ng-container *ngIf&#x3D;&quot;housesFound.length &#x3D;&#x3D; 0 &amp;&amp; requestProcessed;
+                then noRoomsFoundTemplate; else roomsFoundTemplate&quot;&gt;
+  &lt;/ng-container&gt;
+
+&lt;/ion-content&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./roomplan.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">ion-badge {
+    margin-left: 10px;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-header>  <ion-toolbar>    <ion-back-button slot="start"></ion-back-button>    <ion-button *ngIf="!(platform.is(\'ios\') || platform.is(\'android\'))" (click)="refreshRoom()" slot="end" fill="clear">      <ion-icon style="font-size: x-large;" name="refresh"></ion-icon>    </ion-button>    <ion-menu-button slot="end"></ion-menu-button>    <ion-title>{{ "page.roomplan.title" | translate }}</ion-title>  </ion-toolbar>  <ion-toolbar>    <app-campus-tab (campusChanged)="switchLocation($event)"></app-campus-tab>  </ion-toolbar></ion-header><ion-content no-padding (swipe)="campusTabComponent.handleSwipeEvent($event)">  <ion-refresher *ngIf="platform.is(\'ios\') || platform.is(\'android\')" slot="fixed" (ionRefresh)="refreshRoom($event)">    <ion-refresher-content pullingIcon="refresh" refreshingSpinner="dots"></ion-refresher-content>  </ion-refresher>  <app-date-picker (dayOffsetEmitter)="changeDay($event)"></app-date-picker>  <ng-template #noRoomsFoundTemplate>    <app-hint-box hintTextI18nKey="page.roomplan.no_rooms_hintText"          hintTypeI18nKey=""></app-hint-box>  </ng-template>  <ng-template #roomsFoundTemplate>    <ion-list>      <div *ngFor="let house of housesFound">        <ion-item (click)="expandHouse(house.lbl)">          <ion-label no-margin>            <h2>              <b>{{ "words.house" | translate }} {{house.lbl}}</b>              <ion-badge color="primary">                  {{house.rooms.length}}                  <span *ngIf="house.rooms.length == 1">{{ "words.booking" | translate }}</span>                  <span *ngIf="house.rooms.length > 1">{{ "words.bookings" | translate }}</span>              </ion-badge>            </h2>          </ion-label>          <ion-icon [name]="!house.expanded ? \'arrow-dropright\' : \'arrow-dropdown\'" slot="end"></ion-icon>        </ion-item>        <div *ngIf="house.expanded">          <div *ngFor="let room of house.rooms">            <ion-item (click)="expandRoom(house.lbl,room.lbl)">              <ion-label no-margin>                <h2 *ngIf="room.lbl">{{room.lbl}}<ion-badge *ngIf="room.events" color="secondary">{{room.events.length}}</ion-badge></h2>              </ion-label>              <ion-icon [name]="!room.expanded ? \'arrow-dropright\' : \'arrow-dropdown\'" slot="end"></ion-icon>            </ion-item>            <div *ngIf="room.expanded && room.events">              <ion-item margin-left *ngFor="let event of room.events">                <ion-label text-wrap>                  <u>                    <b *ngIf="translate.currentLang === \'de\'">{{event.startTime | date:\'HH:mm\'}} - {{event.endTime | date:\'HH:mm\'}} {{ "words.clock" | translate }}</b>                    <b *ngIf="translate.currentLang !== \'de\'">{{event.startTime | date:\'h:mm a\'}} - {{event.endTime | date:\'h:mm a\'}} {{ "words.clock" | translate }}</b>                  </u>                  <br/>                  <i>{{event.lbl}}</i>                  <br/>                  <p *ngFor="let person of event.persons">                    <ion-badge color="danger">{{person}}</ion-badge>                  </p>                </ion-label>              </ion-item>            </div>          </div>        </div>      </div>    </ion-list>  </ng-template>  <p *ngIf="!isLoaded || (housesFound.length == 0 && error == null && !requestProcessed)" style="text-align: center">    <ion-spinner name="dots"></ion-spinner>  </p>  <ng-container *ngIf="housesFound.length == 0 && requestProcessed;                then noRoomsFoundTemplate; else roomsFoundTemplate">  </ng-container></ion-content></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppInfoPage', 'selector': 'app-app-info'},{'name': 'BookDetailModalPage', 'selector': 'book-modal-page'},{'name': 'BookListComponent', 'selector': 'app-book-list'},{'name': 'BookLocationComponent', 'selector': 'app-book-location'},{'name': 'CampusMapFeatureModalComponent', 'selector': 'app-campus-map-feature-modal'},{'name': 'CampusMapPage', 'selector': 'app-campus-map'},{'name': 'CampusReorderModalPage', 'selector': 'campus-modal-page'},{'name': 'CampusTabComponent', 'selector': 'app-campus-tab'},{'name': 'CourseDataComponent', 'selector': 'app-course-data'},{'name': 'DatePickerComponent', 'selector': 'app-date-picker'},{'name': 'DetailedOpeningModalPage', 'selector': 'detailed-opening-modal-page'},{'name': 'DetailedPracticeModalPage', 'selector': 'detailed-practice-modal-page'},{'name': 'EmergencyPage', 'selector': 'app-emergency'},{'name': 'EventModalPage', 'selector': 'event-modal-page'},{'name': 'EventsPage', 'selector': 'app-events'},{'name': 'EventViewComponent', 'selector': 'app-event-view'},{'name': 'FeedbackPage', 'selector': 'app-feedback'},{'name': 'FooterDisclaimerComponent', 'selector': 'app-footer-disclaimer'},{'name': 'FreeRoomsPage', 'selector': 'app-free-rooms'},{'name': 'GradesPage', 'selector': 'app-grades'},{'name': 'GradesTableComponent', 'selector': 'app-grades-table'},{'name': 'HintBoxComponent', 'selector': 'app-hint-box'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'ImpressumModalPage', 'selector': 'impressum-modal-page'},{'name': 'ImpressumPage', 'selector': 'app-impressum'},{'name': 'LectureListComponent', 'selector': 'app-lecture-list'},{'name': 'LectureSearchModalPage', 'selector': 'lecture-search-modal-page'},{'name': 'LecturesPage', 'selector': 'app-lectures'},{'name': 'LibrarySearchPage', 'selector': 'app-library-search'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'MensaMealComponent', 'selector': 'app-mensa-meal'},{'name': 'MensaPage', 'selector': 'app-mensa'},{'name': 'NewsArticleComponent', 'selector': 'app-news-article'},{'name': 'NewsPage', 'selector': 'app-news'},{'name': 'OpeningHoursPage', 'selector': 'app-opening-hours'},{'name': 'PersonSearchPage', 'selector': 'app-person-search'},{'name': 'PracticePage', 'selector': 'app-practice'},{'name': 'RoomplanPage', 'selector': 'app-roomplan'},{'name': 'SettingsPage', 'selector': 'app-settings'},{'name': 'TimetablePage', 'selector': 'app-timetable'},{'name': 'TransportPage', 'selector': 'app-transport'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'RoomplanPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'RoomplanPage.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

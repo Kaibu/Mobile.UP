@@ -1,0 +1,1015 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Mobile.UP</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Mobile.UP</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>MensaMealComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/mensa-meal/mensa-meal.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-mensa-meal</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./mensa-meal.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./mensa-meal.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#allergenIsExpanded">allergenIsExpanded</a>
+                            </li>
+                            <li>
+                                <a href="#mealIsExpanded">mealIsExpanded</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#checkConditions">checkConditions</a>
+                            </li>
+                            <li>
+                                <a href="#expandAllergen">expandAllergen</a>
+                            </li>
+                            <li>
+                                <a href="#expandMeal">expandMeal</a>
+                            </li>
+                            <li>
+                                <a href="#formatPrices">formatPrices</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#slideLoaded">slideLoaded</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#iconMapping">iconMapping</a>
+                            </li>
+                            <li>
+                                <a href="#mealForDate">mealForDate</a>
+                            </li>
+                            <li>
+                                <a href="#meals">meals</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/mensa-meal/mensa-meal.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="iconMapping"></a>
+                        <b>iconMapping</b>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/components/mensa-meal/mensa-meal.component.ts:13</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mealForDate"></a>
+                        <b>mealForDate</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>boolean[]</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/mensa-meal/mensa-meal.component.ts:12</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="meals"></a>
+                        <b>meals</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IMeals.html" target="_self" >IMeals[]</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/components/mensa-meal/mensa-meal.component.ts:11</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkConditions"></a>
+                    <span class="name">
+                        <b>
+                            checkConditions
+                        </b>
+                        <a href="#checkConditions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkConditions(i)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/app/components/mensa-meal/mensa-meal.component.ts:29</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>i</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="expandAllergen"></a>
+                    <span class="name">
+                        <b>
+                            expandAllergen
+                        </b>
+                        <a href="#expandAllergen"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>expandAllergen(i, j)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="56"
+                            class="link-to-prism">src/app/components/mensa-meal/mensa-meal.component.ts:56</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>i</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>j</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="expandMeal"></a>
+                    <span class="name">
+                        <b>
+                            expandMeal
+                        </b>
+                        <a href="#expandMeal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>expandMeal(i)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="35"
+                            class="link-to-prism">src/app/components/mensa-meal/mensa-meal.component.ts:35</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>i</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formatPrices"></a>
+                    <span class="name">
+                        <b>
+                            formatPrices
+                        </b>
+                        <a href="#formatPrices"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>formatPrices(number: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="69"
+                            class="link-to-prism">src/app/components/mensa-meal/mensa-meal.component.ts:69</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>number</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/app/components/mensa-meal/mensa-meal.component.ts:20</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="slideLoaded"></a>
+                    <span class="name">
+                        <b>
+                            slideLoaded
+                        </b>
+                        <a href="#slideLoaded"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>slideLoaded($event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="73"
+                            class="link-to-prism">src/app/components/mensa-meal/mensa-meal.component.ts:73</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>$event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="allergenIsExpanded"></a>
+                        <span class="name">
+                            <b>
+                            allergenIsExpanded</b>
+                            <a href="#allergenIsExpanded"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>boolean[][]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/mensa-meal/mensa-meal.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mealIsExpanded"></a>
+                        <span class="name">
+                            <b>
+                            mealIsExpanded</b>
+                            <a href="#mealIsExpanded"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>boolean[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/mensa-meal/mensa-meal.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Input } from &#x27;@angular/core&#x27;;
+import { IMeals } from &#x27;src/app/lib/interfaces&#x27;;
+
+@Component({
+  selector: &#x27;app-mensa-meal&#x27;,
+  templateUrl: &#x27;./mensa-meal.component.html&#x27;,
+  styleUrls: [&#x27;./mensa-meal.component.scss&#x27;]
+})
+export class MensaMealComponent implements OnInit {
+
+  @Input() meals: IMeals[];
+  @Input() mealForDate: boolean[];
+  @Input() iconMapping;
+
+  allergenIsExpanded: boolean[][] &#x3D; [];
+  mealIsExpanded: boolean[] &#x3D; [];
+
+  constructor() { }
+
+  ngOnInit() {
+    this.allergenIsExpanded &#x3D; [];
+    this.mealIsExpanded &#x3D; [];
+    for (let i &#x3D; 0; i &lt; this.meals.length; i++) {
+      this.allergenIsExpanded[i] &#x3D; [];
+      this.mealIsExpanded[i] &#x3D; false;
+    }
+  }
+
+  checkConditions(i) {
+    if (this.mealForDate[i]) {
+      return true;
+    } else { return false; }
+  }
+
+  expandMeal(i) {
+    if (this.mealIsExpanded[i]) {
+      this.mealIsExpanded[i] &#x3D; false;
+      if (this.meals[i].allergens) {
+        for (let k &#x3D; 0; k &lt; this.meals[i].allergens.length; k++) {
+          this.allergenIsExpanded[i][k] &#x3D; false;
+        }
+      }
+    } else {
+      for (let j &#x3D; 0; j &lt; this.meals.length; j++) {
+        this.mealIsExpanded[j] &#x3D; false;
+        if (this.meals[j].allergens) {
+          for (let k &#x3D; 0; k &lt; this.meals[j].allergens.length; k++) {
+            this.allergenIsExpanded[j][k] &#x3D; false;
+          }
+        }
+      }
+      this.mealIsExpanded[i] &#x3D; true;
+    }
+  }
+
+  expandAllergen(i, j) {
+    if (this.allergenIsExpanded[i][j]) {
+      this.allergenIsExpanded[i][j] &#x3D; false;
+    } else {
+      if (this.meals[i].allergens) {
+        for (let k &#x3D; 0; k &lt; this.meals[i].allergens.length; k++) {
+          this.allergenIsExpanded[i][k] &#x3D; false;
+        }
+        this.allergenIsExpanded[i][j] &#x3D; true;
+      }
+    }
+  }
+
+  formatPrices(number: number) {
+    return number.toFixed(2) + &#x27; €&#x27;;
+  }
+
+  slideLoaded($event) {
+    const slides &#x3D; $event.target;
+    slides.swiper.autoplay.start();
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div *ngFor&#x3D;&quot;let meal of meals; let i &#x3D; index&quot;&gt;
+  &lt;ion-item *ngIf&#x3D;&quot;checkConditions(i)&quot; (click)&#x3D;&quot;expandMeal(i)&quot; [ngClass]&#x3D;&quot;{&#x27;noborder&#x27;: mealIsExpanded[i]}&quot;&gt;
+    &lt;ion-thumbnail slot&#x3D;&quot;start&quot; *ngIf&#x3D;&quot;meal.type &amp;&amp; meal.type.length &#x3D;&#x3D; 1&quot;&gt;
+      &lt;span *ngFor&#x3D;&quot;let type of meal.type&quot;&gt;
+        &lt;span *ngFor&#x3D;&quot;let icon of iconMapping&quot;&gt;
+          &lt;img *ngIf&#x3D;&quot;type &#x3D;&#x3D; icon.key&quot; [src]&#x3D;&quot;icon.value&quot;&gt;
+        &lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/ion-thumbnail&gt;
+    &lt;ion-thumbnail slot&#x3D;&quot;start&quot; *ngIf&#x3D;&quot;meal.type &amp;&amp; meal.type.length &gt; 1&quot;&gt;
+      &lt;ion-slides (ionSlidesDidLoad)&#x3D;&quot;slideLoaded($event)&quot;&gt;
+        &lt;ion-slide *ngFor&#x3D;&quot;let type of meal.type&quot;&gt;
+          &lt;span *ngFor&#x3D;&quot;let icon of iconMapping&quot;&gt;
+            &lt;img *ngIf&#x3D;&quot;type &#x3D;&#x3D; icon.key&quot; [src]&#x3D;&quot;icon.value&quot;&gt;
+          &lt;/span&gt;
+        &lt;/ion-slide&gt;
+      &lt;/ion-slides&gt;
+    &lt;/ion-thumbnail&gt;
+    &lt;ion-label text-wrap&gt;
+      &lt;p class&#x3D;&quot;mealtitle&quot; *ngIf&#x3D;&quot;meal.title&quot;&gt;{{ meal.title }}
+        &lt;span *ngIf&#x3D;&quot;meal.type&quot;&gt;
+          &lt;span *ngFor&#x3D;&quot;let type of meal.type; let last &#x3D; last&quot;&gt;{{ type }}&lt;span *ngIf&#x3D;&quot;!last&quot;&gt;, &lt;/span&gt;&lt;/span&gt;
+        &lt;/span&gt;
+      &lt;/p&gt;
+      &lt;h2 *ngIf&#x3D;&quot;meal.description&quot;&gt;{{ meal.description }}&lt;/h2&gt;
+    &lt;/ion-label&gt;
+    &lt;ion-icon [name]&#x3D;&quot;mealIsExpanded[i] ? &#x27;arrow-dropdown&#x27; : &#x27;arrow-dropright&#x27;&quot; slot&#x3D;&quot;end&quot;&gt;&lt;/ion-icon&gt;
+  &lt;/ion-item&gt;
+  &lt;ion-item *ngIf&#x3D;&quot;mealIsExpanded[i]&quot; class&#x3D;&quot;mealDescription&quot;&gt;
+    &lt;ion-thumbnail *ngIf&#x3D;&quot;meal.type&quot; name&#x3D;&quot;&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-thumbnail&gt;
+    &lt;ion-label text-wrap&gt;
+      &lt;span *ngIf&#x3D;&quot;meal.prices &amp;&amp; meal.prices.student&quot;&gt;{{ &quot;page.mensa.students&quot; | translate }}: {{ formatPrices(meal.prices.student) }}&lt;/span&gt; &lt;br *ngIf&#x3D;&quot;meal.prices &amp;&amp; meal.prices.student&quot;&gt;
+      &lt;span *ngIf&#x3D;&quot;meal.prices &amp;&amp; meal.prices.guest&quot;&gt;{{ &quot;page.mensa.guests&quot; | translate }}: {{ formatPrices(meal.prices.guest) }}&lt;/span&gt; &lt;br *ngIf&#x3D;&quot;meal.prices &amp;&amp; meal.prices.guest&quot;&gt;
+      &lt;div *ngIf&#x3D;&quot;meal.allergens&quot;&gt;
+        &lt;ion-button *ngFor&#x3D;&quot;let allergen of meal.allergens; let j &#x3D; index&quot; size&#x3D;&quot;small&quot; fill&#x3D;&quot;outline&quot; (click)&#x3D;&quot;expandAllergen(i,j)&quot;&gt;
+          &lt;span *ngIf&#x3D;&quot;allergen.shortName&quot;&gt;({{ allergen.shortName }})&lt;/span&gt;
+        &lt;/ion-button&gt;
+        &lt;div *ngFor&#x3D;&quot;let allergen of meal.allergens; let j &#x3D; index&quot;&gt;
+          &lt;div *ngIf&#x3D;&quot;allergenIsExpanded[i][j] &amp;&amp; allergen.shortName &amp;&amp; allergen.longName&quot;&gt;({{ allergen.shortName }}): {{ allergen.longName }}&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/ion-label&gt;
+  &lt;/ion-item&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./mensa-meal.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">ion-item ion-thumbnail {
+    min-width: 2.1rem;
+    min-height: 2.1rem;
+    max-width: 2.1rem;
+    max-height: 2.1rem;
+    img {
+      min-width: 2.1rem;
+      min-height: 2.1rem;
+      max-width: 2.1rem;
+      max-height: 2.1rem;
+    }
+}
+
+.mealDescription {
+    color: var(--ion-color-primary);
+    padding-bottom: 5px;
+}
+
+ion-item {
+    border-bottom:1px solid #ededed !important;
+
+    ion-label {
+        font-size:80%;
+        margin-top:5px;
+        margin-bottom:0;
+    }
+}
+
+ion-item.noborder {
+    border-width:0 !important;
+}
+
+.mealtitle {
+    font-size:80%;
+    color:#000;
+
+    span {
+        color:#016c69;
+        font-weight:bold;
+    }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div *ngFor="let meal of meals; let i = index">  <ion-item *ngIf="checkConditions(i)" (click)="expandMeal(i)" [ngClass]="{\'noborder\': mealIsExpanded[i]}">    <ion-thumbnail slot="start" *ngIf="meal.type && meal.type.length == 1">      <span *ngFor="let type of meal.type">        <span *ngFor="let icon of iconMapping">          <img *ngIf="type == icon.key" [src]="icon.value">        </span>      </span>    </ion-thumbnail>    <ion-thumbnail slot="start" *ngIf="meal.type && meal.type.length > 1">      <ion-slides (ionSlidesDidLoad)="slideLoaded($event)">        <ion-slide *ngFor="let type of meal.type">          <span *ngFor="let icon of iconMapping">            <img *ngIf="type == icon.key" [src]="icon.value">          </span>        </ion-slide>      </ion-slides>    </ion-thumbnail>    <ion-label text-wrap>      <p class="mealtitle" *ngIf="meal.title">{{ meal.title }}        <span *ngIf="meal.type">          <span *ngFor="let type of meal.type; let last = last">{{ type }}<span *ngIf="!last">, </span></span>        </span>      </p>      <h2 *ngIf="meal.description">{{ meal.description }}</h2>    </ion-label>    <ion-icon [name]="mealIsExpanded[i] ? \'arrow-dropdown\' : \'arrow-dropright\'" slot="end"></ion-icon>  </ion-item>  <ion-item *ngIf="mealIsExpanded[i]" class="mealDescription">    <ion-thumbnail *ngIf="meal.type" name="" slot="start"></ion-thumbnail>    <ion-label text-wrap>      <span *ngIf="meal.prices && meal.prices.student">{{ "page.mensa.students" | translate }}: {{ formatPrices(meal.prices.student) }}</span> <br *ngIf="meal.prices && meal.prices.student">      <span *ngIf="meal.prices && meal.prices.guest">{{ "page.mensa.guests" | translate }}: {{ formatPrices(meal.prices.guest) }}</span> <br *ngIf="meal.prices && meal.prices.guest">      <div *ngIf="meal.allergens">        <ion-button *ngFor="let allergen of meal.allergens; let j = index" size="small" fill="outline" (click)="expandAllergen(i,j)">          <span *ngIf="allergen.shortName">({{ allergen.shortName }})</span>        </ion-button>        <div *ngFor="let allergen of meal.allergens; let j = index">          <div *ngIf="allergenIsExpanded[i][j] && allergen.shortName && allergen.longName">({{ allergen.shortName }}): {{ allergen.longName }}</div>        </div>      </div>    </ion-label>  </ion-item></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppInfoPage', 'selector': 'app-app-info'},{'name': 'BookDetailModalPage', 'selector': 'book-modal-page'},{'name': 'BookListComponent', 'selector': 'app-book-list'},{'name': 'BookLocationComponent', 'selector': 'app-book-location'},{'name': 'CampusMapFeatureModalComponent', 'selector': 'app-campus-map-feature-modal'},{'name': 'CampusMapPage', 'selector': 'app-campus-map'},{'name': 'CampusReorderModalPage', 'selector': 'campus-modal-page'},{'name': 'CampusTabComponent', 'selector': 'app-campus-tab'},{'name': 'CourseDataComponent', 'selector': 'app-course-data'},{'name': 'DatePickerComponent', 'selector': 'app-date-picker'},{'name': 'DetailedOpeningModalPage', 'selector': 'detailed-opening-modal-page'},{'name': 'DetailedPracticeModalPage', 'selector': 'detailed-practice-modal-page'},{'name': 'EmergencyPage', 'selector': 'app-emergency'},{'name': 'EventModalPage', 'selector': 'event-modal-page'},{'name': 'EventsPage', 'selector': 'app-events'},{'name': 'EventViewComponent', 'selector': 'app-event-view'},{'name': 'FeedbackPage', 'selector': 'app-feedback'},{'name': 'FooterDisclaimerComponent', 'selector': 'app-footer-disclaimer'},{'name': 'FreeRoomsPage', 'selector': 'app-free-rooms'},{'name': 'GradesPage', 'selector': 'app-grades'},{'name': 'GradesTableComponent', 'selector': 'app-grades-table'},{'name': 'HintBoxComponent', 'selector': 'app-hint-box'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'ImpressumModalPage', 'selector': 'impressum-modal-page'},{'name': 'ImpressumPage', 'selector': 'app-impressum'},{'name': 'LectureListComponent', 'selector': 'app-lecture-list'},{'name': 'LectureSearchModalPage', 'selector': 'lecture-search-modal-page'},{'name': 'LecturesPage', 'selector': 'app-lectures'},{'name': 'LibrarySearchPage', 'selector': 'app-library-search'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'MensaMealComponent', 'selector': 'app-mensa-meal'},{'name': 'MensaPage', 'selector': 'app-mensa'},{'name': 'NewsArticleComponent', 'selector': 'app-news-article'},{'name': 'NewsPage', 'selector': 'app-news'},{'name': 'OpeningHoursPage', 'selector': 'app-opening-hours'},{'name': 'PersonSearchPage', 'selector': 'app-person-search'},{'name': 'PracticePage', 'selector': 'app-practice'},{'name': 'RoomplanPage', 'selector': 'app-roomplan'},{'name': 'SettingsPage', 'selector': 'app-settings'},{'name': 'TimetablePage', 'selector': 'app-timetable'},{'name': 'TransportPage', 'selector': 'app-transport'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'MensaMealComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'MensaMealComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

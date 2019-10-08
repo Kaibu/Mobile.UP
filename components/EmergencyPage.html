@@ -1,0 +1,2936 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Mobile.UP</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Mobile.UP</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>EmergencyPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/emergency/emergency.page.ts</code>
+</p>
+
+
+    <p class="comment">
+        <h3>Extends</h3>
+    </p>
+    <p class="comment">
+                <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+    </p>
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-emergency</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./emergency.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./emergency.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cordova">cordova</a>
+                            </li>
+                            <li>
+                                <a href="#defaultList">defaultList</a>
+                            </li>
+                            <li>
+                                <a href="#displayedList">displayedList</a>
+                            </li>
+                            <li>
+                                <a href="#isLoaded">isLoaded</a>
+                            </li>
+                            <li>
+                                <a href="#jsonPath">jsonPath</a>
+                            </li>
+                            <li>
+                                <a href="#networkError">networkError</a>
+                            </li>
+                            <li>
+                                <a href="#query">query</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#activatedRoute">activatedRoute</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#config">config</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#connection">connection</a>
+                            </li>
+                            <li>
+                                <a href="#logger">logger</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#loggingService">loggingService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#menu">menu</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#navCtrl">navCtrl</a>
+                            </li>
+                            <li>
+                                <a href="#pageReady">pageReady</a>
+                            </li>
+                            <li>
+                                <a href="#pageReadyReject">pageReadyReject</a>
+                            </li>
+                            <li>
+                                <a href="#pageReadyResolve">pageReadyResolve</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#platform">platform</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#router">router</a>
+                            </li>
+                            <li>
+                                <a href="#session">session</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#sessionProvider">sessionProvider</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#webIntent">webIntent</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#callContact">callContact</a>
+                            </li>
+                            <li>
+                                <a href="#callMap">callMap</a>
+                            </li>
+                            <li>
+                                <a href="#expand">expand</a>
+                            </li>
+                            <li>
+                                <a href="#exportContact">exportContact</a>
+                            </li>
+                            <li>
+                                <a href="#filterItems">filterItems</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#initializeList">initializeList</a>
+                            </li>
+                            <li>
+                                <a href="#loadEmergencyCalls">loadEmergencyCalls</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onScrollListener">onScrollListener</a>
+                            </li>
+                            <li>
+                                <a href="#openMail">openMail</a>
+                            </li>
+                            <li>
+                                <a href="#saveContact">saveContact</a>
+                            </li>
+                            <li>
+                                <a href="#handleQueryParams">handleQueryParams</a>
+                            </li>
+                            <li>
+                                <a href="#openModule">openModule</a>
+                            </li>
+                            <li>
+                                <a href="#openModuleByName">openModuleByName</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#processOptions">processOptions</a>
+                            </li>
+                            <li>
+                                <a href="#requireNetwork">requireNetwork</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#requireSession">requireSession</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setMenuStatus">setMenuStatus</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(keyboard: Keyboard, chRef: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>, mapProvider: <a href="../injectables/NavigatorService.html">NavigatorService</a>, contacts: <a href="../interfaces/Contact.html">Contacts</a>, callNumber: CallNumber, alertService: <a href="../injectables/AlertService.html">AlertService</a>, ws: <a href="../injectables/WebserviceWrapperService.html">WebserviceWrapperService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/pages/emergency/emergency.page.ts:26</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>keyboard</td>
+                                                  
+                                                        <td>
+                                                                    <code>Keyboard</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>chRef</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>mapProvider</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NavigatorService.html" target="_self" >NavigatorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>contacts</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/Contact.html" target="_self" >Contacts</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>callNumber</td>
+                                                  
+                                                        <td>
+                                                                    <code>CallNumber</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>alertService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AlertService.html" target="_self" >AlertService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ws</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/WebserviceWrapperService.html" target="_self" >WebserviceWrapperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="callContact"></a>
+                    <span class="name">
+                        <b>
+                            callContact
+                        </b>
+                        <a href="#callContact"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>callContact(number: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="253"
+                            class="link-to-prism">src/app/pages/emergency/emergency.page.ts:253</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>number</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p><a href="https://www.javascripttuts.com/making-phone-calls-to-contacts-with-ionic-in-one-go/">https://www.javascripttuts.com/making-phone-calls-to-contacts-with-ionic-in-one-go/</a></p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="callMap"></a>
+                    <span class="name">
+                        <b>
+                            callMap
+                        </b>
+                        <a href="#callMap"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>callMap(emergencyCall: <a href="../interfaces/EmergencyCall.html">EmergencyCall</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="139"
+                            class="link-to-prism">src/app/pages/emergency/emergency.page.ts:139</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>emergencyCall</td>
+                                    <td>
+                                                <code><a href="../interfaces/EmergencyCall.html" target="_self" >EmergencyCall</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="expand"></a>
+                    <span class="name">
+                        <b>
+                            expand
+                        </b>
+                        <a href="#expand"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>expand(emergencyCall: <a href="../interfaces/EmergencyCall.html">EmergencyCall</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="121"
+                            class="link-to-prism">src/app/pages/emergency/emergency.page.ts:121</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>emergencyCall</td>
+                                    <td>
+                                                <code><a href="../interfaces/EmergencyCall.html" target="_self" >EmergencyCall</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="exportContact"></a>
+                    <span class="name">
+                        <b>
+                            exportContact
+                        </b>
+                        <a href="#exportContact"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>exportContact(emergencyCall: <a href="../interfaces/EmergencyCall.html">EmergencyCall</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/app/pages/emergency/emergency.page.ts:154</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>emergencyCall</td>
+                                    <td>
+                                                <code><a href="../interfaces/EmergencyCall.html" target="_self" >EmergencyCall</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterItems"></a>
+                    <span class="name">
+                        <b>
+                            filterItems
+                        </b>
+                        <a href="#filterItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>filterItems(query)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="101"
+                            class="link-to-prism">src/app/pages/emergency/emergency.page.ts:101</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>a query string the items will be filtered with</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializeList"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            initializeList
+                        </b>
+                        <a href="#initializeList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initializeList()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">src/app/pages/emergency/emergency.page.ts:53</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadEmergencyCalls"></a>
+                    <span class="name">
+                        <b>
+                            loadEmergencyCalls
+                        </b>
+                        <a href="#loadEmergencyCalls"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadEmergencyCalls(refresher?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="61"
+                            class="link-to-prism">src/app/pages/emergency/emergency.page.ts:61</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>refresher</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="41"
+                            class="link-to-prism">src/app/pages/emergency/emergency.page.ts:41</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onScrollListener"></a>
+                    <span class="name">
+                        <b>
+                            onScrollListener
+                        </b>
+                        <a href="#onScrollListener"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onScrollListener()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="88"
+                            class="link-to-prism">src/app/pages/emergency/emergency.page.ts:88</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openMail"></a>
+                    <span class="name">
+                        <b>
+                            openMail
+                        </b>
+                        <a href="#openMail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openMail(mail)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="243"
+                            class="link-to-prism">src/app/pages/emergency/emergency.page.ts:243</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>mail</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveContact"></a>
+                    <span class="name">
+                        <b>
+                            saveContact
+                        </b>
+                        <a href="#saveContact"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveContact(contact: <a href="../interfaces/Contact.html">Contact</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="226"
+                            class="link-to-prism">src/app/pages/emergency/emergency.page.ts:226</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>contact</td>
+                                    <td>
+                                                <code><a href="../interfaces/Contact.html" target="_self" >Contact</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleQueryParams"></a>
+                    <span class="name">
+                        <b>
+                            handleQueryParams
+                        </b>
+                        <a href="#handleQueryParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleQueryParams(params: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:134</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>handles the queryParams for a page. Should be overwritten.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>params</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the params that should be handled</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openModule"></a>
+                    <span class="name">
+                        <b>
+                            openModule
+                        </b>
+                        <a href="#openModule"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openModule(moduleToOpen: <a href="../interfaces/IModule.html">IModule</a>, params: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:144</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>opens a page by using it&#39;s module</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>moduleToOpen</td>
+                                    <td>
+                                                <code><a href="../interfaces/IModule.html" target="_self" >IModule</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>params</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>{}</code>
+                                    </td>
+
+                                    <td>
+                                        <p>params {any} params that should by passed on</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openModuleByName"></a>
+                    <span class="name">
+                        <b>
+                            openModuleByName
+                        </b>
+                        <a href="#openModuleByName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openModuleByName(moduleName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, params: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:160</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>opens a page by name</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>moduleName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        <p>name of the module</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>params</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>{}</code>
+                                    </td>
+
+                                    <td>
+                                        <p>params that should by passed on</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="processOptions"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            processOptions
+                        </b>
+                        <a href="#processOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>processOptions(pageOptions: <a href="../interfaces/IPageOptions.html">IPageOptions</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:115</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>process the given pageOptions and execute desired functions</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageOptions</td>
+                                    <td>
+                                                <code><a href="../interfaces/IPageOptions.html" target="_self" >IPageOptions</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="requireNetwork"></a>
+                    <span class="name">
+                        <b>
+                            requireNetwork
+                        </b>
+                        <a href="#requireNetwork"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>requireNetwork(necessary?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:174</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>necessary</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="requireSession"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            requireSession
+                        </b>
+                        <a href="#requireSession"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>requireSession(optional?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:183</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>optional</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setMenuStatus"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            setMenuStatus
+                        </b>
+                        <a href="#setMenuStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setMenuStatus(shouldEnable: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:126</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>enables or disables the pages menu section</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>shouldEnable</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>true</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cordova"></a>
+                        <span class="name">
+                            <b>
+                            cordova</b>
+                            <a href="#cordova"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/pages/emergency/emergency.page.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="defaultList"></a>
+                        <span class="name">
+                            <b>
+                            defaultList</b>
+                            <a href="#defaultList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/EmergencyCall.html" target="_self" >Array&lt;EmergencyCall&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/pages/emergency/emergency.page.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="displayedList"></a>
+                        <span class="name">
+                            <b>
+                            displayedList</b>
+                            <a href="#displayedList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/EmergencyCall.html" target="_self" >Array&lt;EmergencyCall&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/pages/emergency/emergency.page.ts:21</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoaded"></a>
+                        <span class="name">
+                            <b>
+                            isLoaded</b>
+                            <a href="#isLoaded"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/pages/emergency/emergency.page.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="jsonPath"></a>
+                        <span class="name">
+                            <b>
+                            jsonPath</b>
+                            <a href="#jsonPath"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;../../assets/json/emergency&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/pages/emergency/emergency.page.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="networkError"></a>
+                        <span class="name">
+                            <b>
+                            networkError</b>
+                            <a href="#networkError"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/pages/emergency/emergency.page.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="query"></a>
+                        <span class="name">
+                            <b>
+                            query</b>
+                            <a href="#query"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/pages/emergency/emergency.page.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="activatedRoute"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            activatedRoute</b>
+                            <a href="#activatedRoute"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:45</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="config"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            config</b>
+                            <a href="#config"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IConfig.html" target="_self" >IConfig</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:48</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="connection"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            connection</b>
+                            <a href="#connection"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/ConnectionService.html" target="_self" >ConnectionService</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:44</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="logger"></a>
+                        <span class="name">
+                            <b>
+                            logger</b>
+                            <a href="#logger"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Logger</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:36</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loggingService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            loggingService</b>
+                            <a href="#loggingService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>LoggingService</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:49</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="menu"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            menu</b>
+                            <a href="#menu"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MenuController</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:46</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="navCtrl"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            navCtrl</b>
+                            <a href="#navCtrl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>NavController</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:47</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageReady"></a>
+                        <span class="name">
+                            <b>
+                            pageReady</b>
+                            <a href="#pageReady"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Promise&lt;void&gt;</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:39</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageReadyReject"></a>
+                        <span class="name">
+                            <b>
+                            pageReadyReject</b>
+                            <a href="#pageReadyReject"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:41</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageReadyResolve"></a>
+                        <span class="name">
+                            <b>
+                            pageReadyResolve</b>
+                            <a href="#pageReadyResolve"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:40</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="platform"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            platform</b>
+                            <a href="#platform"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Platform</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:52</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="router"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            router</b>
+                            <a href="#router"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:50</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="session"></a>
+                        <span class="name">
+                            <b>
+                            session</b>
+                            <a href="#session"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/ISession.html" target="_self" >ISession</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:37</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sessionProvider"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            sessionProvider</b>
+                            <a href="#sessionProvider"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/UserSessionService.html" target="_self" >UserSessionService</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:43</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="webIntent"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            webIntent</b>
+                            <a href="#webIntent"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/WebIntentService.html" target="_self" >WebIntentService</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:51</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ChangeDetectorRef } from &#x27;@angular/core&#x27;;
+import { Keyboard } from &#x27;@ionic-native/keyboard/ngx&#x27;;
+import * as jquery from &#x27;jquery&#x27;;
+import { Contacts, Contact, ContactField, ContactName } from &#x27;@ionic-native/contacts/ngx&#x27;;
+import { CallNumber } from &#x27;@ionic-native/call-number/ngx&#x27;;
+import { EmergencyCall } from &#x27;src/app/lib/interfaces&#x27;;
+import { NavigatorService } from &#x27;src/app/services/navigator/navigator.service&#x27;;
+import { AlertService } from &#x27;src/app/services/alert/alert.service&#x27;;
+import { utils } from &#x27;src/app/lib/util&#x27;;
+import { AbstractPage } from &#x27;src/app/lib/abstract-page&#x27;;
+import { WebserviceWrapperService } from &#x27;src/app/services/webservice-wrapper/webservice-wrapper.service&#x27;;
+
+@Component({
+  selector: &#x27;app-emergency&#x27;,
+  templateUrl: &#x27;./emergency.page.html&#x27;,
+  styleUrls: [&#x27;./emergency.page.scss&#x27;],
+})
+export class EmergencyPage  extends AbstractPage implements OnInit {
+
+  jsonPath &#x3D; &#x27;../../assets/json/emergency&#x27;;
+  displayedList: Array&lt;EmergencyCall&gt; &#x3D; [];
+  defaultList: Array&lt;EmergencyCall&gt; &#x3D; [];
+  isLoaded;
+  cordova &#x3D; false;
+  query &#x3D; &#x27;&#x27;;
+  networkError;
+
+  constructor(
+    private keyboard: Keyboard,
+    private chRef: ChangeDetectorRef,
+    private mapProvider: NavigatorService,
+    // tslint:disable-next-line: deprecation
+    private contacts: Contacts,
+    private callNumber: CallNumber,
+    private alertService: AlertService,
+    private ws: WebserviceWrapperService,
+  ) {
+    super({ optionalNetwork: true });
+  }
+
+  ngOnInit() {
+    if (this.platform.is(&#x27;cordova&#x27;)) {
+      this.cordova &#x3D; true;
+    }
+
+    this.loadEmergencyCalls();
+  }
+
+  /**
+   * @name  initializeList
+   * @description initializes the list that is to be displayed with default values
+   */
+  public initializeList(): void {
+    this.displayedList &#x3D; this.defaultList;
+  }
+
+  /**
+   * @name loadEmergencyCalls
+   * @description loads default items from json file
+   */
+  loadEmergencyCalls(refresher?) {
+
+    if (!(refresher &amp;&amp; refresher.target)) {
+      this.isLoaded &#x3D; false;
+    } else { this.query &#x3D; &#x27;&#x27;; }
+
+    this.networkError &#x3D; false;
+    this.ws.call(
+      &#x27;emergencyCalls&#x27;,
+      {},
+      { forceRefresh: refresher !&#x3D;&#x3D; undefined }
+    ).subscribe((response: any) &#x3D;&gt; {
+      if (refresher &amp;&amp; refresher.target) { refresher.target.complete(); }
+      this.defaultList &#x3D; response;
+      this.isLoaded &#x3D; true;
+      this.initializeList();
+    }, () &#x3D;&gt; {
+      this.isLoaded &#x3D; true;
+      if (refresher &amp;&amp; refresher.target) { refresher.target.complete(); }
+      this.networkError &#x3D; true;
+    });
+    // on error //this.defaultList &#x3D; require(&quot;../../assets/json/emergency&quot;);
+
+  }
+
+
+  // hides keyboard once the user is scrolling
+  onScrollListener() {
+    if (this.platform.is(&#x27;cordova&#x27;) &amp;&amp; (this.platform.is(&#x27;ios&#x27;) || this.platform.is(&#x27;android&#x27;))) {
+      this.keyboard.hide();
+    }
+  }
+
+  /**
+   * @name filterItems
+   * @description when a query is typed into the searchbar this method is called. It
+   * filters the complete list of items with the query and modifies the
+   * displayed list accordingly.
+   * @param {string} query - a query string the items will be filtered with
+   */
+  filterItems(query) {
+    this.initializeList();
+
+    if (query) {
+      query &#x3D; query.detail.value;
+      this.displayedList &#x3D; jquery.grep(
+        this.defaultList,
+        (emergencyCall, index) &#x3D;&gt; {
+          return utils.contains(emergencyCall.name, query);
+        }
+      );
+      this.chRef.detectChanges();
+    }
+  }
+
+  /**
+   * @name expand
+   * @description toggles the expand value of one item to be expanded in the view
+   * @param {EmergencyCall} emergencyCall
+   */
+  expand(emergencyCall: EmergencyCall) {
+    for (let i &#x3D; 0; i &lt; this.displayedList.length; i++) {
+      const currentCall &#x3D; this.displayedList[i];
+      if (currentCall.name &#x3D;&#x3D;&#x3D; emergencyCall.name) {
+        if (emergencyCall.description &amp;&amp; emergencyCall.description &#x3D;&#x3D;&#x3D; currentCall.description) {
+          currentCall.expanded &#x3D; !currentCall.expanded;
+        } else if (!emergencyCall.description) {
+          currentCall.expanded &#x3D; !currentCall.expanded;
+        }
+      }
+    }
+  }
+
+  /**
+   * @name callMap
+   * @description opens the map
+   * @param {EmergencyCall} emergencyCall
+   */
+  callMap(emergencyCall: EmergencyCall) {
+    let location &#x3D; emergencyCall.address.street;
+    if (emergencyCall.address.postal) {
+      location +&#x3D; &#x27; &#x27; + emergencyCall.address.postal;
+    }
+
+    this.mapProvider.navigateToAdress(location);
+  }
+
+
+    /**
+   * @name exportContact
+   * @description exports a contact to the local phone book
+   * @param {EmergencyCall} emergencyCall
+   */
+  exportContact(emergencyCall: EmergencyCall) {
+    if (this.platform.is(&#x27;cordova&#x27;)) {
+      const contact: Contact &#x3D; this.contacts.create();
+
+      contact.name &#x3D; new ContactName(null, emergencyCall.name);
+
+      if (emergencyCall.contact.telephone) { contact.phoneNumbers &#x3D; [new ContactField(&#x27;work&#x27;, emergencyCall.contact.telephone)]; }
+      if (emergencyCall.contact.mail)   { contact.emails &#x3D; [new ContactField(&#x27;work&#x27;, emergencyCall.contact.mail)]; }
+      if (emergencyCall.address &amp;&amp; emergencyCall.address.street) {
+        contact.addresses &#x3D; [new ContactField()];
+        if (contact.addresses &amp;&amp; contact.addresses[0]) {
+          contact.addresses[0].type &#x3D; &#x27;work&#x27;;
+          if (emergencyCall.address.postal) { contact.addresses[0].postalCode &#x3D; emergencyCall.address.postal; }
+          contact.addresses[0].streetAddress &#x3D;  emergencyCall.address.street;
+        }
+      }
+
+      const exportName &#x3D; emergencyCall.name;
+      this.contacts.find([&#x27;name&#x27;], { filter: exportName, multiple: true }).then(response &#x3D;&gt; {
+        this.logger.debug(&#x27;exportContact&#x27;, &#x27;contacts.find&#x27;, response);
+        let contactFound &#x3D; false;
+        let contactID;
+        for (let i &#x3D; 0; i &lt; response.length; i++) {
+          let foundTel &#x3D; false;
+          let foundMail &#x3D; false;
+          let foundRoom &#x3D; false;
+          if (emergencyCall.contact.telephone &amp;&amp; response[i].phoneNumbers.length &gt; 0) {
+            for (let j &#x3D; 0; j &lt; response[i].phoneNumbers.length; j++) {
+              if (response[i].phoneNumbers[j].value &#x3D;&#x3D;&#x3D; emergencyCall.contact.telephone) {
+                foundTel &#x3D; true;
+                break;
+              }
+            }
+          } else if (!emergencyCall.contact.telephone) { foundTel &#x3D; true; }
+
+          if (emergencyCall.contact.mail &amp;&amp; response[i].emails.length &gt; 0) {
+            for (let j &#x3D; 0; j &lt; response[i].emails.length; j++) {
+              if (response[i].emails[j].value &#x3D;&#x3D;&#x3D; emergencyCall.contact.mail) {
+                foundMail &#x3D; true;
+                break;
+              }
+            }
+          } else if (!emergencyCall.contact.mail) { foundMail &#x3D; true; }
+
+          if (emergencyCall.address.street &amp;&amp; response[i].addresses.length &gt; 0) {
+            for (let j &#x3D; 0; j &lt; response[i].addresses.length; j++) {
+              if (response[i].addresses[j].streetAddress &#x3D;&#x3D;&#x3D; emergencyCall.address.street) {
+                foundRoom &#x3D; true;
+                break;
+              }
+            }
+          } else if (!emergencyCall.address.street) { foundRoom &#x3D; true; }
+
+          if (foundTel &amp;&amp; foundMail &amp;&amp; foundRoom) {
+            contactFound &#x3D; true;
+            break;
+          } else if (foundTel || foundMail || foundRoom) {
+            contactID &#x3D; response[i].id;
+          }
+        }
+
+        if (!contactFound) {
+          if (contactID) { contact.id &#x3D; contactID; }
+          this.saveContact(contact);
+        } else { this.alertService.showToast(&#x27;alert.contact-exists&#x27;); }
+      }, error &#x3D;&gt; {
+        this.logger.error(&#x27;exportContact&#x27;, &#x27;contacts.find&#x27;, error);
+        this.saveContact(contact);
+      });
+    }
+  }
+
+  saveContact(contact: Contact) {
+    contact.save().then(
+      () &#x3D;&gt; {
+        this.logger.debug(&#x27;saveContact&#x27;, contact);
+        this.alertService.showToast(&#x27;alert.contact-export-success&#x27;);
+      },
+      (error: any) &#x3D;&gt; {
+        this.logger.error(&#x27;saveContact&#x27;, error);
+        if (error.code &amp;&amp; (error.code &#x3D;&#x3D;&#x3D; 20 || error.code &#x3D;&#x3D;&#x3D; &#x27;20&#x27;)) {
+          this.alertService.showToast(&#x27;alert.permission-denied&#x27;);
+        } else {
+          this.alertService.showToast(&#x27;alert.contact-export-fail&#x27;);
+        }
+      }
+    );
+  }
+
+  openMail(mail) {
+    window.location.href &#x3D; &#x27;mailto:&#x27; + mail;
+  }
+
+  /**
+   * @name callContact
+   * @description using native call for calling numbers
+   * @param {string} number
+   * https://www.javascripttuts.com/making-phone-calls-to-contacts-with-ionic-in-one-go/
+   */
+  callContact(number: string) {
+    if (this.platform.is(&#x27;cordova&#x27;)) {
+      this.callNumber.callNumber(number, true)
+      .then(() &#x3D;&gt; this.logger.debug(&#x27;callContact&#x27;, &#x27;dialer launched&#x27;))
+      .catch((error) &#x3D;&gt; this.logger.error(&#x27;callContact&#x27;, error));
+    } else {
+      window.location.href &#x3D; &#x27;tel:&#x27; + number;
+    }
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-header&gt;
+  &lt;ion-toolbar&gt;
+    &lt;ion-back-button slot&#x3D;&quot;start&quot;&gt;&lt;/ion-back-button&gt;
+    &lt;ion-button *ngIf&#x3D;&quot;!(platform.is(&#x27;ios&#x27;) || platform.is(&#x27;android&#x27;))&quot; (click)&#x3D;&quot;loadEmergencyCalls(true)&quot; slot&#x3D;&quot;end&quot; fill&#x3D;&quot;clear&quot;&gt;
+      &lt;ion-icon style&#x3D;&quot;font-size: x-large;&quot; name&#x3D;&quot;refresh&quot;&gt;&lt;/ion-icon&gt;
+    &lt;/ion-button&gt;
+    &lt;ion-menu-button slot&#x3D;&quot;end&quot;&gt;&lt;/ion-menu-button&gt;
+    &lt;ion-title&gt;{{ &quot;page.emergency.title&quot; | translate }}&lt;/ion-title&gt;
+  &lt;/ion-toolbar&gt;
+  &lt;ion-toolbar *ngIf&#x3D;&quot;!networkError&quot;&gt;
+    &lt;ion-searchbar
+    [(ngModel)]&#x3D;&quot;query&quot;
+    [placeholder]&#x3D;&quot;&#x27;placeholder.search&#x27; | translate&quot;
+    (ionChange)&#x3D;&quot;filterItems($event)&quot;
+    debounce&#x3D;&quot;500&quot;&gt;
+  &lt;/ion-searchbar&gt;
+  &lt;/ion-toolbar&gt;
+&lt;/ion-header&gt;
+
+&lt;ion-content no-padding (ionScrollStart)&#x3D;&quot;onScrollListener()&quot;&gt;
+
+  &lt;ion-refresher *ngIf&#x3D;&quot;platform.is(&#x27;ios&#x27;) || platform.is(&#x27;android&#x27;)&quot; slot&#x3D;&quot;fixed&quot; (ionRefresh)&#x3D;&quot;loadEmergencyCalls($event)&quot;&gt;
+    &lt;ion-refresher-content pullingIcon&#x3D;&quot;refresh&quot; refreshingSpinner&#x3D;&quot;dots&quot;&gt;&lt;/ion-refresher-content&gt;
+  &lt;/ion-refresher&gt;
+
+  &lt;div align&#x3D;&quot;center&quot; *ngIf&#x3D;&quot;!isLoaded&quot; padding&gt;
+    &lt;ion-spinner name&#x3D;&quot;dots&quot;&gt;&lt;/ion-spinner&gt;
+  &lt;/div&gt;
+
+  &lt;div *ngIf&#x3D;&quot;isLoaded &amp;&amp; displayedList.length &#x3D;&#x3D; 0&quot;&gt;
+    &lt;app-hint-box *ngIf&#x3D;&quot;!networkError&quot; hintTypeI18nKey&#x3D;&quot;hints.type.hint&quot; hintTextI18nKey&#x3D;&quot;hints.text.noResults-hint&quot;&gt;&lt;/app-hint-box&gt;
+    &lt;app-hint-box *ngIf&#x3D;&quot;networkError&quot; hintTypeI18nKey&#x3D;&quot;alert.title.httpError&quot; hintTextI18nKey&#x3D;&quot;alert.network&quot;&gt;&lt;/app-hint-box&gt;
+  &lt;/div&gt;
+  &lt;!-- list of emergencyCalls --&gt;
+  &lt;ion-list lines&#x3D;&quot;none&quot;&gt;
+    &lt;span *ngFor&#x3D;&quot;let emergencyCall of displayedList&quot;&gt;
+      &lt;ion-item-sliding&gt;
+        &lt;!-- template for emergencyCalls --&gt;
+        &lt;ion-item (click)&#x3D;&quot;expand(emergencyCall)&quot; [ngClass]&#x3D;&quot;{&#x27;noborder&#x27;: emergencyCall.expanded}&quot;&gt;
+          &lt;ion-icon color&#x3D;&quot;primary&quot; name&#x3D;&quot;person&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-icon&gt;
+          &lt;ion-label text-wrap&gt;
+            &lt;h2&gt;{{emergencyCall.name}}&lt;/h2&gt;
+            &lt;p *ngIf&#x3D;&quot;emergencyCall.description&quot;&gt;{{emergencyCall.description}}&lt;/p&gt;
+          &lt;/ion-label&gt;
+          &lt;ion-icon [name]&#x3D;&quot;!emergencyCall.expanded ? &#x27;arrow-dropright&#x27; : &#x27;arrow-dropdown&#x27;&quot; *ngIf&#x3D;&quot;(emergencyCall.address || emergencyCall.contact)&quot; slot&#x3D;&quot;end&quot;&gt;&lt;/ion-icon&gt;
+        &lt;/ion-item&gt;
+
+        &lt;ion-item-options side&#x3D;&quot;end&quot;&gt;
+          &lt;ion-item-option (click)&#x3D;&quot;openMail(emergencyCall.contact.mail)&quot; color&#x3D;&quot;primary&quot; *ngIf&#x3D;&quot;emergencyCall.contact.mail&quot;&gt;
+            &lt;!-- &lt;ion-icon name&#x3D;&quot;mail&quot; style&#x3D;&quot;color: white&quot;&gt;&lt;/ion-icon&gt; --&gt;
+            &lt;a class&#x3D;&quot;notUnderlined whiteFont&quot;&gt;Mail&lt;/a&gt;
+          &lt;/ion-item-option&gt;
+          &lt;ion-item-option (click)&#x3D;&quot;callContact(emergencyCall.contact.telephone)&quot; color&#x3D;&quot;secondary&quot; *ngIf&#x3D;&quot;emergencyCall.contact.telephone&quot;&gt;
+            &lt;!-- &lt;ion-icon name&#x3D;&quot;call&quot;&gt;&lt;/ion-icon&gt; --&gt;
+            &lt;a class&#x3D;&quot;notUnderlined&quot;&gt;{{ &quot;button.call&quot; | translate }}&lt;/a&gt;
+          &lt;/ion-item-option&gt;
+          &lt;ion-item-option (click)&#x3D;&quot;exportContact(emergencyCall)&quot; color&#x3D;&quot;medium&quot; *ngIf&#x3D;&quot;cordova&quot;&gt;
+            &lt;!-- &lt;ion-icon name&#x3D;&quot;person-add&quot;&gt;&lt;/ion-icon&gt; --&gt;
+            &lt;a class&#x3D;&quot;notUnderlined&quot;&gt;{{ &quot;button.add&quot; | translate }}&lt;/a&gt;
+          &lt;/ion-item-option&gt;
+        &lt;/ion-item-options&gt;
+      &lt;/ion-item-sliding&gt;
+
+      &lt;ion-item *ngIf&#x3D;&quot;emergencyCall.expanded&quot;&gt;
+        &lt;ion-icon slot&#x3D;&quot;start&quot;&gt;&lt;/ion-icon&gt;
+        &lt;ion-label no-margin text-wrap&gt;
+          &lt;ion-grid&gt;
+            &lt;ion-row *ngIf&#x3D;&quot;emergencyCall.contact.mail&quot;&gt;
+              &lt;ion-col size&#x3D;&quot;auto&quot;&gt;
+                &lt;ion-icon color&#x3D;&quot;primary&quot; name&#x3D;&quot;mail&quot;&gt;&lt;/ion-icon&gt;
+              &lt;/ion-col&gt;
+              &lt;ion-col&gt;
+                &lt;a href&#x3D;&quot;mailto:{{emergencyCall.contact.mail}}&quot;&gt;{{emergencyCall.contact.mail}}&lt;/a&gt;
+              &lt;/ion-col&gt;
+            &lt;/ion-row&gt;
+            &lt;ion-row *ngIf&#x3D;&quot;emergencyCall.contact.telephone&quot;&gt;
+              &lt;ion-col size&#x3D;&quot;auto&quot;&gt;
+                &lt;ion-icon color&#x3D;&quot;primary&quot; name&#x3D;&quot;call&quot; ios&#x3D;&quot;ios-call&quot; md&#x3D;&quot;md-call&quot;&gt;&lt;/ion-icon&gt;
+              &lt;/ion-col&gt;
+              &lt;ion-col&gt;
+                &lt;a (click)&#x3D;&quot;callContact(emergencyCall.contact.telephone)&quot; style&#x3D;&quot;text-decoration: underline&quot;&gt;{{emergencyCall.contact.telephone}}&lt;/a&gt;
+              &lt;/ion-col&gt;
+            &lt;/ion-row&gt;
+            &lt;ion-row *ngIf&#x3D;&quot;emergencyCall.address &amp;&amp; (emergencyCall.address.street || emergencyCall.address.postal)&quot;&gt;
+              &lt;ion-col size&#x3D;&quot;auto&quot;&gt;
+                &lt;ion-icon color&#x3D;&quot;primary&quot; name&#x3D;&quot;home&quot;&gt;&lt;/ion-icon&gt;
+              &lt;/ion-col&gt;
+              &lt;ion-col&gt;
+                &lt;a (click)&#x3D;&quot;callMap(emergencyCall)&quot; class&#x3D;&quot;link&quot; text-wrap&gt;
+                  &lt;span *ngIf&#x3D;&quot;emergencyCall.address.street&quot;&gt;{{emergencyCall.address.street}}&lt;/span&gt;
+                  &lt;span *ngIf&#x3D;&quot;emergencyCall.address.postal &amp;&amp; emergencyCall.address.street&quot;&gt;, &lt;/span&gt;
+                  &lt;span *ngIf&#x3D;&quot;emergencyCall.address.postal&quot;&gt;{{emergencyCall.address.postal}}&lt;/span&gt;
+                &lt;/a&gt;
+              &lt;/ion-col&gt;
+            &lt;/ion-row&gt;
+          &lt;/ion-grid&gt;
+        &lt;/ion-label&gt;
+      &lt;/ion-item&gt;
+
+    &lt;/span&gt;
+  &lt;/ion-list&gt;
+&lt;/ion-content&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./emergency.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">ion-icon {
+    margin-inline-end: 10px;
+}
+
+ion-item {
+    --padding-start: 5px;
+    border-bottom:1px solid #ededed !important;
+}
+
+ion-col {
+    font-size: 0.9rem;
+}
+
+.link {
+    color: var(--ion-color-primary);
+    text-decoration: underline;
+}
+
+.notUnderlined {
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.whiteFont {
+    color: white;
+}
+
+ion-item.noborder {
+    border-width:0 !important;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-header>  <ion-toolbar>    <ion-back-button slot="start"></ion-back-button>    <ion-button *ngIf="!(platform.is(\'ios\') || platform.is(\'android\'))" (click)="loadEmergencyCalls(true)" slot="end" fill="clear">      <ion-icon style="font-size: x-large;" name="refresh"></ion-icon>    </ion-button>    <ion-menu-button slot="end"></ion-menu-button>    <ion-title>{{ "page.emergency.title" | translate }}</ion-title>  </ion-toolbar>  <ion-toolbar *ngIf="!networkError">    <ion-searchbar    [(ngModel)]="query"    [placeholder]="\'placeholder.search\' | translate"    (ionChange)="filterItems($event)"    debounce="500">  </ion-searchbar>  </ion-toolbar></ion-header><ion-content no-padding (ionScrollStart)="onScrollListener()">  <ion-refresher *ngIf="platform.is(\'ios\') || platform.is(\'android\')" slot="fixed" (ionRefresh)="loadEmergencyCalls($event)">    <ion-refresher-content pullingIcon="refresh" refreshingSpinner="dots"></ion-refresher-content>  </ion-refresher>  <div align="center" *ngIf="!isLoaded" padding>    <ion-spinner name="dots"></ion-spinner>  </div>  <div *ngIf="isLoaded && displayedList.length == 0">    <app-hint-box *ngIf="!networkError" hintTypeI18nKey="hints.type.hint" hintTextI18nKey="hints.text.noResults-hint"></app-hint-box>    <app-hint-box *ngIf="networkError" hintTypeI18nKey="alert.title.httpError" hintTextI18nKey="alert.network"></app-hint-box>  </div>  <!-- list of emergencyCalls -->  <ion-list lines="none">    <span *ngFor="let emergencyCall of displayedList">      <ion-item-sliding>        <!-- template for emergencyCalls -->        <ion-item (click)="expand(emergencyCall)" [ngClass]="{\'noborder\': emergencyCall.expanded}">          <ion-icon color="primary" name="person" slot="start"></ion-icon>          <ion-label text-wrap>            <h2>{{emergencyCall.name}}</h2>            <p *ngIf="emergencyCall.description">{{emergencyCall.description}}</p>          </ion-label>          <ion-icon [name]="!emergencyCall.expanded ? \'arrow-dropright\' : \'arrow-dropdown\'" *ngIf="(emergencyCall.address || emergencyCall.contact)" slot="end"></ion-icon>        </ion-item>        <ion-item-options side="end">          <ion-item-option (click)="openMail(emergencyCall.contact.mail)" color="primary" *ngIf="emergencyCall.contact.mail">            <!-- <ion-icon name="mail" style="color: white"></ion-icon> -->            <a class="notUnderlined whiteFont">Mail</a>          </ion-item-option>          <ion-item-option (click)="callContact(emergencyCall.contact.telephone)" color="secondary" *ngIf="emergencyCall.contact.telephone">            <!-- <ion-icon name="call"></ion-icon> -->            <a class="notUnderlined">{{ "button.call" | translate }}</a>          </ion-item-option>          <ion-item-option (click)="exportContact(emergencyCall)" color="medium" *ngIf="cordova">            <!-- <ion-icon name="person-add"></ion-icon> -->            <a class="notUnderlined">{{ "button.add" | translate }}</a>          </ion-item-option>        </ion-item-options>      </ion-item-sliding>      <ion-item *ngIf="emergencyCall.expanded">        <ion-icon slot="start"></ion-icon>        <ion-label no-margin text-wrap>          <ion-grid>            <ion-row *ngIf="emergencyCall.contact.mail">              <ion-col size="auto">                <ion-icon color="primary" name="mail"></ion-icon>              </ion-col>              <ion-col>                <a href="mailto:{{emergencyCall.contact.mail}}">{{emergencyCall.contact.mail}}</a>              </ion-col>            </ion-row>            <ion-row *ngIf="emergencyCall.contact.telephone">              <ion-col size="auto">                <ion-icon color="primary" name="call" ios="ios-call" md="md-call"></ion-icon>              </ion-col>              <ion-col>                <a (click)="callContact(emergencyCall.contact.telephone)" style="text-decoration: underline">{{emergencyCall.contact.telephone}}</a>              </ion-col>            </ion-row>            <ion-row *ngIf="emergencyCall.address && (emergencyCall.address.street || emergencyCall.address.postal)">              <ion-col size="auto">                <ion-icon color="primary" name="home"></ion-icon>              </ion-col>              <ion-col>                <a (click)="callMap(emergencyCall)" class="link" text-wrap>                  <span *ngIf="emergencyCall.address.street">{{emergencyCall.address.street}}</span>                  <span *ngIf="emergencyCall.address.postal && emergencyCall.address.street">, </span>                  <span *ngIf="emergencyCall.address.postal">{{emergencyCall.address.postal}}</span>                </a>              </ion-col>            </ion-row>          </ion-grid>        </ion-label>      </ion-item>    </span>  </ion-list></ion-content></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppInfoPage', 'selector': 'app-app-info'},{'name': 'BookDetailModalPage', 'selector': 'book-modal-page'},{'name': 'BookListComponent', 'selector': 'app-book-list'},{'name': 'BookLocationComponent', 'selector': 'app-book-location'},{'name': 'CampusMapFeatureModalComponent', 'selector': 'app-campus-map-feature-modal'},{'name': 'CampusMapPage', 'selector': 'app-campus-map'},{'name': 'CampusReorderModalPage', 'selector': 'campus-modal-page'},{'name': 'CampusTabComponent', 'selector': 'app-campus-tab'},{'name': 'CourseDataComponent', 'selector': 'app-course-data'},{'name': 'DatePickerComponent', 'selector': 'app-date-picker'},{'name': 'DetailedOpeningModalPage', 'selector': 'detailed-opening-modal-page'},{'name': 'DetailedPracticeModalPage', 'selector': 'detailed-practice-modal-page'},{'name': 'EmergencyPage', 'selector': 'app-emergency'},{'name': 'EventModalPage', 'selector': 'event-modal-page'},{'name': 'EventsPage', 'selector': 'app-events'},{'name': 'EventViewComponent', 'selector': 'app-event-view'},{'name': 'FeedbackPage', 'selector': 'app-feedback'},{'name': 'FooterDisclaimerComponent', 'selector': 'app-footer-disclaimer'},{'name': 'FreeRoomsPage', 'selector': 'app-free-rooms'},{'name': 'GradesPage', 'selector': 'app-grades'},{'name': 'GradesTableComponent', 'selector': 'app-grades-table'},{'name': 'HintBoxComponent', 'selector': 'app-hint-box'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'ImpressumModalPage', 'selector': 'impressum-modal-page'},{'name': 'ImpressumPage', 'selector': 'app-impressum'},{'name': 'LectureListComponent', 'selector': 'app-lecture-list'},{'name': 'LectureSearchModalPage', 'selector': 'lecture-search-modal-page'},{'name': 'LecturesPage', 'selector': 'app-lectures'},{'name': 'LibrarySearchPage', 'selector': 'app-library-search'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'MensaMealComponent', 'selector': 'app-mensa-meal'},{'name': 'MensaPage', 'selector': 'app-mensa'},{'name': 'NewsArticleComponent', 'selector': 'app-news-article'},{'name': 'NewsPage', 'selector': 'app-news'},{'name': 'OpeningHoursPage', 'selector': 'app-opening-hours'},{'name': 'PersonSearchPage', 'selector': 'app-person-search'},{'name': 'PracticePage', 'selector': 'app-practice'},{'name': 'RoomplanPage', 'selector': 'app-roomplan'},{'name': 'SettingsPage', 'selector': 'app-settings'},{'name': 'TimetablePage', 'selector': 'app-timetable'},{'name': 'TransportPage', 'selector': 'app-transport'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'EmergencyPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'EmergencyPage.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

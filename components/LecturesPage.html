@@ -1,0 +1,3014 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Mobile.UP</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Mobile.UP</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>LecturesPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/lectures/lectures.page.ts</code>
+</p>
+
+
+    <p class="comment">
+        <h3>Extends</h3>
+    </p>
+    <p class="comment">
+                <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+    </p>
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-lectures</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./lectures.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./lectures.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#allLectures">allLectures</a>
+                            </li>
+                            <li>
+                                <a href="#flattenedLectures">flattenedLectures</a>
+                            </li>
+                            <li>
+                                <a href="#isLoaded">isLoaded</a>
+                            </li>
+                            <li>
+                                <a href="#isRefreshing">isRefreshing</a>
+                            </li>
+                            <li>
+                                <a href="#isSearching">isSearching</a>
+                            </li>
+                            <li>
+                                <a href="#lectures">lectures</a>
+                            </li>
+                            <li>
+                                <a href="#modalOpen">modalOpen</a>
+                            </li>
+                            <li>
+                                <a href="#networkError">networkError</a>
+                            </li>
+                            <li>
+                                <a href="#query">query</a>
+                            </li>
+                            <li>
+                                <a href="#queryTooShort">queryTooShort</a>
+                            </li>
+                            <li>
+                                <a href="#refreshLectureComponent">refreshLectureComponent</a>
+                            </li>
+                            <li>
+                                <a href="#resultKeys">resultKeys</a>
+                            </li>
+                            <li>
+                                <a href="#searchResults">searchResults</a>
+                            </li>
+                            <li>
+                                <a href="#valueArray">valueArray</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#activatedRoute">activatedRoute</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#config">config</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#connection">connection</a>
+                            </li>
+                            <li>
+                                <a href="#logger">logger</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#loggingService">loggingService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#menu">menu</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#navCtrl">navCtrl</a>
+                            </li>
+                            <li>
+                                <a href="#pageReady">pageReady</a>
+                            </li>
+                            <li>
+                                <a href="#pageReadyReject">pageReadyReject</a>
+                            </li>
+                            <li>
+                                <a href="#pageReadyResolve">pageReadyResolve</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#platform">platform</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#router">router</a>
+                            </li>
+                            <li>
+                                <a href="#session">session</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#sessionProvider">sessionProvider</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#webIntent">webIntent</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#contains">contains</a>
+                            </li>
+                            <li>
+                                <a href="#flattenJSON">flattenJSON</a>
+                            </li>
+                            <li>
+                                <a href="#getValues">getValues</a>
+                            </li>
+                            <li>
+                                <a href="#loadLectureTree">loadLectureTree</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onScrollListener">onScrollListener</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#openItem">openItem</a>
+                            </li>
+                            <li>
+                                <a href="#refreshLectureTree">refreshLectureTree</a>
+                            </li>
+                            <li>
+                                <a href="#searchLecture">searchLecture</a>
+                            </li>
+                            <li>
+                                <a href="#selectFilter">selectFilter</a>
+                            </li>
+                            <li>
+                                <a href="#unescapeHTML">unescapeHTML</a>
+                            </li>
+                            <li>
+                                <a href="#handleQueryParams">handleQueryParams</a>
+                            </li>
+                            <li>
+                                <a href="#openModule">openModule</a>
+                            </li>
+                            <li>
+                                <a href="#openModuleByName">openModuleByName</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#processOptions">processOptions</a>
+                            </li>
+                            <li>
+                                <a href="#requireNetwork">requireNetwork</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#requireSession">requireSession</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setMenuStatus">setMenuStatus</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(ws: <a href="../injectables/WebserviceWrapperService.html">WebserviceWrapperService</a>, modalCtrl: ModalController, keyboard: Keyboard)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/pages/lectures/lectures.page.ts:15</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>ws</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/WebserviceWrapperService.html" target="_self" >WebserviceWrapperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>ModalController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>keyboard</td>
+                                                  
+                                                        <td>
+                                                                    <code>Keyboard</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contains"></a>
+                    <span class="name">
+                        <b>
+                            contains
+                        </b>
+                        <a href="#contains"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>contains(x, y)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="225"
+                            class="link-to-prism">src/app/pages/lectures/lectures.page.ts:225</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>x</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>y</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="flattenJSON"></a>
+                    <span class="name">
+                        <b>
+                            flattenJSON
+                        </b>
+                        <a href="#flattenJSON"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>flattenJSON(cur, prop, result)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="77"
+                            class="link-to-prism">src/app/pages/lectures/lectures.page.ts:77</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cur</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>prop</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>result</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getValues"></a>
+                    <span class="name">
+                        <b>
+                            getValues
+                        </b>
+                        <a href="#getValues"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getValues(filterKey?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="124"
+                            class="link-to-prism">src/app/pages/lectures/lectures.page.ts:124</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filterKey</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadLectureTree"></a>
+                    <span class="name">
+                        <b>
+                            loadLectureTree
+                        </b>
+                        <a href="#loadLectureTree"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadLectureTree(forceRefresh: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/app/pages/lectures/lectures.page.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>forceRefresh</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">src/app/pages/lectures/lectures.page.ts:40</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onScrollListener"></a>
+                    <span class="name">
+                        <b>
+                            onScrollListener
+                        </b>
+                        <a href="#onScrollListener"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onScrollListener()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="230"
+                            class="link-to-prism">src/app/pages/lectures/lectures.page.ts:230</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openItem"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            openItem
+                        </b>
+                        <a href="#openItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>openItem(index)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="165"
+                            class="link-to-prism">src/app/pages/lectures/lectures.page.ts:165</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="refreshLectureTree"></a>
+                    <span class="name">
+                        <b>
+                            refreshLectureTree
+                        </b>
+                        <a href="#refreshLectureTree"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>refreshLectureTree(refresher)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="44"
+                            class="link-to-prism">src/app/pages/lectures/lectures.page.ts:44</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>refresher</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchLecture"></a>
+                    <span class="name">
+                        <b>
+                            searchLecture
+                        </b>
+                        <a href="#searchLecture"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>searchLecture(event?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="108"
+                            class="link-to-prism">src/app/pages/lectures/lectures.page.ts:108</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectFilter"></a>
+                    <span class="name">
+                        <b>
+                            selectFilter
+                        </b>
+                        <a href="#selectFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectFilter(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="213"
+                            class="link-to-prism">src/app/pages/lectures/lectures.page.ts:213</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unescapeHTML"></a>
+                    <span class="name">
+                        <b>
+                            unescapeHTML
+                        </b>
+                        <a href="#unescapeHTML"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>unescapeHTML(s: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="236"
+                            class="link-to-prism">src/app/pages/lectures/lectures.page.ts:236</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>s</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleQueryParams"></a>
+                    <span class="name">
+                        <b>
+                            handleQueryParams
+                        </b>
+                        <a href="#handleQueryParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleQueryParams(params: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:134</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>handles the queryParams for a page. Should be overwritten.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>params</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the params that should be handled</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openModule"></a>
+                    <span class="name">
+                        <b>
+                            openModule
+                        </b>
+                        <a href="#openModule"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openModule(moduleToOpen: <a href="../interfaces/IModule.html">IModule</a>, params: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:144</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>opens a page by using it&#39;s module</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>moduleToOpen</td>
+                                    <td>
+                                                <code><a href="../interfaces/IModule.html" target="_self" >IModule</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>params</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>{}</code>
+                                    </td>
+
+                                    <td>
+                                        <p>params {any} params that should by passed on</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openModuleByName"></a>
+                    <span class="name">
+                        <b>
+                            openModuleByName
+                        </b>
+                        <a href="#openModuleByName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openModuleByName(moduleName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, params: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:160</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>opens a page by name</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>moduleName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        <p>name of the module</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>params</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>{}</code>
+                                    </td>
+
+                                    <td>
+                                        <p>params that should by passed on</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="processOptions"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            processOptions
+                        </b>
+                        <a href="#processOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>processOptions(pageOptions: <a href="../interfaces/IPageOptions.html">IPageOptions</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:115</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>process the given pageOptions and execute desired functions</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageOptions</td>
+                                    <td>
+                                                <code><a href="../interfaces/IPageOptions.html" target="_self" >IPageOptions</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="requireNetwork"></a>
+                    <span class="name">
+                        <b>
+                            requireNetwork
+                        </b>
+                        <a href="#requireNetwork"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>requireNetwork(necessary?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:174</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>necessary</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="requireSession"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            requireSession
+                        </b>
+                        <a href="#requireSession"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>requireSession(optional?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:183</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>optional</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setMenuStatus"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            setMenuStatus
+                        </b>
+                        <a href="#setMenuStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setMenuStatus(shouldEnable: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:126</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>enables or disables the pages menu section</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>shouldEnable</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>true</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="allLectures"></a>
+                        <span class="name">
+                            <b>
+                            allLectures</b>
+                            <a href="#allLectures"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/pages/lectures/lectures.page.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="flattenedLectures"></a>
+                        <span class="name">
+                            <b>
+                            flattenedLectures</b>
+                            <a href="#flattenedLectures"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/pages/lectures/lectures.page.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoaded"></a>
+                        <span class="name">
+                            <b>
+                            isLoaded</b>
+                            <a href="#isLoaded"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/pages/lectures/lectures.page.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isRefreshing"></a>
+                        <span class="name">
+                            <b>
+                            isRefreshing</b>
+                            <a href="#isRefreshing"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/pages/lectures/lectures.page.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isSearching"></a>
+                        <span class="name">
+                            <b>
+                            isSearching</b>
+                            <a href="#isSearching"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/pages/lectures/lectures.page.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lectures"></a>
+                        <span class="name">
+                            <b>
+                            lectures</b>
+                            <a href="#lectures"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/pages/lectures/lectures.page.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modalOpen"></a>
+                        <span class="name">
+                            <b>
+                            modalOpen</b>
+                            <a href="#modalOpen"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/pages/lectures/lectures.page.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="networkError"></a>
+                        <span class="name">
+                            <b>
+                            networkError</b>
+                            <a href="#networkError"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/pages/lectures/lectures.page.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="query"></a>
+                        <span class="name">
+                            <b>
+                            query</b>
+                            <a href="#query"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/pages/lectures/lectures.page.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="queryTooShort"></a>
+                        <span class="name">
+                            <b>
+                            queryTooShort</b>
+                            <a href="#queryTooShort"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/pages/lectures/lectures.page.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="refreshLectureComponent"></a>
+                        <span class="name">
+                            <b>
+                            refreshLectureComponent</b>
+                            <a href="#refreshLectureComponent"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/pages/lectures/lectures.page.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="resultKeys"></a>
+                        <span class="name">
+                            <b>
+                            resultKeys</b>
+                            <a href="#resultKeys"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/pages/lectures/lectures.page.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="searchResults"></a>
+                        <span class="name">
+                            <b>
+                            searchResults</b>
+                            <a href="#searchResults"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/pages/lectures/lectures.page.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="valueArray"></a>
+                        <span class="name">
+                            <b>
+                            valueArray</b>
+                            <a href="#valueArray"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/pages/lectures/lectures.page.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="activatedRoute"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            activatedRoute</b>
+                            <a href="#activatedRoute"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:45</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="config"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            config</b>
+                            <a href="#config"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IConfig.html" target="_self" >IConfig</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:48</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="connection"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            connection</b>
+                            <a href="#connection"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/ConnectionService.html" target="_self" >ConnectionService</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:44</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="logger"></a>
+                        <span class="name">
+                            <b>
+                            logger</b>
+                            <a href="#logger"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Logger</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:36</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loggingService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            loggingService</b>
+                            <a href="#loggingService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>LoggingService</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:49</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="menu"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            menu</b>
+                            <a href="#menu"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MenuController</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:46</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="navCtrl"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            navCtrl</b>
+                            <a href="#navCtrl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>NavController</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:47</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageReady"></a>
+                        <span class="name">
+                            <b>
+                            pageReady</b>
+                            <a href="#pageReady"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Promise&lt;void&gt;</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:39</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageReadyReject"></a>
+                        <span class="name">
+                            <b>
+                            pageReadyReject</b>
+                            <a href="#pageReadyReject"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:41</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageReadyResolve"></a>
+                        <span class="name">
+                            <b>
+                            pageReadyResolve</b>
+                            <a href="#pageReadyResolve"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:40</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="platform"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            platform</b>
+                            <a href="#platform"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Platform</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:52</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="router"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            router</b>
+                            <a href="#router"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:50</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="session"></a>
+                        <span class="name">
+                            <b>
+                            session</b>
+                            <a href="#session"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/ISession.html" target="_self" >ISession</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:37</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sessionProvider"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            sessionProvider</b>
+                            <a href="#sessionProvider"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/UserSessionService.html" target="_self" >UserSessionService</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:43</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="webIntent"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            webIntent</b>
+                            <a href="#webIntent"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/WebIntentService.html" target="_self" >WebIntentService</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:51</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { AbstractPage } from &#x27;src/app/lib/abstract-page&#x27;;
+import { IPulsAPIResponse_getLectureScheduleAll } from &#x27;src/app/lib/interfaces_PULS&#x27;;
+import { utils } from &#x27;src/app/lib/util&#x27;;
+import { LectureSearchModalPage } from &#x27;./lecture-search.modal&#x27;;
+import { ModalController } from &#x27;@ionic/angular&#x27;;
+import { Keyboard } from &#x27;@ionic-native/keyboard/ngx&#x27;;
+import { WebserviceWrapperService } from &#x27;../../services/webservice-wrapper/webservice-wrapper.service&#x27;;
+
+@Component({
+  selector: &#x27;app-lectures&#x27;,
+  templateUrl: &#x27;./lectures.page.html&#x27;,
+  styleUrls: [&#x27;./lectures.page.scss&#x27;],
+})
+export class LecturesPage extends AbstractPage implements OnInit {
+
+  constructor(
+    private ws: WebserviceWrapperService,
+    private modalCtrl: ModalController,
+    private keyboard: Keyboard
+  ) {
+    super({ optionalNetwork: true });
+  }
+
+  isLoaded;
+  isSearching;
+  isRefreshing;
+  refreshLectureComponent &#x3D; false;
+  allLectures;
+  lectures;
+  flattenedLectures;
+  searchResults &#x3D; [];
+  resultKeys &#x3D; [];
+  query &#x3D; &#x27;&#x27;;
+  networkError;
+  modalOpen;
+  valueArray &#x3D; [];
+  queryTooShort &#x3D; false;
+
+  ngOnInit() {
+    this.loadLectureTree();
+  }
+
+  refreshLectureTree(refresher) {
+    this.isRefreshing &#x3D; true;
+    this.refreshLectureComponent &#x3D; true;
+    this.query &#x3D; &#x27;&#x27;;
+    this.searchLecture();
+    this.isLoaded &#x3D; false;
+    this.loadLectureTree(true);
+    setTimeout(() &#x3D;&gt; {
+      if (refresher) { refresher.target.complete(); }
+      this.isRefreshing &#x3D; false;
+    }, 500);
+  }
+
+  loadLectureTree(forceRefresh: boolean &#x3D; false) {
+    this.isLoaded &#x3D; false;
+    this.networkError &#x3D; false;
+
+    this.ws.call(
+      &#x27;pulsGetLectureScheduleAll&#x27;,
+      {},
+      { forceRefresh: forceRefresh }
+    ).subscribe((response: IPulsAPIResponse_getLectureScheduleAll) &#x3D;&gt; {
+      this.allLectures &#x3D; response;
+      this.lectures &#x3D; this.allLectures;
+      this.flattenedLectures &#x3D; this.flattenJSON(response, &#x27;&#x27;, {});
+
+      this.isLoaded &#x3D; true;
+    }, () &#x3D;&gt; {
+      this.isLoaded &#x3D; true;
+      this.networkError &#x3D; true;
+    });
+  }
+
+  flattenJSON(cur, prop, result) {
+    if (Object(cur) !&#x3D;&#x3D; cur) {
+      if (utils.contains(prop, &#x27;name&#x27;)) {
+        result[prop] &#x3D; cur;
+      }
+    } else if (Array.isArray(cur)) {
+      const l &#x3D; cur.length;
+      for (let i &#x3D; 0; i &lt; l; i++) {
+        result &#x3D; this.flattenJSON(cur[i], prop ? prop + &#x27;.&#x27; + i : &#x27; + i&#x27;, result);
+      }
+
+      if (l &#x3D;&#x3D;&#x3D; 0) {
+        result[prop] &#x3D; [];
+      }
+    } else {
+      let isEmpty &#x3D; true;
+      for (const p in cur) {
+        if (p) {
+          isEmpty &#x3D; false;
+          result &#x3D; this.flattenJSON(cur[p], prop ? prop + &#x27;.&#x27; + p : p, result);
+        }
+      }
+
+      if (isEmpty) {
+        result[prop] &#x3D; {};
+      }
+    }
+
+    return result;
+  }
+
+  searchLecture(event?) {
+    if (event) { this.query &#x3D; event.detail.value.trim(); }
+    this.searchResults &#x3D; [];
+    this.resultKeys &#x3D; [];
+    this.queryTooShort &#x3D; false;
+
+    if (this.query &amp;&amp; this.query.length &gt; 2) {
+      this.isSearching &#x3D; true;
+      if (this.valueArray.length &#x3D;&#x3D;&#x3D; 1) {
+        this.searchResults &#x3D; this.getValues(this.valueArray[0]);
+      } else { this.searchResults &#x3D; this.getValues(); }
+    } else if (this.query &amp;&amp; this.query.length &gt; 0 &amp;&amp; this.query.length &lt; 3) {
+      this.queryTooShort &#x3D; true;
+    }
+  }
+
+  getValues(filterKey?: string) {
+    const objects &#x3D; [];
+    for (const i in this.flattenedLectures) {
+      if (this.flattenedLectures.hasOwnProperty(i)) {
+        if (utils.contains(this.flattenedLectures[i], this.query)) {
+          if (utils.contains(i, &#x27;courseName&#x27;)) {
+            // check if course has already been added
+            // since course often are listed multiple times
+            if (!utils.isInArray(objects, this.flattenedLectures[i])) {
+              if (filterKey) {
+                if (utils.contains(i, filterKey)) {
+                  objects.push(this.flattenedLectures[i]);
+                  this.resultKeys.push(i);
+                }
+              } else {
+                objects.push(this.flattenedLectures[i]);
+                this.resultKeys.push(i);
+              }
+            }
+          } else {
+            if (filterKey) {
+              if (utils.contains(i, filterKey)) {
+                objects.push(this.flattenedLectures[i]);
+                this.resultKeys.push(i);
+              }
+            } else {
+              objects.push(this.flattenedLectures[i]);
+              this.resultKeys.push(i);
+            }
+          }
+        }
+      }
+    }
+
+    setTimeout(() &#x3D;&gt; {
+      this.isSearching &#x3D; false;
+    }, 500);
+
+    return objects;
+  }
+
+  async openItem(index) {
+    const name &#x3D; this.searchResults[index];
+    let ref &#x3D; this.resultKeys[index];
+    if (ref) { ref &#x3D; ref.replace(&#x27;courseName&#x27;, &#x27;courseId&#x27;); }
+    const isCourse &#x3D; utils.contains(ref, &#x27;courseId&#x27;);
+
+    const pathKeys &#x3D; utils.convertToArray(ref.split(&#x27;.&#x27;));
+
+    let toOpen &#x3D; this.allLectures;
+    const itemTree &#x3D; [];
+    for (let i &#x3D; 0; i &lt; pathKeys.length - 1; i++) {
+      // getting course or directory
+      if (i &gt; (pathKeys.length - 3)) {
+        if (isCourse) {
+          // getting the courseId
+          toOpen &#x3D; toOpen[pathKeys[i]];
+        }
+      } else {
+        toOpen &#x3D; toOpen[pathKeys[i]];
+      }
+
+      if (toOpen &amp;&amp; !Array.isArray(toOpen)) {
+        let treeItemName;
+        if (toOpen.courseName) {
+          treeItemName &#x3D; toOpen.courseName;
+        } else if (toOpen.headerName) {
+          treeItemName &#x3D; toOpen.headerName;
+        } else if (toOpen.childNode &amp;&amp; toOpen.childNode.headerName) {
+          treeItemName &#x3D; toOpen.childNode.headerName;
+        }
+
+        if (treeItemName &amp;&amp; treeItemName !&#x3D;&#x3D;  &#x27;Vorlesungsverzeichnis&#x27; &amp;&amp; !utils.isInArray(itemTree, treeItemName)) {
+          itemTree.push(this.unescapeHTML(treeItemName));
+        }
+      }
+    }
+
+    const modal &#x3D; await this.modalCtrl.create({
+      backdropDismiss: false,
+      component: LectureSearchModalPage,
+      componentProps: { item: toOpen, isCourse: isCourse, name: name, itemTree: itemTree }
+    });
+    modal.present();
+    this.modalOpen &#x3D; true;
+    await modal.onDidDismiss();
+    this.modalOpen &#x3D; false;
+  }
+
+  selectFilter(event) {
+    this.valueArray &#x3D; utils.convertToArray(event.detail.value);
+
+    this.searchResults &#x3D; [];
+    this.resultKeys &#x3D; [];
+    this.isSearching &#x3D; true;
+    if (this.valueArray.length &#x3D;&#x3D;&#x3D; 1) {
+      this.searchResults &#x3D; this.getValues(this.valueArray[0]);
+    } else { this.searchResults &#x3D; this.getValues(); }
+    this.isSearching &#x3D; false;
+  }
+
+  contains(x, y) {
+    return utils.contains(x, y);
+  }
+
+  // hides keyboard once the user is scrolling
+  onScrollListener() {
+    if (this.platform.is(&#x27;cordova&#x27;) &amp;&amp; (this.platform.is(&#x27;ios&#x27;) || this.platform.is(&#x27;android&#x27;))) {
+      this.keyboard.hide();
+    }
+  }
+
+  unescapeHTML(s: string) { // replaces &amp;colon; in strings, unescape / decodeURI didnt work (?)
+    if (s !&#x3D;&#x3D; undefined) {
+      return s.replace(/&amp;colon;/g, &#x27;:&#x27;);
+    } else { return &#x27;&#x27;; }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-header&gt;
+  &lt;ion-toolbar&gt;
+    &lt;ion-back-button slot&#x3D;&quot;start&quot;&gt;&lt;/ion-back-button&gt;
+    &lt;ion-button *ngIf&#x3D;&quot;!(platform.is(&#x27;ios&#x27;) || platform.is(&#x27;android&#x27;))&quot; (click)&#x3D;&quot;refreshLectureTree()&quot; slot&#x3D;&quot;end&quot; fill&#x3D;&quot;clear&quot;&gt;
+      &lt;ion-icon style&#x3D;&quot;font-size: x-large;&quot; name&#x3D;&quot;refresh&quot;&gt;&lt;/ion-icon&gt;
+    &lt;/ion-button&gt;
+    &lt;ion-menu-button slot&#x3D;&quot;end&quot;&gt;&lt;/ion-menu-button&gt;
+    &lt;ion-title&gt;{{ &quot;page.lectures.title&quot; | translate }}&lt;/ion-title&gt;
+  &lt;/ion-toolbar&gt;
+  &lt;ion-toolbar *ngIf&#x3D;&quot;!networkError&quot;&gt;
+    &lt;ion-item align&#x3D;&quot;center&quot; *ngIf&#x3D;&quot;!isLoaded&quot; lines&#x3D;&quot;none&quot; class&#x3D;&quot;searchPrepareItem&quot;&gt;
+      &lt;ion-label&gt;
+        {{ &quot;page.lectures.preparingSearch&quot; | translate }}
+      &lt;/ion-label&gt;
+      &lt;ion-spinner name&#x3D;&quot;dots&quot; slot&#x3D;&quot;end&quot;&gt;&lt;/ion-spinner&gt;
+    &lt;/ion-item&gt;
+    &lt;ion-searchbar *ngIf&#x3D;&quot;isLoaded&quot;
+    [(ngModel)]&#x3D;&quot;query&quot;
+    [placeholder]&#x3D;&quot;&#x27;placeholder.search&#x27; | translate&quot;
+    (ionChange)&#x3D;&quot;searchLecture($event)&quot;
+    debounce&#x3D;&quot;750&quot;&gt;
+    &lt;/ion-searchbar&gt;
+  &lt;/ion-toolbar&gt;
+&lt;/ion-header&gt;
+
+&lt;ion-content (ionScrollStart)&#x3D;&quot;onScrollListener()&quot; [ngClass]&#x3D;&quot;modalOpen ? &#x27;modalOpened&#x27; : &#x27;modalClosed&#x27;&quot; no-padding&gt;
+
+  &lt;ion-refresher *ngIf&#x3D;&quot;platform.is(&#x27;ios&#x27;) || platform.is(&#x27;android&#x27;)&quot; slot&#x3D;&quot;fixed&quot; (ionRefresh)&#x3D;&quot;refreshLectureTree($event)&quot;&gt;
+    &lt;ion-refresher-content pullingIcon&#x3D;&quot;refresh&quot; refreshingSpinner&#x3D;&quot;dots&quot;&gt;&lt;/ion-refresher-content&gt;
+  &lt;/ion-refresher&gt;
+
+  &lt;div align&#x3D;&quot;center&quot; *ngIf&#x3D;&quot;isSearching&quot; padding&gt;
+    &lt;ion-spinner name&#x3D;&quot;dots&quot;&gt;&lt;/ion-spinner&gt;
+  &lt;/div&gt;
+
+  &lt;div *ngIf&#x3D;&quot;queryTooShort&quot;&gt;
+    &lt;app-hint-box hintTypeI18nKey&#x3D;&quot;hints.type.hint&quot; hintTextI18nKey&#x3D;&quot;hints.text.queryTooShort&quot;&gt;&lt;/app-hint-box&gt;
+  &lt;/div&gt;
+
+  &lt;app-lecture-list *ngIf&#x3D;&quot;!isRefreshing &amp;&amp; searchResults.length &#x3D;&#x3D;&#x3D; 0 &amp;&amp; query.length &#x3D;&#x3D;&#x3D; 0&quot; [refresh]&#x3D;&quot;refreshLectureComponent&quot;&gt;&lt;/app-lecture-list&gt;
+
+  &lt;div *ngIf&#x3D;&quot;!isRefreshing &amp;&amp; !isSearching &amp;&amp; searchResults.length &gt; 0&quot;&gt;
+    &lt;ion-item color&#x3D;&quot;light&quot;&gt;
+      &lt;ion-label&gt;
+        {{ &quot;page.lectures.filter&quot; | translate }}
+      &lt;/ion-label&gt;
+      &lt;ion-select (ionChange)&#x3D;&quot;selectFilter($event)&quot; multiple&#x3D;&quot;true&quot; okText&#x3D;&quot;{{ &#x27;button.ok&#x27; | translate }}&quot; cancelText&#x3D;&quot;{{ &#x27;button.cancel&#x27; | translate }}&quot;&gt;
+        &lt;ion-select-option value&#x3D;&quot;header&quot; selected&gt;{{ &quot;page.lectures.directories&quot; | translate }}&lt;/ion-select-option&gt;
+        &lt;ion-select-option value&#x3D;&quot;courses&quot; selected&gt;{{ &quot;page.lectures.courses&quot; | translate }}&lt;/ion-select-option&gt;
+      &lt;/ion-select&gt;
+    &lt;/ion-item&gt;
+    &lt;ion-list&gt;
+      &lt;ion-item *ngFor&#x3D;&quot;let result of searchResults; let i &#x3D; index&quot; (click)&#x3D;&quot;openItem(i)&quot;&gt;
+        &lt;ion-label text-wrap&gt;
+          {{ unescapeHTML(result) }}
+        &lt;/ion-label&gt;
+        &lt;ion-badge *ngIf&#x3D;&quot;contains(resultKeys[i], &#x27;courseName&#x27;)&quot; slot&#x3D;&quot;end&quot;&gt;{{ &quot;page.lectures.courseBadge&quot; | translate }}&lt;/ion-badge&gt;
+      &lt;/ion-item&gt;
+    &lt;/ion-list&gt;
+  &lt;/div&gt;
+&lt;/ion-content&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./lectures.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">ion-item {
+    font-size: 0.75rem;
+}
+
+.searchPrepareItem {
+    font-size: 0.9rem;
+    --background: var(--ion-toolbar-background);
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-header>  <ion-toolbar>    <ion-back-button slot="start"></ion-back-button>    <ion-button *ngIf="!(platform.is(\'ios\') || platform.is(\'android\'))" (click)="refreshLectureTree()" slot="end" fill="clear">      <ion-icon style="font-size: x-large;" name="refresh"></ion-icon>    </ion-button>    <ion-menu-button slot="end"></ion-menu-button>    <ion-title>{{ "page.lectures.title" | translate }}</ion-title>  </ion-toolbar>  <ion-toolbar *ngIf="!networkError">    <ion-item align="center" *ngIf="!isLoaded" lines="none" class="searchPrepareItem">      <ion-label>        {{ "page.lectures.preparingSearch" | translate }}      </ion-label>      <ion-spinner name="dots" slot="end"></ion-spinner>    </ion-item>    <ion-searchbar *ngIf="isLoaded"    [(ngModel)]="query"    [placeholder]="\'placeholder.search\' | translate"    (ionChange)="searchLecture($event)"    debounce="750">    </ion-searchbar>  </ion-toolbar></ion-header><ion-content (ionScrollStart)="onScrollListener()" [ngClass]="modalOpen ? \'modalOpened\' : \'modalClosed\'" no-padding>  <ion-refresher *ngIf="platform.is(\'ios\') || platform.is(\'android\')" slot="fixed" (ionRefresh)="refreshLectureTree($event)">    <ion-refresher-content pullingIcon="refresh" refreshingSpinner="dots"></ion-refresher-content>  </ion-refresher>  <div align="center" *ngIf="isSearching" padding>    <ion-spinner name="dots"></ion-spinner>  </div>  <div *ngIf="queryTooShort">    <app-hint-box hintTypeI18nKey="hints.type.hint" hintTextI18nKey="hints.text.queryTooShort"></app-hint-box>  </div>  <app-lecture-list *ngIf="!isRefreshing && searchResults.length === 0 && query.length === 0" [refresh]="refreshLectureComponent"></app-lecture-list>  <div *ngIf="!isRefreshing && !isSearching && searchResults.length > 0">    <ion-item color="light">      <ion-label>        {{ "page.lectures.filter" | translate }}      </ion-label>      <ion-select (ionChange)="selectFilter($event)" multiple="true" okText="{{ \'button.ok\' | translate }}" cancelText="{{ \'button.cancel\' | translate }}">        <ion-select-option value="header" selected>{{ "page.lectures.directories" | translate }}</ion-select-option>        <ion-select-option value="courses" selected>{{ "page.lectures.courses" | translate }}</ion-select-option>      </ion-select>    </ion-item>    <ion-list>      <ion-item *ngFor="let result of searchResults; let i = index" (click)="openItem(i)">        <ion-label text-wrap>          {{ unescapeHTML(result) }}        </ion-label>        <ion-badge *ngIf="contains(resultKeys[i], \'courseName\')" slot="end">{{ "page.lectures.courseBadge" | translate }}</ion-badge>      </ion-item>    </ion-list>  </div></ion-content></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppInfoPage', 'selector': 'app-app-info'},{'name': 'BookDetailModalPage', 'selector': 'book-modal-page'},{'name': 'BookListComponent', 'selector': 'app-book-list'},{'name': 'BookLocationComponent', 'selector': 'app-book-location'},{'name': 'CampusMapFeatureModalComponent', 'selector': 'app-campus-map-feature-modal'},{'name': 'CampusMapPage', 'selector': 'app-campus-map'},{'name': 'CampusReorderModalPage', 'selector': 'campus-modal-page'},{'name': 'CampusTabComponent', 'selector': 'app-campus-tab'},{'name': 'CourseDataComponent', 'selector': 'app-course-data'},{'name': 'DatePickerComponent', 'selector': 'app-date-picker'},{'name': 'DetailedOpeningModalPage', 'selector': 'detailed-opening-modal-page'},{'name': 'DetailedPracticeModalPage', 'selector': 'detailed-practice-modal-page'},{'name': 'EmergencyPage', 'selector': 'app-emergency'},{'name': 'EventModalPage', 'selector': 'event-modal-page'},{'name': 'EventsPage', 'selector': 'app-events'},{'name': 'EventViewComponent', 'selector': 'app-event-view'},{'name': 'FeedbackPage', 'selector': 'app-feedback'},{'name': 'FooterDisclaimerComponent', 'selector': 'app-footer-disclaimer'},{'name': 'FreeRoomsPage', 'selector': 'app-free-rooms'},{'name': 'GradesPage', 'selector': 'app-grades'},{'name': 'GradesTableComponent', 'selector': 'app-grades-table'},{'name': 'HintBoxComponent', 'selector': 'app-hint-box'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'ImpressumModalPage', 'selector': 'impressum-modal-page'},{'name': 'ImpressumPage', 'selector': 'app-impressum'},{'name': 'LectureListComponent', 'selector': 'app-lecture-list'},{'name': 'LectureSearchModalPage', 'selector': 'lecture-search-modal-page'},{'name': 'LecturesPage', 'selector': 'app-lectures'},{'name': 'LibrarySearchPage', 'selector': 'app-library-search'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'MensaMealComponent', 'selector': 'app-mensa-meal'},{'name': 'MensaPage', 'selector': 'app-mensa'},{'name': 'NewsArticleComponent', 'selector': 'app-news-article'},{'name': 'NewsPage', 'selector': 'app-news'},{'name': 'OpeningHoursPage', 'selector': 'app-opening-hours'},{'name': 'PersonSearchPage', 'selector': 'app-person-search'},{'name': 'PracticePage', 'selector': 'app-practice'},{'name': 'RoomplanPage', 'selector': 'app-roomplan'},{'name': 'SettingsPage', 'selector': 'app-settings'},{'name': 'TimetablePage', 'selector': 'app-timetable'},{'name': 'TransportPage', 'selector': 'app-transport'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'LecturesPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'LecturesPage.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

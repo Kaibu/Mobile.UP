@@ -1,0 +1,339 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Mobile.UP</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Mobile.UP</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content interface">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Interfaces</li>
+  <li>IRhythmMapping</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/pages/timetable/createEvents.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="inputs">Indexable</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <code>[rhyhtm: string]:    <code>literal type</code>
+</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/pages/timetable/createEvents.ts:23</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Frequency, RRule, Weekday } from &#x27;rrule&#x27;;
+import * as moment from &#x27;moment&#x27;;
+import { ICourse, IEvent } from &#x27;src/app/lib/interfaces_PULS&#x27;;
+import { utils } from &#x27;src/app/lib/util&#x27;;
+
+export interface IEventRules {
+  begin: RRule;
+  end: RRule;
+}
+
+export interface IEventObject {
+  id: number;
+  startTime: Date;
+  endTime: Date;
+  title: string;
+  courseDetails: ICourse;
+  eventDetails: IEvent;
+  color: string;
+}
+
+export type IEventSource &#x3D; IEventObject[];
+export interface IWeekDaysMapping {[weekday: string]: Weekday; }
+export interface IRhythmMapping {[rhyhtm: string]: {freq: Frequency, interval: number}; }
+
+const weekdaysMapping: IWeekDaysMapping &#x3D; {
+  &#x27;Montag&#x27;: RRule.MO,
+  &#x27;Dienstag&#x27;: RRule.TU,
+  &#x27;Mittwoch&#x27;: RRule.WE,
+  &#x27;Donnerstag&#x27;: RRule.TH,
+  &#x27;Freitag&#x27;: RRule.FR,
+  &#x27;Samstag&#x27;: RRule.SA,
+  &#x27;Sonntag&#x27;: RRule.SU,
+};
+
+const rhythmMapping: IRhythmMapping &#x3D; {
+  &#x27;wöchentlich&#x27;: {
+    freq: RRule.WEEKLY,
+    interval: 1
+  },
+  &#x27;14-täglich&#x27;: {
+    freq: RRule.WEEKLY,
+    interval: 2
+  },
+  &#x27;Einzel&#x27;: {
+    // can be treated as weekly event that occurs in a single week
+    freq: RRule.WEEKLY,
+    interval: 1
+  },
+  &#x27;Einzeltermin&#x27;: {
+    // can be treated as weekly event that occurs in a single week
+    freq: RRule.WEEKLY,
+    interval: 1
+  },
+  &#x27;Block&#x27;: {
+    freq: RRule.DAILY,
+    interval: 1
+  },
+};
+
+function pulsToUTC(date, time, second&#x3D; &#x27;00&#x27;) {
+  const day &#x3D; date.substr(0, 2);
+  const month &#x3D; date.substr(3, 2);
+  const year &#x3D; date.substr(6);
+
+  const hour &#x3D; time.substr(0, 2);
+  const minute &#x3D; time.substr(3);
+
+  return new Date(
+    Date.UTC(
+      parseInt(year),
+      parseInt(month) - 1, // need to subtract 1 because month starts at 0
+      parseInt(day),
+      parseInt(hour),
+      parseInt(minute),
+      parseInt(second)
+    )
+  );
+}
+
+/**
+ * Creates event rrules for the given event and returns IEventRules object
+ * containing rrules for begin and end of event on each day
+ * @param event
+ * @param tzid Id of timezone to be used
+ * @returns eventrules
+ */
+function createEventRules(event: IEvent, tzid): IEventRules {
+
+  if (!rhythmMapping[event.rhythm]) {
+    throw new Error(&#x60;[createRule]: Event ${event.eventId}: Unknown rhythm: ${event.rhythm}&#x60;);
+  }
+  if (!weekdaysMapping[event.day]) {
+    throw new Error(&#x60;[createRule]: Event ${event.eventId}: Unknown weekday: ${event.day}&#x60;);
+  }
+  if (event.startDate &#x3D;&#x3D;&#x3D; undefined || event.endDate &#x3D;&#x3D;&#x3D; undefined) {
+    throw new Error(&#x60;[createRule]: Event ${event.eventId}: Missing startTime or endTime&#x60;);
+  }
+  if (event.startTime &#x3D;&#x3D;&#x3D; undefined || event.endTime &#x3D;&#x3D;&#x3D; undefined) {
+    throw new Error(&#x60;[createRule]: Event ${event.eventId}: Missing startTime or endTime&#x60;);
+  }
+
+  return &lt;IEventRules&gt; {
+    // create rule for beginning time on each day the event takes place
+    begin: new RRule({
+      freq: rhythmMapping[event.rhythm].freq,
+      interval: rhythmMapping[event.rhythm].interval,
+      byweekday: weekdaysMapping[event.day],
+      dtstart: pulsToUTC(event.startDate, event.startTime),
+      until: pulsToUTC(event.endDate, &#x27;24:00&#x27;)
+    }),
+    // create rule for end time on each day the event takes place
+    end: new RRule({
+      freq: rhythmMapping[event.rhythm].freq,
+      interval: rhythmMapping[event.rhythm].interval,
+      byweekday: weekdaysMapping[event.day],
+      dtstart: pulsToUTC(event.startDate, event.endTime),
+      until: pulsToUTC(event.endDate, &#x27;24:00&#x27;)
+    })
+  };
+}
+
+/**
+ * Main function in this file. Uses given courses list to create an EventSource
+ * that can be fed to ionic2calendar. Also returns a mapping of courseID to course
+ * and eventID to event which can be used to easily get information about courses
+ * and events. Also returns a list of courses containgin invalid events that are
+ * not usable.
+ * @param studentCourses
+ * @param tzid Id of timezone to be used
+ * @returns IEventSource
+ */
+export function createEventSource(studentCourses: ICourse[],
+                                  tzid: string&#x3D; &#x27;Europe/Berlin&#x27;): IEventSource {
+  // the eventSource we will be returning, actually the main result of this function
+  const eventSource: IEventSource &#x3D; new Array&lt;IEventObject&gt;();
+
+  for (const c of studentCourses) {
+    if (c &amp;&amp; c.events &amp;&amp; c.events.event) {
+      // this step is necessary because c.events.event can be a single object
+      // or an array of objects
+      const events &#x3D; utils.convertToArray(c.events.event);
+
+      // iterate events of this course because there can be more than one
+      for (const e of events) {
+        try {
+          // try to create an EventRule object from the event, if not possible
+          // createEventRules will throw an exception. Then the event is pushed
+          // to list of invalid events
+          const eventRules: IEventRules &#x3D; createEventRules(e, tzid);
+
+          // get all matching events
+          const begin &#x3D; eventRules.begin.all();
+          const end &#x3D; eventRules.end.all();
+
+          // now iterate over all created single dates and combine them into one
+          // IEventObject
+          for (let i &#x3D; 0; i &lt; begin.length; i++) {
+            if (!moment(begin[i]).isDST()) {
+              // compensate daylight saving time
+              // 2 hours are added by the calendar
+              begin[i].setHours(begin[i].getHours() - 1);
+              end[i].setHours(end[i].getHours() - 1);
+            } else {
+              // for some reason the calendar plugin adds + 2 hours to our begin/end times
+              // we have to regulate that
+              begin[i].setHours(begin[i].getHours() - 2);
+              end[i].setHours(end[i].getHours() - 2);
+            }
+
+            eventSource.push(&lt;IEventObject&gt;{
+              id: e.eventId,
+              title: c.courseName,
+              startTime: begin[i],
+              endTime: end[i],
+              courseDetails: c,
+              eventDetails: e
+            });
+          }
+        } catch (error) {
+          console.log(&#x60;[createEventSource]: Could not parse one event for &#x27;${c.courseName}&#x27; because: &#x27;${error}&#x27;&#x60;);
+          break;
+        }
+      }
+    }
+  }
+  return eventSource;
+}
+</code></pre>
+    </div>
+</div>
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'interface';
+            var COMPODOC_CURRENT_PAGE_URL = 'IRhythmMapping.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

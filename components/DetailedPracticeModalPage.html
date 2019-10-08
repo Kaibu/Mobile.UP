@@ -1,0 +1,779 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Mobile.UP</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Mobile.UP</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>DetailedPracticeModalPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/practice/detailed-practice.modal.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>detailed-practice-modal-page</code></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./detailed-practice.modal.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#translate">translate</a>
+                            </li>
+                            <li>
+                                <a href="#URLEndpoint">URLEndpoint</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#closeModal">closeModal</a>
+                            </li>
+                            <li>
+                                <a href="#favorite">favorite</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openPdfLink">openPdfLink</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ADS">ADS</a>
+                            </li>
+                            <li>
+                                <a href="#isFavorite">isFavorite</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(modalCtrl: ModalController, webIntent: <a href="../injectables/WebIntentService.html">WebIntentService</a>, alertService: <a href="../injectables/AlertService.html">AlertService</a>, translate: TranslateService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/pages/practice/detailed-practice.modal.ts:17</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>modalCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>ModalController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>webIntent</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/WebIntentService.html" target="_self" >WebIntentService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>alertService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AlertService.html" target="_self" >AlertService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ADS"></a>
+                        <b>ADS</b>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/pages/practice/detailed-practice.modal.ts:15</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isFavorite"></a>
+                        <b>isFavorite</b>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/pages/practice/detailed-practice.modal.ts:16</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeModal"></a>
+                    <span class="name">
+                        <b>
+                            closeModal
+                        </b>
+                        <a href="#closeModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>closeModal()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="32"
+                            class="link-to-prism">src/app/pages/practice/detailed-practice.modal.ts:32</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="favorite"></a>
+                    <span class="name">
+                        <b>
+                            favorite
+                        </b>
+                        <a href="#favorite"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>favorite()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/pages/practice/detailed-practice.modal.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">src/app/pages/practice/detailed-practice.modal.ts:27</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openPdfLink"></a>
+                    <span class="name">
+                        <b>
+                            openPdfLink
+                        </b>
+                        <a href="#openPdfLink"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openPdfLink(fileLink: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/app/pages/practice/detailed-practice.modal.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>fileLink</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="translate"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            translate</b>
+                            <a href="#translate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>TranslateService</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/pages/practice/detailed-practice.modal.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="URLEndpoint"></a>
+                        <span class="name">
+                            <b>
+                            URLEndpoint</b>
+                            <a href="#URLEndpoint"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/pages/practice/detailed-practice.modal.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input, OnInit } from &#x27;@angular/core&#x27;;
+import { ModalController } from &#x27;@ionic/angular&#x27;;
+import { WebIntentService } from &#x27;src/app/services/web-intent/web-intent.service&#x27;;
+import { IConfig } from &#x27;src/app/lib/interfaces&#x27;;
+import { ConfigService } from &#x27;src/app/services/config/config.service&#x27;;
+import { AlertService } from &#x27;src/app/services/alert/alert.service&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+
+@Component({
+  selector: &#x27;detailed-practice-modal-page&#x27;,
+  templateUrl: &#x27;./detailed-practice.modal.html&#x27;,
+})
+export class DetailedPracticeModalPage implements OnInit {
+
+  @Input() ADS;
+  @Input() isFavorite;
+  URLEndpoint;
+
+  constructor(
+      private modalCtrl: ModalController,
+      private webIntent: WebIntentService,
+      private alertService: AlertService,
+      public translate: TranslateService // used in template
+    ) {
+  }
+
+  ngOnInit() {
+    const config: IConfig &#x3D; ConfigService.config;
+    this.URLEndpoint &#x3D; config.webservices.endpoint.practiceJobPostings.url;
+  }
+
+  closeModal() {
+    this.modalCtrl.dismiss({
+      &#x27;isFavoriteNew&#x27;: this.isFavorite
+    });
+  }
+
+  openPdfLink(fileLink: string) {
+    this.webIntent.permissionPromptWebsite(this.URLEndpoint + fileLink);
+  }
+
+  favorite() {
+    this.isFavorite &#x3D; !this.isFavorite;
+
+    if (!this.isFavorite) {
+      this.alertService.showToast(&#x27;hints.text.favRemoved&#x27;);
+    } else {
+      this.alertService.showToast(&#x27;hints.text.favAdded&#x27;);
+    }
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-header&gt;
+    &lt;ion-toolbar&gt;
+        &lt;ion-button slot&#x3D;&quot;start&quot; (click)&#x3D;&quot;closeModal()&quot; fill&#x3D;&quot;clear&quot;&gt;
+            &lt;ion-icon style&#x3D;&quot;color: black; font-size: x-large;&quot; name&#x3D;&quot;ios-arrow-back&quot;&gt;&lt;/ion-icon&gt;
+        &lt;/ion-button&gt;
+        &lt;ion-title&gt;{{ &quot;page.practice.title&quot; | translate }}&lt;/ion-title&gt;
+        &lt;ion-button slot&#x3D;&quot;end&quot; (click)&#x3D;&quot;favorite()&quot; fill&#x3D;&quot;clear&quot;&gt;
+            &lt;ion-icon style&#x3D;&quot;font-size: x-large;&quot; [name]&#x3D;&quot;isFavorite ? &#x27;star&#x27; : &#x27;star-outline&#x27;&quot;&gt;&lt;/ion-icon&gt;
+        &lt;/ion-button&gt;
+    &lt;/ion-toolbar&gt;
+&lt;/ion-header&gt;
+
+&lt;ion-content no-padding&gt;
+    &lt;h5 padding-horizontal text-wrap&gt;{{ ADS.title }}&lt;/h5&gt;
+    &lt;ion-list&gt;
+        &lt;ion-item *ngIf&#x3D;&quot;ADS.firm !&#x3D; &#x27;&#x27;&quot;&gt;
+            &lt;ion-label text-wrap&gt;
+                &lt;h2&gt;{{ &quot;page.practice.item.firm&quot; | translate }}&lt;/h2&gt;
+                &lt;p&gt;{{ADS.firm}}&lt;/p&gt;
+            &lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+        &lt;ion-item *ngIf&#x3D;&quot;ADS.field !&#x3D; &#x27;&#x27;&quot;&gt;
+            &lt;ion-label text-wrap&gt;
+                &lt;h2&gt;{{ &quot;page.practice.item.field&quot; | translate }}&lt;/h2&gt;
+                &lt;p&gt;{{ADS.field}}&lt;/p&gt;
+            &lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+        &lt;ion-item *ngIf&#x3D;&quot;ADS.art !&#x3D; &#x27;&#x27;&quot; [ngSwitch]&#x3D;&quot;ADS.art&quot;&gt;
+            &lt;ion-label text-wrap&gt;
+                &lt;h2&gt;{{ &quot;page.practice.item.art&quot; | translate }}&lt;/h2&gt;
+                &lt;p *ngSwitchCase&#x3D;&quot;&#x27;1&#x27;&quot;&gt;{{ &quot;page.practice.item.praktika&quot; | translate }}&lt;/p&gt;&lt;p *ngSwitchCase&#x3D;&quot;&#x27;2&#x27;&quot;&gt;{{ &quot;page.practice.item.student&quot; | translate }}&lt;/p&gt;&lt;p *ngSwitchCase&#x3D;&quot;&#x27;3&#x27;&quot;&gt;{{ &quot;page.practice.item.graduate&quot; | translate }}&lt;/p&gt;&lt;p *ngSwitchCase&#x3D;&quot;&#x27;4&#x27;&quot;&gt;{{ &quot;page.practice.item.thesis&quot; | translate }}&lt;/p&gt;
+            &lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+        &lt;ion-item&gt;
+            &lt;ion-label text-wrap&gt;
+                &lt;h2&gt;{{ &quot;page.practice.item.pubDate&quot; | translate }}&lt;/h2&gt;
+                &lt;p *ngIf&#x3D;&quot;translate.currentLang &#x3D;&#x3D;&#x3D; &#x27;de&#x27;&quot;&gt;{{ADS.date | date:&#x27;dd.MM.yy&#x27;}}&lt;/p&gt;
+                &lt;p *ngIf&#x3D;&quot;translate.currentLang !&#x3D;&#x3D; &#x27;de&#x27;&quot;&gt;{{ADS.date | date:&#x27;MM/dd/yy&#x27;}}&lt;/p&gt;
+            &lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+
+        &lt;ion-item *ngIf&#x3D;&quot;ADS.famfriendly !&#x3D; &#x27;0&#x27;&quot;&gt;
+            &lt;ion-label text-wrap&gt;
+                &lt;h2&gt;{{ &quot;page.practice.item.familyfriendly&quot; | translate }}&lt;/h2&gt;
+                &lt;p&gt;{{ ADS.famfriendly }}&lt;/p&gt;
+            &lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+        &lt;ion-item *ngIf&#x3D;&quot;ADS.language !&#x3D; &#x27;&#x27;&quot;&gt;
+            &lt;ion-label text-wrap&gt;
+                &lt;h2&gt;{{ &quot;page.practice.item.language&quot; | translate }}&lt;/h2&gt;
+                &lt;p&gt;{{ADS.language}}&lt;/p&gt;
+            &lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+        &lt;ion-item *ngIf&#x3D;&quot;ADS.foreign&quot;&gt;
+            &lt;ion-label text-wrap&gt;
+                &lt;h2&gt;{{ &quot;page.practice.item.foreign&quot; | translate }}&lt;/h2&gt;
+                &lt;p *ngIf&#x3D;&quot;ADS.foreign &#x3D;&#x3D; &#x27;1&#x27;&quot;&gt;{{ &quot;button.yes&quot; | translate }}&lt;/p&gt;
+                &lt;p *ngIf&#x3D;&quot;ADS.foreign &#x3D;&#x3D; &#x27;0&#x27;&quot;&gt;{{ &quot;button.no&quot; | translate }}&lt;/p&gt;
+            &lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+        &lt;ion-item *ngIf&#x3D;&quot;ADS.file !&#x3D; &#x27;&#x27;&quot;&gt;
+            &lt;ion-label text-wrap&gt;
+                &lt;h2&gt;&lt;ion-icon name&#x3D;&quot;document&quot;&gt;&lt;/ion-icon&gt; &lt;a (click)&#x3D;&quot;openPdfLink(ADS.file)&quot;&gt;{{ &quot;page.practice.item.jobPosting&quot; | translate }}&lt;/a&gt;&lt;/h2&gt;
+            &lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+    &lt;/ion-list&gt;
+&lt;/ion-content&gt;</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-header>    <ion-toolbar>        <ion-button slot="start" (click)="closeModal()" fill="clear">            <ion-icon style="color: black; font-size: x-large;" name="ios-arrow-back"></ion-icon>        </ion-button>        <ion-title>{{ "page.practice.title" | translate }}</ion-title>        <ion-button slot="end" (click)="favorite()" fill="clear">            <ion-icon style="font-size: x-large;" [name]="isFavorite ? \'star\' : \'star-outline\'"></ion-icon>        </ion-button>    </ion-toolbar></ion-header><ion-content no-padding>    <h5 padding-horizontal text-wrap>{{ ADS.title }}</h5>    <ion-list>        <ion-item *ngIf="ADS.firm != \'\'">            <ion-label text-wrap>                <h2>{{ "page.practice.item.firm" | translate }}</h2>                <p>{{ADS.firm}}</p>            </ion-label>        </ion-item>        <ion-item *ngIf="ADS.field != \'\'">            <ion-label text-wrap>                <h2>{{ "page.practice.item.field" | translate }}</h2>                <p>{{ADS.field}}</p>            </ion-label>        </ion-item>        <ion-item *ngIf="ADS.art != \'\'" [ngSwitch]="ADS.art">            <ion-label text-wrap>                <h2>{{ "page.practice.item.art" | translate }}</h2>                <p *ngSwitchCase="\'1\'">{{ "page.practice.item.praktika" | translate }}</p><p *ngSwitchCase="\'2\'">{{ "page.practice.item.student" | translate }}</p><p *ngSwitchCase="\'3\'">{{ "page.practice.item.graduate" | translate }}</p><p *ngSwitchCase="\'4\'">{{ "page.practice.item.thesis" | translate }}</p>            </ion-label>        </ion-item>        <ion-item>            <ion-label text-wrap>                <h2>{{ "page.practice.item.pubDate" | translate }}</h2>                <p *ngIf="translate.currentLang === \'de\'">{{ADS.date | date:\'dd.MM.yy\'}}</p>                <p *ngIf="translate.currentLang !== \'de\'">{{ADS.date | date:\'MM/dd/yy\'}}</p>            </ion-label>        </ion-item>        <ion-item *ngIf="ADS.famfriendly != \'0\'">            <ion-label text-wrap>                <h2>{{ "page.practice.item.familyfriendly" | translate }}</h2>                <p>{{ ADS.famfriendly }}</p>            </ion-label>        </ion-item>        <ion-item *ngIf="ADS.language != \'\'">            <ion-label text-wrap>                <h2>{{ "page.practice.item.language" | translate }}</h2>                <p>{{ADS.language}}</p>            </ion-label>        </ion-item>        <ion-item *ngIf="ADS.foreign">            <ion-label text-wrap>                <h2>{{ "page.practice.item.foreign" | translate }}</h2>                <p *ngIf="ADS.foreign == \'1\'">{{ "button.yes" | translate }}</p>                <p *ngIf="ADS.foreign == \'0\'">{{ "button.no" | translate }}</p>            </ion-label>        </ion-item>        <ion-item *ngIf="ADS.file != \'\'">            <ion-label text-wrap>                <h2><ion-icon name="document"></ion-icon> <a (click)="openPdfLink(ADS.file)">{{ "page.practice.item.jobPosting" | translate }}</a></h2>            </ion-label>        </ion-item>    </ion-list></ion-content></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppInfoPage', 'selector': 'app-app-info'},{'name': 'BookDetailModalPage', 'selector': 'book-modal-page'},{'name': 'BookListComponent', 'selector': 'app-book-list'},{'name': 'BookLocationComponent', 'selector': 'app-book-location'},{'name': 'CampusMapFeatureModalComponent', 'selector': 'app-campus-map-feature-modal'},{'name': 'CampusMapPage', 'selector': 'app-campus-map'},{'name': 'CampusReorderModalPage', 'selector': 'campus-modal-page'},{'name': 'CampusTabComponent', 'selector': 'app-campus-tab'},{'name': 'CourseDataComponent', 'selector': 'app-course-data'},{'name': 'DatePickerComponent', 'selector': 'app-date-picker'},{'name': 'DetailedOpeningModalPage', 'selector': 'detailed-opening-modal-page'},{'name': 'DetailedPracticeModalPage', 'selector': 'detailed-practice-modal-page'},{'name': 'EmergencyPage', 'selector': 'app-emergency'},{'name': 'EventModalPage', 'selector': 'event-modal-page'},{'name': 'EventsPage', 'selector': 'app-events'},{'name': 'EventViewComponent', 'selector': 'app-event-view'},{'name': 'FeedbackPage', 'selector': 'app-feedback'},{'name': 'FooterDisclaimerComponent', 'selector': 'app-footer-disclaimer'},{'name': 'FreeRoomsPage', 'selector': 'app-free-rooms'},{'name': 'GradesPage', 'selector': 'app-grades'},{'name': 'GradesTableComponent', 'selector': 'app-grades-table'},{'name': 'HintBoxComponent', 'selector': 'app-hint-box'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'ImpressumModalPage', 'selector': 'impressum-modal-page'},{'name': 'ImpressumPage', 'selector': 'app-impressum'},{'name': 'LectureListComponent', 'selector': 'app-lecture-list'},{'name': 'LectureSearchModalPage', 'selector': 'lecture-search-modal-page'},{'name': 'LecturesPage', 'selector': 'app-lectures'},{'name': 'LibrarySearchPage', 'selector': 'app-library-search'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'MensaMealComponent', 'selector': 'app-mensa-meal'},{'name': 'MensaPage', 'selector': 'app-mensa'},{'name': 'NewsArticleComponent', 'selector': 'app-news-article'},{'name': 'NewsPage', 'selector': 'app-news'},{'name': 'OpeningHoursPage', 'selector': 'app-opening-hours'},{'name': 'PersonSearchPage', 'selector': 'app-person-search'},{'name': 'PracticePage', 'selector': 'app-practice'},{'name': 'RoomplanPage', 'selector': 'app-roomplan'},{'name': 'SettingsPage', 'selector': 'app-settings'},{'name': 'TimetablePage', 'selector': 'app-timetable'},{'name': 'TransportPage', 'selector': 'app-transport'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'DetailedPracticeModalPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DetailedPracticeModalPage.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

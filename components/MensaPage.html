@@ -1,0 +1,2902 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Mobile.UP</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Mobile.UP</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>MensaPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/mensa/mensa.page.ts</code>
+</p>
+
+
+    <p class="comment">
+        <h3>Extends</h3>
+    </p>
+    <p class="comment">
+                <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+    </p>
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-mensa</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./mensa.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./mensa.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#allMeals">allMeals</a>
+                            </li>
+                            <li>
+                                <a href="#campus">campus</a>
+                            </li>
+                            <li>
+                                <a href="#campusTabComponent">campusTabComponent</a>
+                            </li>
+                            <li>
+                                <a href="#currentDate">currentDate</a>
+                            </li>
+                            <li>
+                                <a href="#displayedMeals">displayedMeals</a>
+                            </li>
+                            <li>
+                                <a href="#displayedUlfMeals">displayedUlfMeals</a>
+                            </li>
+                            <li>
+                                <a href="#filterKeywords">filterKeywords</a>
+                            </li>
+                            <li>
+                                <a href="#iconMapping">iconMapping</a>
+                            </li>
+                            <li>
+                                <a href="#isLoaded">isLoaded</a>
+                            </li>
+                            <li>
+                                <a href="#mealForDate">mealForDate</a>
+                            </li>
+                            <li>
+                                <a href="#mensaIsOpen">mensaIsOpen</a>
+                            </li>
+                            <li>
+                                <a href="#networkError">networkError</a>
+                            </li>
+                            <li>
+                                <a href="#noMealsForDate">noMealsForDate</a>
+                            </li>
+                            <li>
+                                <a href="#noMensaForLocation">noMensaForLocation</a>
+                            </li>
+                            <li>
+                                <a href="#noUlfMealsForDate">noUlfMealsForDate</a>
+                            </li>
+                            <li>
+                                <a href="#selectedDate">selectedDate</a>
+                            </li>
+                            <li>
+                                <a href="#ulfIconMapping">ulfIconMapping</a>
+                            </li>
+                            <li>
+                                <a href="#ulfMealForDate">ulfMealForDate</a>
+                            </li>
+                            <li>
+                                <a href="#ulfMeals">ulfMeals</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#activatedRoute">activatedRoute</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#config">config</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#connection">connection</a>
+                            </li>
+                            <li>
+                                <a href="#logger">logger</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#loggingService">loggingService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#menu">menu</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#navCtrl">navCtrl</a>
+                            </li>
+                            <li>
+                                <a href="#pageReady">pageReady</a>
+                            </li>
+                            <li>
+                                <a href="#pageReadyReject">pageReadyReject</a>
+                            </li>
+                            <li>
+                                <a href="#pageReadyResolve">pageReadyResolve</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#platform">platform</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#router">router</a>
+                            </li>
+                            <li>
+                                <a href="#session">session</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#sessionProvider">sessionProvider</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#webIntent">webIntent</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changeCampus">changeCampus</a>
+                            </li>
+                            <li>
+                                <a href="#classifyMeals">classifyMeals</a>
+                            </li>
+                            <li>
+                                <a href="#filterMenus">filterMenus</a>
+                            </li>
+                            <li>
+                                <a href="#getFilterKeywords">getFilterKeywords</a>
+                            </li>
+                            <li>
+                                <a href="#getOpening">getOpening</a>
+                            </li>
+                            <li>
+                                <a href="#loadCampusMenu">loadCampusMenu</a>
+                            </li>
+                            <li>
+                                <a href="#pickDate">pickDate</a>
+                            </li>
+                            <li>
+                                <a href="#handleQueryParams">handleQueryParams</a>
+                            </li>
+                            <li>
+                                <a href="#openModule">openModule</a>
+                            </li>
+                            <li>
+                                <a href="#openModuleByName">openModuleByName</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#processOptions">processOptions</a>
+                            </li>
+                            <li>
+                                <a href="#requireNetwork">requireNetwork</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#requireSession">requireSession</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setMenuStatus">setMenuStatus</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(translate: TranslateService, ws: <a href="../injectables/WebserviceWrapperService.html">WebserviceWrapperService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:44</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ws</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/WebserviceWrapperService.html" target="_self" >WebserviceWrapperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeCampus"></a>
+                    <span class="name">
+                        <b>
+                            changeCampus
+                        </b>
+                        <a href="#changeCampus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeCampus(campus: <a href="../interfaces/ICampus.html">ICampus</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/app/pages/mensa/mensa.page.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>switches the currently selected campus</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>campus</td>
+                                    <td>
+                                                <code><a href="../interfaces/ICampus.html" target="_self" >ICampus</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="classifyMeals"></a>
+                    <span class="name">
+                        <b>
+                            classifyMeals
+                        </b>
+                        <a href="#classifyMeals"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>classifyMeals()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="141"
+                            class="link-to-prism">src/app/pages/mensa/mensa.page.ts:141</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterMenus"></a>
+                    <span class="name">
+                        <b>
+                            filterMenus
+                        </b>
+                        <a href="#filterMenus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>filterMenus(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="171"
+                            class="link-to-prism">src/app/pages/mensa/mensa.page.ts:171</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getFilterKeywords"></a>
+                    <span class="name">
+                        <b>
+                            getFilterKeywords
+                        </b>
+                        <a href="#getFilterKeywords"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getFilterKeywords()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="129"
+                            class="link-to-prism">src/app/pages/mensa/mensa.page.ts:129</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getOpening"></a>
+                    <span class="name">
+                        <b>
+                            getOpening
+                        </b>
+                        <a href="#getOpening"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getOpening()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="241"
+                            class="link-to-prism">src/app/pages/mensa/mensa.page.ts:241</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadCampusMenu"></a>
+                    <span class="name">
+                        <b>
+                            loadCampusMenu
+                        </b>
+                        <a href="#loadCampusMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadCampusMenu(refresher?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="62"
+                            class="link-to-prism">src/app/pages/mensa/mensa.page.ts:62</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>refresher</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pickDate"></a>
+                    <span class="name">
+                        <b>
+                            pickDate
+                        </b>
+                        <a href="#pickDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>pickDate($event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="210"
+                            class="link-to-prism">src/app/pages/mensa/mensa.page.ts:210</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>$event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleQueryParams"></a>
+                    <span class="name">
+                        <b>
+                            handleQueryParams
+                        </b>
+                        <a href="#handleQueryParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleQueryParams(params: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:134</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>handles the queryParams for a page. Should be overwritten.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>params</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the params that should be handled</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openModule"></a>
+                    <span class="name">
+                        <b>
+                            openModule
+                        </b>
+                        <a href="#openModule"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openModule(moduleToOpen: <a href="../interfaces/IModule.html">IModule</a>, params: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:144</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>opens a page by using it&#39;s module</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>moduleToOpen</td>
+                                    <td>
+                                                <code><a href="../interfaces/IModule.html" target="_self" >IModule</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>params</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>{}</code>
+                                    </td>
+
+                                    <td>
+                                        <p>params {any} params that should by passed on</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openModuleByName"></a>
+                    <span class="name">
+                        <b>
+                            openModuleByName
+                        </b>
+                        <a href="#openModuleByName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openModuleByName(moduleName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, params: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:160</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>opens a page by name</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>moduleName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        <p>name of the module</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>params</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>{}</code>
+                                    </td>
+
+                                    <td>
+                                        <p>params that should by passed on</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="processOptions"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            processOptions
+                        </b>
+                        <a href="#processOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>processOptions(pageOptions: <a href="../interfaces/IPageOptions.html">IPageOptions</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:115</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>process the given pageOptions and execute desired functions</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageOptions</td>
+                                    <td>
+                                                <code><a href="../interfaces/IPageOptions.html" target="_self" >IPageOptions</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="requireNetwork"></a>
+                    <span class="name">
+                        <b>
+                            requireNetwork
+                        </b>
+                        <a href="#requireNetwork"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>requireNetwork(necessary?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:174</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>necessary</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="requireSession"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            requireSession
+                        </b>
+                        <a href="#requireSession"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>requireSession(optional?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:183</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>optional</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setMenuStatus"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            setMenuStatus
+                        </b>
+                        <a href="#setMenuStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setMenuStatus(shouldEnable: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:126</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>enables or disables the pages menu section</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>shouldEnable</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>true</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="allMeals"></a>
+                        <span class="name">
+                            <b>
+                            allMeals</b>
+                            <a href="#allMeals"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IMeals.html" target="_self" >IMeals[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="campus"></a>
+                        <span class="name">
+                            <b>
+                            campus</b>
+                            <a href="#campus"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/ICampus.html" target="_self" >ICampus</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="campusTabComponent"></a>
+                        <span class="name">
+                            <b>
+                            campusTabComponent</b>
+                            <a href="#campusTabComponent"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../components/CampusTabComponent.html" target="_self" >CampusTabComponent</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(CampusTabComponent)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentDate"></a>
+                        <span class="name">
+                            <b>
+                            currentDate</b>
+                            <a href="#currentDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>moment()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="displayedMeals"></a>
+                        <span class="name">
+                            <b>
+                            displayedMeals</b>
+                            <a href="#displayedMeals"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IMeals.html" target="_self" >IMeals[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="displayedUlfMeals"></a>
+                        <span class="name">
+                            <b>
+                            displayedUlfMeals</b>
+                            <a href="#displayedUlfMeals"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IMeals.html" target="_self" >IMeals[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="filterKeywords"></a>
+                        <span class="name">
+                            <b>
+                            filterKeywords</b>
+                            <a href="#filterKeywords"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:21</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="iconMapping"></a>
+                        <span class="name">
+                            <b>
+                            iconMapping</b>
+                            <a href="#iconMapping"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoaded"></a>
+                        <span class="name">
+                            <b>
+                            isLoaded</b>
+                            <a href="#isLoaded"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mealForDate"></a>
+                        <span class="name">
+                            <b>
+                            mealForDate</b>
+                            <a href="#mealForDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>boolean[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mensaIsOpen"></a>
+                        <span class="name">
+                            <b>
+                            mensaIsOpen</b>
+                            <a href="#mensaIsOpen"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="networkError"></a>
+                        <span class="name">
+                            <b>
+                            networkError</b>
+                            <a href="#networkError"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="noMealsForDate"></a>
+                        <span class="name">
+                            <b>
+                            noMealsForDate</b>
+                            <a href="#noMealsForDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="noMensaForLocation"></a>
+                        <span class="name">
+                            <b>
+                            noMensaForLocation</b>
+                            <a href="#noMensaForLocation"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="noUlfMealsForDate"></a>
+                        <span class="name">
+                            <b>
+                            noUlfMealsForDate</b>
+                            <a href="#noUlfMealsForDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedDate"></a>
+                        <span class="name">
+                            <b>
+                            selectedDate</b>
+                            <a href="#selectedDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>moment()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ulfIconMapping"></a>
+                        <span class="name">
+                            <b>
+                            ulfIconMapping</b>
+                            <a href="#ulfIconMapping"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ulfMealForDate"></a>
+                        <span class="name">
+                            <b>
+                            ulfMealForDate</b>
+                            <a href="#ulfMealForDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>boolean[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ulfMeals"></a>
+                        <span class="name">
+                            <b>
+                            ulfMeals</b>
+                            <a href="#ulfMeals"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IMeals.html" target="_self" >IMeals[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/pages/mensa/mensa.page.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="activatedRoute"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            activatedRoute</b>
+                            <a href="#activatedRoute"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:45</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="config"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            config</b>
+                            <a href="#config"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IConfig.html" target="_self" >IConfig</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:48</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="connection"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            connection</b>
+                            <a href="#connection"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/ConnectionService.html" target="_self" >ConnectionService</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:44</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="logger"></a>
+                        <span class="name">
+                            <b>
+                            logger</b>
+                            <a href="#logger"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Logger</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:36</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loggingService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            loggingService</b>
+                            <a href="#loggingService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>LoggingService</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:49</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="menu"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            menu</b>
+                            <a href="#menu"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MenuController</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:46</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="navCtrl"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            navCtrl</b>
+                            <a href="#navCtrl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>NavController</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:47</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageReady"></a>
+                        <span class="name">
+                            <b>
+                            pageReady</b>
+                            <a href="#pageReady"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Promise&lt;void&gt;</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:39</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageReadyReject"></a>
+                        <span class="name">
+                            <b>
+                            pageReadyReject</b>
+                            <a href="#pageReadyReject"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:41</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageReadyResolve"></a>
+                        <span class="name">
+                            <b>
+                            pageReadyResolve</b>
+                            <a href="#pageReadyResolve"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:40</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="platform"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            platform</b>
+                            <a href="#platform"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Platform</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:52</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="router"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            router</b>
+                            <a href="#router"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:50</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="session"></a>
+                        <span class="name">
+                            <b>
+                            session</b>
+                            <a href="#session"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/ISession.html" target="_self" >ISession</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:37</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sessionProvider"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            sessionProvider</b>
+                            <a href="#sessionProvider"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/UserSessionService.html" target="_self" >UserSessionService</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:43</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="webIntent"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Protected</span>
+                            webIntent</b>
+                            <a href="#webIntent"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/WebIntentService.html" target="_self" >WebIntentService</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/AbstractPage.html" target="_self" >AbstractPage</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/AbstractPage.html#source" target="_self" >AbstractPage:51</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, ViewChild } from &#x27;@angular/core&#x27;;
+import * as moment from &#x27;moment&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import { ICampus, IMeals, IMensaResponse } from &#x27;src/app/lib/interfaces&#x27;;
+import { AbstractPage } from &#x27;src/app/lib/abstract-page&#x27;;
+import { WebserviceWrapperService } from &#x27;../../services/webservice-wrapper/webservice-wrapper.service&#x27;;
+import { IMensaRequestParams } from &#x27;../../services/webservice-wrapper/webservice-definition-interfaces&#x27;;
+import { CampusTabComponent } from &#x27;../../components/campus-tab/campus-tab.component&#x27;;
+import { utils } from &#x27;../../lib/util&#x27;;
+import * as jquery from &#x27;jquery&#x27;;
+import * as opening from &#x27;opening_hours&#x27;;
+
+
+@Component({
+  selector: &#x27;app-mensa&#x27;,
+  templateUrl: &#x27;./mensa.page.html&#x27;,
+  styleUrls: [&#x27;./mensa.page.scss&#x27;],
+})
+export class MensaPage extends AbstractPage {
+
+  filterKeywords &#x3D; [];
+  currentDate &#x3D; moment();
+  selectedDate &#x3D; moment();
+
+  allMeals: IMeals[] &#x3D; [];
+  displayedMeals: IMeals[] &#x3D; [];
+  ulfMeals: IMeals[] &#x3D; [];
+  displayedUlfMeals: IMeals[] &#x3D; [];
+
+  mealForDate: boolean[] &#x3D; [];
+  ulfMealForDate: boolean[] &#x3D; [];
+
+  iconMapping &#x3D; [];
+  ulfIconMapping &#x3D; [];
+  mensaIsOpen &#x3D; true;
+
+  isLoaded;
+  noMealsForDate;
+  noUlfMealsForDate;
+  networkError;
+  campus: ICampus;
+  noMensaForLocation &#x3D; false;
+
+  @ViewChild(CampusTabComponent) campusTabComponent: CampusTabComponent;
+
+  constructor(
+    private translate: TranslateService,
+    private ws: WebserviceWrapperService
+  ) {
+    super({ optionalNetwork: true });
+  }
+
+  /**
+   * switches the currently selected campus
+   * @param campus {ICampus}
+   */
+  changeCampus(campus: ICampus) {
+    this.campus &#x3D; campus;
+    this.loadCampusMenu();
+  }
+
+  loadCampusMenu(refresher?) {
+    if (!(refresher &amp;&amp; refresher.target)) {
+      this.isLoaded &#x3D; false;
+    }
+
+    this.getOpening();
+
+    this.allMeals &#x3D; [];
+    this.displayedMeals &#x3D; [];
+    this.ulfMeals &#x3D; undefined;
+    this.displayedUlfMeals &#x3D; undefined;
+    for (let i &#x3D; 0; i &lt; this.mealForDate.length; i++) { this.mealForDate[i] &#x3D; false; }
+    for (let i &#x3D; 0; i &lt; this.ulfMealForDate.length; i++) { this.ulfMealForDate[i] &#x3D; false; }
+
+    this.noMealsForDate &#x3D; true;
+    this.noUlfMealsForDate &#x3D; true;
+    this.networkError &#x3D; false;
+
+    if (this.campus.canteen_name &amp;&amp; this.campus.canteen_name.length &gt; 0) {
+      this.noMensaForLocation &#x3D; false;
+      this.ws.call(
+        &#x27;mensa&#x27;,
+        &lt;IMensaRequestParams&gt;{
+          campus_canteen_name: this.campus.canteen_name
+        },
+        { forceRefreshGroup: refresher !&#x3D;&#x3D; undefined }
+      ).subscribe((res: IMensaResponse) &#x3D;&gt; {
+        if (res.meal) {
+          this.allMeals &#x3D; res.meal;
+          this.displayedMeals &#x3D; res.meal;
+        }
+        if (res.iconHashMap &amp;&amp; res.iconHashMap.entry) { this.iconMapping &#x3D; res.iconHashMap.entry; }
+
+        if (this.campus.canteen_name &#x3D;&#x3D;&#x3D; &#x27;Griebnitzsee&#x27;) {
+          const ulfParam &#x3D; &#x27;UlfsCafe&#x27;;
+          this.ws.call(
+            &#x27;mensa&#x27;,
+            &lt;IMensaRequestParams&gt;{
+              campus_canteen_name: ulfParam
+            }
+          ).subscribe((resUlf: IMensaResponse) &#x3D;&gt; {
+            if (resUlf.meal) {
+              this.ulfMeals &#x3D; resUlf.meal;
+              this.displayedUlfMeals &#x3D; resUlf.meal;
+            }
+            if (resUlf.iconHashMap &amp;&amp; resUlf.iconHashMap.entry) { this.ulfIconMapping &#x3D; resUlf.iconHashMap.entry; }
+            this.getFilterKeywords();
+            this.classifyMeals();
+            if (refresher &amp;&amp; refresher.target) { refresher.target.complete(); }
+          });
+        } else {
+          this.getFilterKeywords();
+          this.classifyMeals();
+          if (refresher &amp;&amp; refresher.target) { refresher.target.complete(); }
+        }
+      }, () &#x3D;&gt; {
+        this.isLoaded &#x3D; true;
+        this.networkError &#x3D; true;
+        if (refresher &amp;&amp; refresher.target) { refresher.target.complete(); }
+      });
+    } else {
+      this.noMensaForLocation &#x3D; true;
+      if (refresher &amp;&amp; refresher.target) { refresher.target.complete(); }
+      this.isLoaded &#x3D; true;
+    }
+  }
+
+  getFilterKeywords() {
+    this.filterKeywords &#x3D; [];
+    for (let i &#x3D; 0; i &lt; this.displayedMeals.length; i++) {
+      for (let j &#x3D; 0; j &lt; this.displayedMeals[i].type.length; j++) {
+        if (!utils.isInArray(this.filterKeywords, this.displayedMeals[i].type[j])) {
+          this.filterKeywords.push(this.displayedMeals[i].type[j]);
+        }
+      }
+      this.filterKeywords.sort();
+    }
+  }
+
+  classifyMeals() {
+    let mealDate;
+    for (let i &#x3D; 0; i &lt; this.displayedMeals.length; i++) {
+      if (this.displayedMeals[i].date) {
+        mealDate &#x3D; moment(this.displayedMeals[i].date);
+      } else { mealDate &#x3D; moment(); }
+
+      if (this.currentDate.format(&#x27;MM DD YYYY&#x27;) &#x3D;&#x3D;&#x3D; mealDate.format(&#x27;MM DD YYYY&#x27;)) {
+        this.mealForDate[i] &#x3D; true;
+        this.noMealsForDate &#x3D; false;
+      } else { this.mealForDate[i] &#x3D; false; }
+    }
+
+    if (this.displayedUlfMeals) {
+      for (let i &#x3D; 0; i &lt; this.displayedUlfMeals.length; i++) {
+        if (this.displayedUlfMeals[i].date) {
+          mealDate &#x3D; moment(this.displayedUlfMeals[i].date);
+        } else { mealDate &#x3D; moment(); }
+
+        if (this.currentDate.format(&#x27;MM DD YYYY&#x27;) &#x3D;&#x3D;&#x3D; mealDate.format(&#x27;MM DD YYYY&#x27;)) {
+          this.ulfMealForDate[i] &#x3D; true;
+          this.noUlfMealsForDate &#x3D; false;
+        } else { this.ulfMealForDate[i] &#x3D; false; }
+      }
+    }
+
+    this.isLoaded &#x3D; true;
+    this.pickDate(this.selectedDate);
+  }
+
+  filterMenus(event) {
+    const filter &#x3D; utils.convertToArray(event.detail.value);
+
+    this.displayedMeals &#x3D; this.allMeals;
+    this.displayedUlfMeals &#x3D; this.ulfMeals;
+
+    if (filter &amp;&amp; filter.length &gt; 0) {
+      this.displayedMeals &#x3D; jquery.grep(this.displayedMeals, (meal) &#x3D;&gt; {
+        if (meal.type) {
+          let fulfillsConditions &#x3D; false;
+          for (let i &#x3D; 0; i &lt; filter.length; i++) {
+            if (utils.isInArray(meal.type, filter[i])) {
+              fulfillsConditions &#x3D; true;
+              break;
+            }
+          }
+          return fulfillsConditions;
+        } else { return false; }
+      });
+
+      if (this.displayedUlfMeals) {
+        this.displayedUlfMeals &#x3D; jquery.grep(this.displayedUlfMeals, (meal) &#x3D;&gt; {
+          if (meal.type) {
+            let fulfillsConditions &#x3D; false;
+            for (let i &#x3D; 0; i &lt; filter.length; i++) {
+              if (utils.isInArray(meal.type, filter[i])) {
+                fulfillsConditions &#x3D; true;
+                break;
+              }
+            }
+            return fulfillsConditions;
+          } else { return false; }
+        });
+      }
+    }
+
+    this.classifyMeals();
+  }
+
+  pickDate($event) {
+    this.selectedDate &#x3D; $event;
+    this.noMealsForDate &#x3D; true;
+    this.noUlfMealsForDate &#x3D; true;
+
+    let i, mealDate;
+    for (i &#x3D; 0; i &lt; this.displayedMeals.length; i++) {
+      if (this.displayedMeals[i].date) {
+        mealDate &#x3D; moment(this.displayedMeals[i].date);
+      } else { mealDate &#x3D; moment(); }
+
+      if ($event.format(&#x27;MM DD YYYY&#x27;) &#x3D;&#x3D;&#x3D; mealDate.format(&#x27;MM DD YYYY&#x27;)) {
+        this.mealForDate[i] &#x3D; true;
+        this.noMealsForDate &#x3D; false;
+      } else { this.mealForDate[i] &#x3D; false; }
+    }
+
+    if (this.displayedUlfMeals) {
+      for (i &#x3D; 0; i &lt; this.displayedUlfMeals.length; i++) {
+        if (this.displayedUlfMeals[i].date) {
+          mealDate &#x3D; moment(this.displayedUlfMeals[i].date);
+        } else { mealDate &#x3D; moment(); }
+
+        if ($event.format(&#x27;MM DD YYYY&#x27;) &#x3D;&#x3D;&#x3D; mealDate.format(&#x27;MM DD YYYY&#x27;)) {
+          this.ulfMealForDate[i] &#x3D; true;
+          this.noUlfMealsForDate &#x3D; false;
+        } else { this.ulfMealForDate[i] &#x3D; false; }
+      }
+    }
+  }
+
+  getOpening() {
+    this.mensaIsOpen &#x3D; true;
+    const searchTerm &#x3D; &#x27;mensa &#x27; + this.campus.name.replace(&#x27;neuespalais&#x27;, &#x27;am neuen palais&#x27;);
+
+    this.ws.call(&#x27;openingHours&#x27;).subscribe((response: any) &#x3D;&gt; {
+      this.ws.call(&#x27;nominatim&#x27;).subscribe(nominatim &#x3D;&gt; {
+        if (response) {
+          response &#x3D; utils.convertToArray(response);
+          response &#x3D; response.filter(function(item) {
+            return item.name.toLowerCase().includes(searchTerm.toLowerCase());
+          });
+
+          if (response.length &gt; 0) {
+            response &#x3D; response[0];
+            response.parsedOpening &#x3D; new opening(
+              response.opening_hours,
+              nominatim,
+              { &#x27;locale&#x27;: this.translate.currentLang });
+            this.mensaIsOpen &#x3D; response.parsedOpening.getState();
+          }
+        }
+      });
+    });
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-header&gt;
+  &lt;ion-toolbar&gt;
+    &lt;ion-back-button slot&#x3D;&quot;start&quot;&gt;&lt;/ion-back-button&gt;
+    &lt;ion-button *ngIf&#x3D;&quot;!(platform.is(&#x27;ios&#x27;) || platform.is(&#x27;android&#x27;))&quot; (click)&#x3D;&quot;loadCampusMenu(true)&quot; slot&#x3D;&quot;end&quot; fill&#x3D;&quot;clear&quot;&gt;
+      &lt;ion-icon style&#x3D;&quot;font-size: x-large;&quot; name&#x3D;&quot;refresh&quot;&gt;&lt;/ion-icon&gt;
+    &lt;/ion-button&gt;
+    &lt;ion-menu-button slot&#x3D;&quot;end&quot;&gt;&lt;/ion-menu-button&gt;
+    &lt;ion-title&gt;{{ &quot;page.mensa.title&quot; | translate }}&lt;/ion-title&gt;
+  &lt;/ion-toolbar&gt;
+  &lt;ion-toolbar&gt;
+    &lt;app-campus-tab (campusChanged)&#x3D;&quot;changeCampus($event)&quot;&gt;&lt;/app-campus-tab&gt;
+  &lt;/ion-toolbar&gt;
+&lt;/ion-header&gt;
+
+&lt;ion-content no-padding (swipe)&#x3D;&quot;campusTabComponent.handleSwipeEvent($event)&quot;&gt;
+
+  &lt;ion-refresher *ngIf&#x3D;&quot;platform.is(&#x27;ios&#x27;) || platform.is(&#x27;android&#x27;)&quot; slot&#x3D;&quot;fixed&quot; (ionRefresh)&#x3D;&quot;loadCampusMenu($event)&quot;&gt;
+    &lt;ion-refresher-content pullingIcon&#x3D;&quot;refresh&quot; refreshingSpinner&#x3D;&quot;dots&quot;&gt;&lt;/ion-refresher-content&gt;
+  &lt;/ion-refresher&gt;
+
+  &lt;div align&#x3D;&quot;center&quot; *ngIf&#x3D;&quot;!isLoaded&quot; padding&gt;
+    &lt;ion-spinner name&#x3D;&quot;dots&quot;&gt;&lt;/ion-spinner&gt;
+  &lt;/div&gt;
+
+  &lt;app-hint-box *ngIf&#x3D;&quot;isLoaded &amp;&amp; !mensaIsOpen &amp;&amp; !networkError &amp;&amp; !noMensaForLocation&quot; hintTypeI18nKey&#x3D;&quot;hints.type.hint&quot; hintTextI18nKey&#x3D;&quot;page.mensa.mensaClosed&quot;&gt;&lt;/app-hint-box&gt;
+  &lt;app-hint-box *ngIf&#x3D;&quot;noMensaForLocation&quot; hintTypeI18nKey&#x3D;&quot;hints.type.hint&quot; hintTextI18nKey&#x3D;&quot;hints.text.functionNotAvailable&quot;&gt;&lt;/app-hint-box&gt;
+
+  &lt;ion-grid *ngIf&#x3D;&quot;isLoaded &amp;&amp; !noMensaForLocation &amp;&amp; !networkError&quot;&gt;
+    &lt;ion-row&gt;
+      &lt;ion-col size&#x3D;&quot;6&quot;&gt;
+        &lt;app-date-picker [compactMode]&#x3D;&quot;true&quot; [inputDate]&#x3D;&quot;selectedDate&quot; (momentObjectEmitter)&#x3D;&quot;pickDate($event)&quot;&gt;&lt;/app-date-picker&gt;
+      &lt;/ion-col&gt;
+      &lt;ion-col size&#x3D;&quot;6&quot;&gt;
+        &lt;ion-item&gt;
+          &lt;ion-label&gt;Filter&lt;/ion-label&gt;
+          &lt;ion-select multiple&#x3D;&quot;true&quot; (ionChange)&#x3D;&quot;filterMenus($event)&quot; okText&#x3D;&quot;{{ &#x27;button.ok&#x27; | translate }}&quot; cancelText&#x3D;&quot;{{ &#x27;button.cancel&#x27;  | translate }}&quot; [disabled]&#x3D;&quot;filterKeywords.length &#x3D;&#x3D;&#x3D; 0&quot;&gt;
+            &lt;ion-select-option *ngFor&#x3D;&quot;let filter of filterKeywords&quot;&gt;{{ filter }}&lt;/ion-select-option&gt;
+          &lt;/ion-select&gt;
+        &lt;/ion-item&gt;
+      &lt;/ion-col&gt;
+    &lt;/ion-row&gt;
+  &lt;/ion-grid&gt;
+
+  &lt;div *ngIf&#x3D;&quot;isLoaded &amp;&amp; !noMensaForLocation &amp;&amp; !networkError&quot;&gt;
+    &lt;ion-list lines&#x3D;&quot;none&quot; [ngClass]&#x3D;&quot;showBasicCalendar ? &#x27;calendarExpanded&#x27; : &#x27;calendarCollapsed&#x27; &quot;&gt;
+      &lt;app-mensa-meal *ngIf&#x3D;&quot;!noMealsForDate&quot;
+      [meals]&#x3D;&quot;displayedMeals&quot;
+      [mealForDate]&#x3D;&quot;mealForDate&quot;
+      [iconMapping]&#x3D;&quot;iconMapping&quot;&gt;&lt;/app-mensa-meal&gt;
+
+      &lt;ion-item-divider *ngIf&#x3D;&quot;ulfMeals &amp;&amp; !noUlfMealsForDate&quot; color&#x3D;&quot;light&quot;&gt;
+        &lt;ion-label&gt;
+          Ulf&#x27;s Café
+        &lt;/ion-label&gt;
+      &lt;/ion-item-divider&gt;
+
+      &lt;app-mensa-meal *ngIf&#x3D;&quot;ulfMeals &amp;&amp; !noUlfMealsForDate&quot;
+      [meals]&#x3D;&quot;displayedUlfMeals&quot;
+      [mealForDate]&#x3D;&quot;ulfMealForDate&quot;
+      [iconMapping]&#x3D;&quot;ulfIconMapping&quot;&gt;&lt;/app-mensa-meal&gt;
+    &lt;/ion-list&gt;
+  &lt;/div&gt;
+
+  &lt;div *ngIf&#x3D;&quot;isLoaded &amp;&amp; noMealsForDate &amp;&amp; noUlfMealsForDate &amp;&amp; !networkError &amp;&amp; mensaIsOpen &amp;&amp; !noMensaForLocation&quot;&gt;
+    &lt;app-hint-box hintTypeI18nKey&#x3D;&quot;hints.type.hint&quot; hintTextI18nKey&#x3D;&quot;hints.text.mensa-nomeals-hint&quot;&gt;&lt;/app-hint-box&gt;
+  &lt;/div&gt;
+  &lt;app-hint-box *ngIf&#x3D;&quot;isLoaded &amp;&amp; networkError &amp;&amp; !noMensaForLocation&quot; hintTypeI18nKey&#x3D;&quot;alert.title.httpError&quot; hintTextI18nKey&#x3D;&quot;alert.network&quot;&gt;&lt;/app-hint-box&gt;
+
+&lt;/ion-content&gt;
+
+&lt;ion-footer&gt;
+  &lt;ion-toolbar&gt;
+    &lt;app-footer-disclaimer disclaimerReference&#x3D;&quot;page.mensa.disclaimer&quot;&gt;&lt;/app-footer-disclaimer&gt;
+  &lt;/ion-toolbar&gt;
+&lt;/ion-footer&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./mensa.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">#footerTitle {
+    color:var(--ion-color-primary);
+}
+
+ion-grid {
+    padding: 0;
+}
+
+ion-item {
+    --min-height: 10px;
+    min-height: 10px;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-header>  <ion-toolbar>    <ion-back-button slot="start"></ion-back-button>    <ion-button *ngIf="!(platform.is(\'ios\') || platform.is(\'android\'))" (click)="loadCampusMenu(true)" slot="end" fill="clear">      <ion-icon style="font-size: x-large;" name="refresh"></ion-icon>    </ion-button>    <ion-menu-button slot="end"></ion-menu-button>    <ion-title>{{ "page.mensa.title" | translate }}</ion-title>  </ion-toolbar>  <ion-toolbar>    <app-campus-tab (campusChanged)="changeCampus($event)"></app-campus-tab>  </ion-toolbar></ion-header><ion-content no-padding (swipe)="campusTabComponent.handleSwipeEvent($event)">  <ion-refresher *ngIf="platform.is(\'ios\') || platform.is(\'android\')" slot="fixed" (ionRefresh)="loadCampusMenu($event)">    <ion-refresher-content pullingIcon="refresh" refreshingSpinner="dots"></ion-refresher-content>  </ion-refresher>  <div align="center" *ngIf="!isLoaded" padding>    <ion-spinner name="dots"></ion-spinner>  </div>  <app-hint-box *ngIf="isLoaded && !mensaIsOpen && !networkError && !noMensaForLocation" hintTypeI18nKey="hints.type.hint" hintTextI18nKey="page.mensa.mensaClosed"></app-hint-box>  <app-hint-box *ngIf="noMensaForLocation" hintTypeI18nKey="hints.type.hint" hintTextI18nKey="hints.text.functionNotAvailable"></app-hint-box>  <ion-grid *ngIf="isLoaded && !noMensaForLocation && !networkError">    <ion-row>      <ion-col size="6">        <app-date-picker [compactMode]="true" [inputDate]="selectedDate" (momentObjectEmitter)="pickDate($event)"></app-date-picker>      </ion-col>      <ion-col size="6">        <ion-item>          <ion-label>Filter</ion-label>          <ion-select multiple="true" (ionChange)="filterMenus($event)" okText="{{ \'button.ok\' | translate }}" cancelText="{{ \'button.cancel\'  | translate }}" [disabled]="filterKeywords.length === 0">            <ion-select-option *ngFor="let filter of filterKeywords">{{ filter }}</ion-select-option>          </ion-select>        </ion-item>      </ion-col>    </ion-row>  </ion-grid>  <div *ngIf="isLoaded && !noMensaForLocation && !networkError">    <ion-list lines="none" [ngClass]="showBasicCalendar ? \'calendarExpanded\' : \'calendarCollapsed\' ">      <app-mensa-meal *ngIf="!noMealsForDate"      [meals]="displayedMeals"      [mealForDate]="mealForDate"      [iconMapping]="iconMapping"></app-mensa-meal>      <ion-item-divider *ngIf="ulfMeals && !noUlfMealsForDate" color="light">        <ion-label>          Ulf\'s Café        </ion-label>      </ion-item-divider>      <app-mensa-meal *ngIf="ulfMeals && !noUlfMealsForDate"      [meals]="displayedUlfMeals"      [mealForDate]="ulfMealForDate"      [iconMapping]="ulfIconMapping"></app-mensa-meal>    </ion-list>  </div>  <div *ngIf="isLoaded && noMealsForDate && noUlfMealsForDate && !networkError && mensaIsOpen && !noMensaForLocation">    <app-hint-box hintTypeI18nKey="hints.type.hint" hintTextI18nKey="hints.text.mensa-nomeals-hint"></app-hint-box>  </div>  <app-hint-box *ngIf="isLoaded && networkError && !noMensaForLocation" hintTypeI18nKey="alert.title.httpError" hintTextI18nKey="alert.network"></app-hint-box></ion-content><ion-footer>  <ion-toolbar>    <app-footer-disclaimer disclaimerReference="page.mensa.disclaimer"></app-footer-disclaimer>  </ion-toolbar></ion-footer></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppInfoPage', 'selector': 'app-app-info'},{'name': 'BookDetailModalPage', 'selector': 'book-modal-page'},{'name': 'BookListComponent', 'selector': 'app-book-list'},{'name': 'BookLocationComponent', 'selector': 'app-book-location'},{'name': 'CampusMapFeatureModalComponent', 'selector': 'app-campus-map-feature-modal'},{'name': 'CampusMapPage', 'selector': 'app-campus-map'},{'name': 'CampusReorderModalPage', 'selector': 'campus-modal-page'},{'name': 'CampusTabComponent', 'selector': 'app-campus-tab'},{'name': 'CourseDataComponent', 'selector': 'app-course-data'},{'name': 'DatePickerComponent', 'selector': 'app-date-picker'},{'name': 'DetailedOpeningModalPage', 'selector': 'detailed-opening-modal-page'},{'name': 'DetailedPracticeModalPage', 'selector': 'detailed-practice-modal-page'},{'name': 'EmergencyPage', 'selector': 'app-emergency'},{'name': 'EventModalPage', 'selector': 'event-modal-page'},{'name': 'EventsPage', 'selector': 'app-events'},{'name': 'EventViewComponent', 'selector': 'app-event-view'},{'name': 'FeedbackPage', 'selector': 'app-feedback'},{'name': 'FooterDisclaimerComponent', 'selector': 'app-footer-disclaimer'},{'name': 'FreeRoomsPage', 'selector': 'app-free-rooms'},{'name': 'GradesPage', 'selector': 'app-grades'},{'name': 'GradesTableComponent', 'selector': 'app-grades-table'},{'name': 'HintBoxComponent', 'selector': 'app-hint-box'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'ImpressumModalPage', 'selector': 'impressum-modal-page'},{'name': 'ImpressumPage', 'selector': 'app-impressum'},{'name': 'LectureListComponent', 'selector': 'app-lecture-list'},{'name': 'LectureSearchModalPage', 'selector': 'lecture-search-modal-page'},{'name': 'LecturesPage', 'selector': 'app-lectures'},{'name': 'LibrarySearchPage', 'selector': 'app-library-search'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'MensaMealComponent', 'selector': 'app-mensa-meal'},{'name': 'MensaPage', 'selector': 'app-mensa'},{'name': 'NewsArticleComponent', 'selector': 'app-news-article'},{'name': 'NewsPage', 'selector': 'app-news'},{'name': 'OpeningHoursPage', 'selector': 'app-opening-hours'},{'name': 'PersonSearchPage', 'selector': 'app-person-search'},{'name': 'PracticePage', 'selector': 'app-practice'},{'name': 'RoomplanPage', 'selector': 'app-roomplan'},{'name': 'SettingsPage', 'selector': 'app-settings'},{'name': 'TimetablePage', 'selector': 'app-timetable'},{'name': 'TransportPage', 'selector': 'app-transport'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'MensaPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'MensaPage.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

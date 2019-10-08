@@ -1,0 +1,1252 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Mobile.UP</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Mobile.UP</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>CourseDataComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/course-data/course-data.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-course-data</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./course-data.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./course-data.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#courseData">courseData</a>
+                            </li>
+                            <li>
+                                <a href="#courseGroups">courseGroups</a>
+                            </li>
+                            <li>
+                                <a href="#isLoaded">isLoaded</a>
+                            </li>
+                            <li>
+                                <a href="#lecturerList">lecturerList</a>
+                            </li>
+                            <li>
+                                <a href="#networkError">networkError</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#checkDoubledLecturers">checkDoubledLecturers</a>
+                            </li>
+                            <li>
+                                <a href="#convertToArray">convertToArray</a>
+                            </li>
+                            <li>
+                                <a href="#getCourseData">getCourseData</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#replaceUnderscore">replaceUnderscore</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#course">course</a>
+                            </li>
+                            <li>
+                                <a href="#refresh">refresh</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(ws: <a href="../injectables/WebserviceWrapperService.html">WebserviceWrapperService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/components/course-data/course-data.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>ws</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/WebserviceWrapperService.html" target="_self" >WebserviceWrapperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="course"></a>
+                        <b>course</b>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/components/course-data/course-data.component.ts:13</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="refresh"></a>
+                        <b>refresh</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/course-data/course-data.component.ts:14</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkDoubledLecturers"></a>
+                    <span class="name">
+                        <b>
+                            checkDoubledLecturers
+                        </b>
+                        <a href="#checkDoubledLecturers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkDoubledLecturers(event, lecturer, index)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/app/components/course-data/course-data.component.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>TODO: can be removed when bug in api is fixed</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>lecturer</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>index</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="convertToArray"></a>
+                    <span class="name">
+                        <b>
+                            convertToArray
+                        </b>
+                        <a href="#convertToArray"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>convertToArray(array)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="70"
+                            class="link-to-prism">src/app/components/course-data/course-data.component.ts:70</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>has to be declared for html pages to use the imported function
+couldn&#39;t find a better solution</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>array</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCourseData"></a>
+                    <span class="name">
+                        <b>
+                            getCourseData
+                        </b>
+                        <a href="#getCourseData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCourseData(courseId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/app/components/course-data/course-data.component.ts:29</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>courseId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="25"
+                            class="link-to-prism">src/app/components/course-data/course-data.component.ts:25</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="replaceUnderscore"></a>
+                    <span class="name">
+                        <b>
+                            replaceUnderscore
+                        </b>
+                        <a href="#replaceUnderscore"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>replaceUnderscore(roomSc: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="112"
+                            class="link-to-prism">src/app/components/course-data/course-data.component.ts:112</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>roomSc</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="courseData"></a>
+                        <span class="name">
+                            <b>
+                            courseData</b>
+                            <a href="#courseData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/course-data/course-data.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="courseGroups"></a>
+                        <span class="name">
+                            <b>
+                            courseGroups</b>
+                            <a href="#courseGroups"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/course-data/course-data.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoaded"></a>
+                        <span class="name">
+                            <b>
+                            isLoaded</b>
+                            <a href="#isLoaded"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/components/course-data/course-data.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lecturerList"></a>
+                        <span class="name">
+                            <b>
+                            lecturerList</b>
+                            <a href="#lecturerList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/course-data/course-data.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="networkError"></a>
+                        <span class="name">
+                            <b>
+                            networkError</b>
+                            <a href="#networkError"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/components/course-data/course-data.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Input } from &#x27;@angular/core&#x27;;
+import { utils } from &#x27;src/app/lib/util&#x27;;
+import { IPulsAPIResponse_getCourseData } from &#x27;src/app/lib/interfaces_PULS&#x27;;
+import { WebserviceWrapperService } from &#x27;../../services/webservice-wrapper/webservice-wrapper.service&#x27;;
+
+@Component({
+  selector: &#x27;app-course-data&#x27;,
+  templateUrl: &#x27;./course-data.component.html&#x27;,
+  styleUrls: [&#x27;./course-data.component.scss&#x27;]
+})
+export class CourseDataComponent implements OnInit {
+
+  @Input() course;
+  @Input() refresh &#x3D; false;
+  courseData;
+  courseGroups &#x3D; [];
+  lecturerList &#x3D; [];
+  isLoaded;
+  networkError;
+
+  constructor(
+    private ws: WebserviceWrapperService
+  ) { }
+
+  ngOnInit() {
+    this.getCourseData(this.course.courseId);
+  }
+
+  getCourseData(courseId) {
+    this.isLoaded &#x3D; false;
+    this.networkError &#x3D; false;
+    this.ws.call(
+      &#x27;pulsGetCourseData&#x27;,
+      { courseId: courseId },
+      { forceRefreshGroup: this.refresh }
+    ).subscribe((response: IPulsAPIResponse_getCourseData) &#x3D;&gt; {
+      this.courseData &#x3D; response;
+
+      let i;
+      this.courseGroups &#x3D; [];
+      // check how many different groups exist
+      if (
+        this.courseData
+        &amp;&amp; this.courseData.courseData
+        &amp;&amp; this.courseData.courseData.course
+      ) {
+        const coursetmp &#x3D; utils.convertToArray(this.courseData.courseData.course)[0];
+
+        if (coursetmp &amp;&amp; coursetmp.events &amp;&amp; coursetmp.events.event) {
+          const tmp &#x3D; utils.convertToArray(coursetmp.events.event);
+          for (i &#x3D; 0; i &lt; tmp.length; i++) {
+            if (tmp[i].groupId &amp;&amp; !utils.isInArray(this.courseGroups, tmp[i].groupId)) {
+              this.courseGroups.push(tmp[i].groupId);
+            }
+          }
+        }
+      }
+
+      this.isLoaded &#x3D; true;
+    }, error &#x3D;&gt; {
+      this.networkError &#x3D; true;
+    });
+  }
+
+  /**
+   * has to be declared for html pages to use the imported function
+   * couldn&#x27;t find a better solution
+   * @param array
+   */
+  convertToArray(array) {
+    return utils.convertToArray(array);
+  }
+
+  /**
+   * TODO: can be removed when bug in api is fixed
+   * @name checkDoubledLecturers
+   * @param event
+   * @param lecturer
+   * @param index
+   */
+  checkDoubledLecturers(event, lecturer, index) {
+    if (event &amp;&amp; event.eventId &amp;&amp; lecturer &amp;&amp; lecturer.lecturerId) {
+      if ((this.lecturerList[event.eventId] !&#x3D;&#x3D; undefined)  &amp;&amp; (this.lecturerList[event.eventId].length &gt; 0)) {
+        if (utils.isInArray(this.lecturerList[event.eventId], [lecturer.lecturerId][index])) {
+          return true;
+        } else {
+          let i;
+          let alreadyIn &#x3D; false;
+          for (i &#x3D; 0; i &lt; this.lecturerList.length; i++) {
+            if ((this.lecturerList[i] !&#x3D;&#x3D; undefined) &amp;&amp; (this.lecturerList[i][0] &#x3D;&#x3D;&#x3D; lecturer.lecturerId)) {
+              alreadyIn &#x3D; true;
+            }
+          }
+
+          if (alreadyIn) { return false; } else {
+            this.lecturerList[event.eventId].push([lecturer.lecturerId][index]);
+            return true;
+          }
+        }
+      } else {
+        this.lecturerList[event.eventId] &#x3D; [];
+        this.lecturerList[event.eventId].push([lecturer.lecturerId][index]);
+        return true;
+      }
+    }
+  }
+
+   /**
+   * @name replaceUnderscore
+   * @param {string} roomSc
+   */
+  replaceUnderscore(roomSc: string) {
+    if (roomSc !&#x3D;&#x3D; undefined) {
+      return roomSc.replace(/_/g, &#x27;.&#x27;);
+    } else { return &#x27;&#x27;; }
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div align&#x3D;&quot;center&quot; *ngIf&#x3D;&quot;!isLoaded &amp;&amp; !networkError&quot; padding&gt;
+    &lt;ion-spinner name&#x3D;&quot;dots&quot;&gt;&lt;/ion-spinner&gt;
+&lt;/div&gt;
+&lt;app-hint-box *ngIf&#x3D;&quot;networkError&quot; hintTypeI18nKey&#x3D;&quot;alert.title.httpError&quot; hintTextI18nKey&#x3D;&quot;alert.network&quot;&gt;&lt;/app-hint-box&gt;
+&lt;ion-item class&#x3D;&quot;courseData&quot; *ngIf&#x3D;&quot;course.courseId &amp;&amp; courseData&quot; padding-top&gt;
+    &lt;ion-grid class&#x3D;&quot;courseData&quot;&gt;
+        &lt;ion-row *ngIf&#x3D;&quot;course.semester&quot;&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot; class&#x3D;&quot;courseKeywords&quot;&gt;{{ &quot;page.lectures.term&quot; | translate }}:&lt;/ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot;&gt;{{ course.semester }}&lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+        &lt;ion-row *ngIf&#x3D;&quot;course.sws&quot;&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot; class&#x3D;&quot;courseKeywords&quot;&gt;{{ &quot;page.lectures.sws&quot; | translate }}:&lt;/ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot;&gt;{{ course.sws }}&lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+        &lt;ion-row *ngIf&#x3D;&quot;convertToArray(courseData.courseData.course)[0].courseLinks&quot;&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot; class&#x3D;&quot;courseKeywords&quot;&gt;{{ &quot;page.lectures.links&quot; | translate }}:&lt;/ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot;&gt;
+                &lt;div *ngFor&#x3D;&quot;let link of convertToArray(convertToArray(courseData.courseData.course)[0].courseLinks)&quot;&gt;
+                    &lt;a [href]&#x3D;&quot;link.courseLink.link&quot; target&#x3D;&quot;_blank&quot;&gt;{{ link.courseLink.linkName }}&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+        &lt;ion-row *ngIf&#x3D;&quot;convertToArray(courseData.courseData.course)[0].enrolmentBegin&quot;&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot; class&#x3D;&quot;courseKeywords&quot;&gt;{{ &quot;page.lectures.application&quot; | translate }}:&lt;/ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot;&gt;
+                &lt;div [innerHTML]&#x3D;&quot;convertToArray(courseData.courseData.course)[0].enrolmentBegin + &#x27; - &#x27; + convertToArray(courseData.courseData.course)[0].enrolmentEnd&quot;&gt;&lt;/div&gt;
+            &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+        &lt;ion-row *ngIf&#x3D;&quot;convertToArray(courseData.courseData.course)[0].language&quot;&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot; class&#x3D;&quot;courseKeywords&quot;&gt;{{ &quot;page.lectures.lang&quot; | translate }}:&lt;/ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot;&gt;
+                &lt;div [innerHTML]&#x3D;&quot;convertToArray(courseData.courseData.course)[0].language&quot;&gt;&lt;/div&gt;
+            &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+        &lt;ion-row *ngIf&#x3D;&quot;convertToArray(courseData.courseData.course)[0].facilityName&quot;&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot; class&#x3D;&quot;courseKeywords&quot;&gt;{{ &quot;page.lectures.department&quot; | translate}}:&lt;/ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot;&gt;
+                &lt;div [innerHTML]&#x3D;&quot;convertToArray(courseData.courseData.course)[0].facilityName&quot;&gt;&lt;/div&gt;
+            &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+        &lt;ion-row *ngIf&#x3D;&quot;convertToArray(courseData.courseData.course)[0].shortComment&quot;&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot; class&#x3D;&quot;courseKeywords&quot;&gt;{{ &quot;page.lectures.sComment&quot; | translate }}:&lt;/ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot;&gt;
+                &lt;div [innerHTML]&#x3D;&quot;convertToArray(courseData.courseData.course)[0].shortComment&quot;&gt;&lt;/div&gt;
+            &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+        &lt;ion-row *ngIf&#x3D;&quot;convertToArray(courseData.courseData.course)[0].comment&quot;&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot; class&#x3D;&quot;courseKeywords&quot;&gt;{{ &quot;page.lectures.comment&quot; | translate }}:&lt;/ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot;&gt;
+                &lt;div [innerHTML]&#x3D;&quot;convertToArray(courseData.courseData.course)[0].comment&quot;&gt;&lt;/div&gt;
+            &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+        &lt;ion-row *ngIf&#x3D;&quot;convertToArray(courseData.courseData.course)[0].note&quot;&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot; class&#x3D;&quot;courseKeywords&quot;&gt;{{ &quot;page.lectures.annotation&quot; | translate }}:&lt;/ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot;&gt;
+                &lt;div [innerHTML]&#x3D;&quot;convertToArray(courseData.courseData.course)[0].note&quot;&gt;&lt;/div&gt;
+            &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+        &lt;ion-row *ngIf&#x3D;&quot;convertToArray(courseData.courseData.course)[0].literature&quot;&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot; class&#x3D;&quot;courseKeywords&quot;&gt;{{ &quot;page.lectures.literature&quot; | translate }}:&lt;/ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot;&gt;
+                &lt;div [innerHTML]&#x3D;&quot;convertToArray(courseData.courseData.course)[0].literature&quot;&gt;&lt;/div&gt;
+            &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+        &lt;ion-row *ngIf&#x3D;&quot;convertToArray(courseData.courseData.course)[0].qualification&quot;&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot; class&#x3D;&quot;courseKeywords&quot;&gt;{{ &quot;page.lectures.prereq&quot; | translate }}:&lt;/ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot;&gt;
+                &lt;div [innerHTML]&#x3D;&quot;convertToArray(courseData.courseData.course)[0].qualification&quot;&gt;&lt;/div&gt;
+            &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+        &lt;ion-row *ngIf&#x3D;&quot;convertToArray(courseData.courseData.course)[0].examination&quot;&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot; class&#x3D;&quot;courseKeywords&quot;&gt;{{ &quot;page.lectures.certificates&quot; | translate }}:&lt;/ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot;&gt;
+                &lt;div [innerHTML]&#x3D;&quot;convertToArray(courseData.courseData.course)[0].examination&quot;&gt;&lt;/div&gt;
+            &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+        &lt;ion-row *ngIf&#x3D;&quot;convertToArray(courseData.courseData.course)[0].content&quot;&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot; class&#x3D;&quot;courseKeywords&quot;&gt;{{ &quot;page.lectures.learnContent&quot; | translate }}:&lt;/ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot;&gt;
+                &lt;div [innerHTML]&#x3D;&quot;convertToArray(courseData.courseData.course)[0].content&quot;&gt;&lt;/div&gt;
+            &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+        &lt;ion-row *ngIf&#x3D;&quot;convertToArray(courseData.courseData.course)[0].audience&quot;&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot; class&#x3D;&quot;courseKeywords&quot;&gt;{{ &quot;page.lectures.audience&quot; | translate }}:&lt;/ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;12&quot;&gt;
+                &lt;div [innerHTML]&#x3D;&quot;convertToArray(courseData.courseData.course)[0].audience&quot;&gt;&lt;/div&gt;
+            &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+    &lt;/ion-grid&gt;
+&lt;/ion-item&gt;
+&lt;ion-list *ngIf&#x3D;&quot;
+course.courseId
+&amp;&amp; courseData
+&amp;&amp; courseData.courseData
+&amp;&amp; courseData.courseData.course
+&amp;&amp; convertToArray(this.courseData.courseData.course)[0].events
+&amp;&amp; convertToArray(this.courseData.courseData.course)[0].events.event
+&amp;&amp; courseGroups
+&amp;&amp; courseGroups.length &gt; 0
+&quot; class&#x3D;&quot;courseData&quot; &gt;
+    &lt;span *ngFor&#x3D;&quot;let group of courseGroups; let i &#x3D; index&quot; class&#x3D;&quot;groupTable courseData&quot;&gt;
+      &lt;ion-item lines&#x3D;&quot;none&quot; style&#x3D;&quot;font-weight: bold&quot;&gt;
+          &lt;ion-label&gt;
+              {{ &quot;page.lectures.group&quot; | translate }} {{ group }}
+          &lt;/ion-label&gt;
+      &lt;/ion-item&gt;
+      &lt;ion-item lines&#x3D;&quot;none&quot;&gt;
+          &lt;table&gt;
+              &lt;thead&gt;
+                  &lt;tr&gt;
+                      &lt;th&gt;{{ &quot;page.lectures.day&quot; | translate }}&lt;/th&gt;
+                      &lt;th&gt;{{ &quot;page.lectures.time&quot; | translate }}&lt;/th&gt;
+                      &lt;th&gt;{{ &quot;page.lectures.freq&quot; | translate }}&lt;/th&gt;
+                      &lt;th&gt;{{ &quot;page.lectures.duration&quot; | translate }}&lt;/th&gt;
+                      &lt;th&gt;{{ &quot;page.lectures.room&quot; | translate }}&lt;/th&gt;
+                      &lt;th&gt;{{ &quot;page.lectures.lecturer&quot; | translate }}&lt;/th&gt;
+                  &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                  &lt;tr *ngFor&#x3D;&quot;let event of convertToArray(convertToArray(this.courseData.courseData.course)[0].events.event); let i &#x3D; index; let odd &#x3D; odd&quot; [ngClass]&#x3D;&quot;event.groupId !&#x3D; group ? &#x27;emptyRow&#x27; : &#x27;&#x27;&quot;&gt;
+                      &lt;td *ngIf&#x3D;&quot;event.groupId &#x3D;&#x3D; group&quot;&gt;&lt;span *ngIf&#x3D;&quot;event.daySC&quot;&gt;{{ event.daySC }}&lt;/span&gt;&lt;/td&gt;
+                      &lt;td *ngIf&#x3D;&quot;event.groupId &#x3D;&#x3D; group&quot;&gt;&lt;span *ngIf&#x3D;&quot;event.startTime &amp;&amp; event.endTime&quot;&gt;{{ event.startTime }} - {{ event.endTime }}&lt;/span&gt;&lt;/td&gt;
+                      &lt;td *ngIf&#x3D;&quot;event.groupId &#x3D;&#x3D; group&quot;&gt;&lt;span *ngIf&#x3D;&quot;event.rhythmSC&quot;&gt;{{ event.rhythmSC }}&lt;/span&gt;&lt;/td&gt;
+                      &lt;td *ngIf&#x3D;&quot;event.groupId &#x3D;&#x3D; group&quot;&gt;&lt;span *ngIf&#x3D;&quot;event.startDate &amp;&amp; event.endDate&quot;&gt;{{ event.startDate }} - {{ event.endDate }}&lt;/span&gt;&lt;/td&gt;
+                      &lt;td *ngIf&#x3D;&quot;event.groupId &#x3D;&#x3D; group&quot;&gt;&lt;span *ngIf&#x3D;&quot;event.roomSc&quot;&gt;{{ replaceUnderscore(event.roomSc) }}&lt;/span&gt;&lt;/td&gt;
+                      &lt;td *ngIf&#x3D;&quot;event.groupId &#x3D;&#x3D; group&quot;&gt;
+                          &lt;span *ngIf&#x3D;&quot;event.lecturers &amp;&amp; event.lecturers.lecturer&quot;&gt;
+                              &lt;span *ngFor&#x3D;&quot;let lecturer of convertToArray(event.lecturers.lecturer); let l &#x3D; index; let first &#x3D; first&quot;&gt;
+                                  &lt;span *ngIf&#x3D;&quot;checkDoubledLecturers(event, lecturer, l)&quot;&gt;
+                                      &lt;span *ngIf&#x3D;&quot;!first&quot;&gt;, &lt;/span&gt;&lt;span *ngIf&#x3D;&quot;lecturer.lecturerTitle&quot;&gt;{{ lecturer.lecturerTitle }} &lt;/span&gt;{{ lecturer.lecturerLastname }}
+                                  &lt;/span&gt;
+                              &lt;/span&gt;
+                          &lt;/span&gt;
+                      &lt;/td&gt;
+                  &lt;/tr&gt;
+              &lt;/tbody&gt;
+          &lt;/table&gt;
+      &lt;/ion-item&gt;
+    &lt;/span&gt;
+&lt;/ion-list&gt;
+&lt;br&gt;&lt;br&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./course-data.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.courseData {
+    border-radius: 0px;
+    font-size: 0.75rem;
+    margin-left: 0.5%;
+    padding: 0;
+    margin-right: 0;
+
+    p {
+        font-size: 0.75rem;
+        color: var(--ion-color-primary);
+    }
+}
+
+.courseKeywords {
+    font-weight: bold;
+}
+
+.noCourses {
+    --background: var(--ion-color-light);
+    color: black;
+    border-radius: 0px;
+    margin-left: 0.5%;
+    font-size: 0.75rem;
+}
+
+/*
+Generic Styling, for Desktops/Laptops
+*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+    background: #eee;
+}
+th {
+    background: var(--ion-color-primary);
+    color: white;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+td, th {
+    padding: 6px;
+    border: 1px solid #ededed;
+    text-align: left;
+}
+
+/*
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        font-size: 0.75rem;
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { border: 1px solid #ededed; }
+    tr.emptyRow { border: 0px solid #ededed; }
+
+    td {
+        /* Behave  like a &quot;row&quot; */
+        border: none;
+        border-bottom: 1px solid #ededed;
+        position: relative;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: relative;
+        /* Top/left values mimic padding */
+        top: 0px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    /*
+    Label the data
+    */
+    td:nth-of-type(1):before { content: &quot;Tag:&quot;; }
+    td:nth-of-type(2):before { content: &quot;Zeit:&quot;; }
+    td:nth-of-type(3):before { content: &quot;Rhythmus:&quot;; }
+    td:nth-of-type(4):before { content: &quot;Dauer:&quot;; }
+    td:nth-of-type(5):before { content: &quot;Raum:&quot;; }
+    td:nth-of-type(6):before { content: &quot;Lehrperson:&quot;; }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    body {
+        padding: 0;
+        margin: 0;
+        width: 320px;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body {
+        width: 495px;
+    }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div align="center" *ngIf="!isLoaded && !networkError" padding>    <ion-spinner name="dots"></ion-spinner></div><app-hint-box *ngIf="networkError" hintTypeI18nKey="alert.title.httpError" hintTextI18nKey="alert.network"></app-hint-box><ion-item class="courseData" *ngIf="course.courseId && courseData" padding-top>    <ion-grid class="courseData">        <ion-row *ngIf="course.semester">            <ion-col size="12" class="courseKeywords">{{ "page.lectures.term" | translate }}:</ion-col>            <ion-col size="12">{{ course.semester }}</ion-col>        </ion-row>        <ion-row *ngIf="course.sws">            <ion-col size="12" class="courseKeywords">{{ "page.lectures.sws" | translate }}:</ion-col>            <ion-col size="12">{{ course.sws }}</ion-col>        </ion-row>        <ion-row *ngIf="convertToArray(courseData.courseData.course)[0].courseLinks">            <ion-col size="12" class="courseKeywords">{{ "page.lectures.links" | translate }}:</ion-col>            <ion-col size="12">                <div *ngFor="let link of convertToArray(convertToArray(courseData.courseData.course)[0].courseLinks)">                    <a [href]="link.courseLink.link" target="_blank">{{ link.courseLink.linkName }}</a>                </div>            </ion-col>        </ion-row>        <ion-row *ngIf="convertToArray(courseData.courseData.course)[0].enrolmentBegin">            <ion-col size="12" class="courseKeywords">{{ "page.lectures.application" | translate }}:</ion-col>            <ion-col size="12">                <div [innerHTML]="convertToArray(courseData.courseData.course)[0].enrolmentBegin + \' - \' + convertToArray(courseData.courseData.course)[0].enrolmentEnd"></div>            </ion-col>        </ion-row>        <ion-row *ngIf="convertToArray(courseData.courseData.course)[0].language">            <ion-col size="12" class="courseKeywords">{{ "page.lectures.lang" | translate }}:</ion-col>            <ion-col size="12">                <div [innerHTML]="convertToArray(courseData.courseData.course)[0].language"></div>            </ion-col>        </ion-row>        <ion-row *ngIf="convertToArray(courseData.courseData.course)[0].facilityName">            <ion-col size="12" class="courseKeywords">{{ "page.lectures.department" | translate}}:</ion-col>            <ion-col size="12">                <div [innerHTML]="convertToArray(courseData.courseData.course)[0].facilityName"></div>            </ion-col>        </ion-row>        <ion-row *ngIf="convertToArray(courseData.courseData.course)[0].shortComment">            <ion-col size="12" class="courseKeywords">{{ "page.lectures.sComment" | translate }}:</ion-col>            <ion-col size="12">                <div [innerHTML]="convertToArray(courseData.courseData.course)[0].shortComment"></div>            </ion-col>        </ion-row>        <ion-row *ngIf="convertToArray(courseData.courseData.course)[0].comment">            <ion-col size="12" class="courseKeywords">{{ "page.lectures.comment" | translate }}:</ion-col>            <ion-col size="12">                <div [innerHTML]="convertToArray(courseData.courseData.course)[0].comment"></div>            </ion-col>        </ion-row>        <ion-row *ngIf="convertToArray(courseData.courseData.course)[0].note">            <ion-col size="12" class="courseKeywords">{{ "page.lectures.annotation" | translate }}:</ion-col>            <ion-col size="12">                <div [innerHTML]="convertToArray(courseData.courseData.course)[0].note"></div>            </ion-col>        </ion-row>        <ion-row *ngIf="convertToArray(courseData.courseData.course)[0].literature">            <ion-col size="12" class="courseKeywords">{{ "page.lectures.literature" | translate }}:</ion-col>            <ion-col size="12">                <div [innerHTML]="convertToArray(courseData.courseData.course)[0].literature"></div>            </ion-col>        </ion-row>        <ion-row *ngIf="convertToArray(courseData.courseData.course)[0].qualification">            <ion-col size="12" class="courseKeywords">{{ "page.lectures.prereq" | translate }}:</ion-col>            <ion-col size="12">                <div [innerHTML]="convertToArray(courseData.courseData.course)[0].qualification"></div>            </ion-col>        </ion-row>        <ion-row *ngIf="convertToArray(courseData.courseData.course)[0].examination">            <ion-col size="12" class="courseKeywords">{{ "page.lectures.certificates" | translate }}:</ion-col>            <ion-col size="12">                <div [innerHTML]="convertToArray(courseData.courseData.course)[0].examination"></div>            </ion-col>        </ion-row>        <ion-row *ngIf="convertToArray(courseData.courseData.course)[0].content">            <ion-col size="12" class="courseKeywords">{{ "page.lectures.learnContent" | translate }}:</ion-col>            <ion-col size="12">                <div [innerHTML]="convertToArray(courseData.courseData.course)[0].content"></div>            </ion-col>        </ion-row>        <ion-row *ngIf="convertToArray(courseData.courseData.course)[0].audience">            <ion-col size="12" class="courseKeywords">{{ "page.lectures.audience" | translate }}:</ion-col>            <ion-col size="12">                <div [innerHTML]="convertToArray(courseData.courseData.course)[0].audience"></div>            </ion-col>        </ion-row>    </ion-grid></ion-item><ion-list *ngIf="course.courseId&& courseData&& courseData.courseData&& courseData.courseData.course&& convertToArray(this.courseData.courseData.course)[0].events&& convertToArray(this.courseData.courseData.course)[0].events.event&& courseGroups&& courseGroups.length > 0" class="courseData" >    <span *ngFor="let group of courseGroups; let i = index" class="groupTable courseData">      <ion-item lines="none" style="font-weight: bold">          <ion-label>              {{ "page.lectures.group" | translate }} {{ group }}          </ion-label>      </ion-item>      <ion-item lines="none">          <table>              <thead>                  <tr>                      <th>{{ "page.lectures.day" | translate }}</th>                      <th>{{ "page.lectures.time" | translate }}</th>                      <th>{{ "page.lectures.freq" | translate }}</th>                      <th>{{ "page.lectures.duration" | translate }}</th>                      <th>{{ "page.lectures.room" | translate }}</th>                      <th>{{ "page.lectures.lecturer" | translate }}</th>                  </tr>              </thead>              <tbody>                  <tr *ngFor="let event of convertToArray(convertToArray(this.courseData.courseData.course)[0].events.event); let i = index; let odd = odd" [ngClass]="event.groupId != group ? \'emptyRow\' : \'\'">                      <td *ngIf="event.groupId == group"><span *ngIf="event.daySC">{{ event.daySC }}</span></td>                      <td *ngIf="event.groupId == group"><span *ngIf="event.startTime && event.endTime">{{ event.startTime }} - {{ event.endTime }}</span></td>                      <td *ngIf="event.groupId == group"><span *ngIf="event.rhythmSC">{{ event.rhythmSC }}</span></td>                      <td *ngIf="event.groupId == group"><span *ngIf="event.startDate && event.endDate">{{ event.startDate }} - {{ event.endDate }}</span></td>                      <td *ngIf="event.groupId == group"><span *ngIf="event.roomSc">{{ replaceUnderscore(event.roomSc) }}</span></td>                      <td *ngIf="event.groupId == group">                          <span *ngIf="event.lecturers && event.lecturers.lecturer">                              <span *ngFor="let lecturer of convertToArray(event.lecturers.lecturer); let l = index; let first = first">                                  <span *ngIf="checkDoubledLecturers(event, lecturer, l)">                                      <span *ngIf="!first">, </span><span *ngIf="lecturer.lecturerTitle">{{ lecturer.lecturerTitle }} </span>{{ lecturer.lecturerLastname }}                                  </span>                              </span>                          </span>                      </td>                  </tr>              </tbody>          </table>      </ion-item>    </span></ion-list><br><br></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppInfoPage', 'selector': 'app-app-info'},{'name': 'BookDetailModalPage', 'selector': 'book-modal-page'},{'name': 'BookListComponent', 'selector': 'app-book-list'},{'name': 'BookLocationComponent', 'selector': 'app-book-location'},{'name': 'CampusMapFeatureModalComponent', 'selector': 'app-campus-map-feature-modal'},{'name': 'CampusMapPage', 'selector': 'app-campus-map'},{'name': 'CampusReorderModalPage', 'selector': 'campus-modal-page'},{'name': 'CampusTabComponent', 'selector': 'app-campus-tab'},{'name': 'CourseDataComponent', 'selector': 'app-course-data'},{'name': 'DatePickerComponent', 'selector': 'app-date-picker'},{'name': 'DetailedOpeningModalPage', 'selector': 'detailed-opening-modal-page'},{'name': 'DetailedPracticeModalPage', 'selector': 'detailed-practice-modal-page'},{'name': 'EmergencyPage', 'selector': 'app-emergency'},{'name': 'EventModalPage', 'selector': 'event-modal-page'},{'name': 'EventsPage', 'selector': 'app-events'},{'name': 'EventViewComponent', 'selector': 'app-event-view'},{'name': 'FeedbackPage', 'selector': 'app-feedback'},{'name': 'FooterDisclaimerComponent', 'selector': 'app-footer-disclaimer'},{'name': 'FreeRoomsPage', 'selector': 'app-free-rooms'},{'name': 'GradesPage', 'selector': 'app-grades'},{'name': 'GradesTableComponent', 'selector': 'app-grades-table'},{'name': 'HintBoxComponent', 'selector': 'app-hint-box'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'ImpressumModalPage', 'selector': 'impressum-modal-page'},{'name': 'ImpressumPage', 'selector': 'app-impressum'},{'name': 'LectureListComponent', 'selector': 'app-lecture-list'},{'name': 'LectureSearchModalPage', 'selector': 'lecture-search-modal-page'},{'name': 'LecturesPage', 'selector': 'app-lectures'},{'name': 'LibrarySearchPage', 'selector': 'app-library-search'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'MensaMealComponent', 'selector': 'app-mensa-meal'},{'name': 'MensaPage', 'selector': 'app-mensa'},{'name': 'NewsArticleComponent', 'selector': 'app-news-article'},{'name': 'NewsPage', 'selector': 'app-news'},{'name': 'OpeningHoursPage', 'selector': 'app-opening-hours'},{'name': 'PersonSearchPage', 'selector': 'app-person-search'},{'name': 'PracticePage', 'selector': 'app-practice'},{'name': 'RoomplanPage', 'selector': 'app-roomplan'},{'name': 'SettingsPage', 'selector': 'app-settings'},{'name': 'TimetablePage', 'selector': 'app-timetable'},{'name': 'TransportPage', 'selector': 'app-transport'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CourseDataComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CourseDataComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
